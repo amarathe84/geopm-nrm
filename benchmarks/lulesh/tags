@@ -1,0 +1,637 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLOW_UNPACKED_COL	lulesh-comm.cc	13;"	d	file:
+ALLOW_UNPACKED_PLANE	lulesh-comm.cc	11;"	d	file:
+ALLOW_UNPACKED_ROW	lulesh-comm.cc	12;"	d	file:
+Allocate	lulesh.cc	/^T *Allocate(size_t size)$/;"	f
+AllocateElemPersistent	lulesh.h	/^   void AllocateElemPersistent(Int_t numElem) \/\/ Elem-centered$/;"	f	class:Domain
+AllocateElemPersistent	lulesh_tuple.h	/^   void AllocateElemPersistent(Int_t numElem) \/\/ Elem-centered$/;"	f	class:Domain
+AllocateGradients	lulesh.h	/^   void AllocateGradients(Int_t numElem, Int_t allElem)$/;"	f	class:Domain
+AllocateGradients	lulesh_tuple.h	/^   void AllocateGradients(Int_t numElem, Int_t allElem)$/;"	f	class:Domain
+AllocateNodePersistent	lulesh.h	/^   void AllocateNodePersistent(Int_t numNode) \/\/ Node-centered$/;"	f	class:Domain
+AllocateNodePersistent	lulesh_tuple.h	/^   void AllocateNodePersistent(Int_t numNode) \/\/ Node-centered$/;"	f	class:Domain
+AllocateStrains	lulesh.h	/^   void AllocateStrains(Int_t numElem)$/;"	f	class:Domain
+AllocateStrains	lulesh_tuple.h	/^   void AllocateStrains(Int_t numElem)$/;"	f	class:Domain
+ApplyAccelerationBoundaryConditionsForNodes	lulesh.cc	/^void ApplyAccelerationBoundaryConditionsForNodes(Domain& domain)$/;"	f	file:
+ApplyMaterialPropertiesForElems	lulesh.cc	/^void ApplyMaterialPropertiesForElems(Domain& domain, Real_t vnew[])$/;"	f	file:
+AreaFace	lulesh.cc	/^Real_t AreaFace( const Real_t x0, const Real_t x1,$/;"	f	file:
+BuildMesh	lulesh-init.cc	/^Domain::BuildMesh(Int_t nx, Int_t edgeNodes, Int_t edgeElems)$/;"	f	class:Domain
+CACHE_ALIGN_REAL	lulesh.h	101;"	d
+CACHE_ALIGN_REAL	lulesh_tuple.h	103;"	d
+CACHE_COHERENCE_PAD_REAL	lulesh.h	99;"	d
+CACHE_COHERENCE_PAD_REAL	lulesh_tuple.h	101;"	d
+CBRT	lulesh.h	/^inline real10 CBRT(real10 arg) { return cbrtl(arg) ; }$/;"	f
+CBRT	lulesh.h	/^inline real4  CBRT(real4  arg) { return cbrtf(arg) ; }$/;"	f
+CBRT	lulesh.h	/^inline real8  CBRT(real8  arg) { return cbrt(arg) ; }$/;"	f
+CBRT	lulesh_tuple.h	/^inline real10 CBRT(real10 arg) { return cbrtl(arg) ; }$/;"	f
+CBRT	lulesh_tuple.h	/^inline real4  CBRT(real4  arg) { return cbrtf(arg) ; }$/;"	f
+CBRT	lulesh_tuple.h	/^inline real8  CBRT(real8  arg) { return cbrt(arg) ; }$/;"	f
+CXX	Makefile	/^CXX = $(MPICXX)$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O3 -fopenmp -I. -Wall -I$(GEO_INSTALL_PATH)\/include -I$(LIBMSR_INSTALL_PATH)\/include$/;"	m
+CalcAccelerationForNodes	lulesh.cc	/^void CalcAccelerationForNodes(Domain &domain, Index_t numNode)$/;"	f	file:
+CalcCourantConstraintForElems	lulesh.cc	/^void CalcCourantConstraintForElems(Domain &domain, Index_t length,$/;"	f	file:
+CalcElemCharacteristicLength	lulesh.cc	/^Real_t CalcElemCharacteristicLength( const Real_t x[8],$/;"	f	file:
+CalcElemFBHourglassForce	lulesh.cc	/^void CalcElemFBHourglassForce(Real_t *xd, Real_t *yd, Real_t *zd,  Real_t hourgam[][4],$/;"	f	file:
+CalcElemNodeNormals	lulesh.cc	/^void CalcElemNodeNormals(Real_t pfx[8],$/;"	f	file:
+CalcElemShapeFunctionDerivatives	lulesh.cc	/^void CalcElemShapeFunctionDerivatives( Real_t const x[],$/;"	f	file:
+CalcElemVelocityGradient	lulesh.cc	/^void CalcElemVelocityGradient( const Real_t* const xvel,$/;"	f	file:
+CalcElemVolume	lulesh.cc	/^Real_t CalcElemVolume( const Real_t x0, const Real_t x1,$/;"	f	file:
+CalcElemVolume	lulesh.cc	/^Real_t CalcElemVolume( const Real_t x[8], const Real_t y[8], const Real_t z[8] )$/;"	f
+CalcElemVolumeDerivative	lulesh.cc	/^void CalcElemVolumeDerivative(Real_t dvdx[8],$/;"	f	file:
+CalcEnergyForElems	lulesh.cc	/^void CalcEnergyForElems(Real_t* p_new, Real_t* e_new, Real_t* q_new,$/;"	f	file:
+CalcFBHourglassForceForElems	lulesh.cc	/^void CalcFBHourglassForceForElems( Domain &domain,$/;"	f	file:
+CalcForceForNodes	lulesh.cc	/^static inline void CalcForceForNodes(Domain& domain)$/;"	f	file:
+CalcHourglassControlForElems	lulesh.cc	/^void CalcHourglassControlForElems(Domain& domain,$/;"	f	file:
+CalcHydroConstraintForElems	lulesh.cc	/^void CalcHydroConstraintForElems(Domain &domain, Index_t length,$/;"	f	file:
+CalcKinematicsForElems	lulesh.cc	/^void CalcKinematicsForElems( Domain &domain, Real_t *vnew, $/;"	f
+CalcLagrangeElements	lulesh.cc	/^void CalcLagrangeElements(Domain& domain, Real_t* vnew)$/;"	f	file:
+CalcMonotonicQForElems	lulesh.cc	/^void CalcMonotonicQForElems(Domain& domain, Real_t vnew[])$/;"	f	file:
+CalcMonotonicQGradientsForElems	lulesh.cc	/^void CalcMonotonicQGradientsForElems(Domain& domain, Real_t vnew[])$/;"	f	file:
+CalcMonotonicQRegionForElems	lulesh.cc	/^void CalcMonotonicQRegionForElems(Domain &domain, Int_t r,$/;"	f	file:
+CalcPositionForNodes	lulesh.cc	/^void CalcPositionForNodes(Domain &domain, const Real_t dt, Index_t numNode)$/;"	f	file:
+CalcPressureForElems	lulesh.cc	/^void CalcPressureForElems(Real_t* p_new, Real_t* bvc,$/;"	f	file:
+CalcQForElems	lulesh.cc	/^void CalcQForElems(Domain& domain, Real_t vnew[])$/;"	f	file:
+CalcSoundSpeedForElems	lulesh.cc	/^void CalcSoundSpeedForElems(Domain &domain,$/;"	f	file:
+CalcTimeConstraintsForElems	lulesh.cc	/^void CalcTimeConstraintsForElems(Domain& domain) {$/;"	f	file:
+CalcVelocityForNodes	lulesh.cc	/^void CalcVelocityForNodes(Domain &domain, const Real_t dt, const Real_t u_cut,$/;"	f	file:
+CalcVolumeForceForElems	lulesh.cc	/^void CalcVolumeForceForElems(Domain& domain)$/;"	f	file:
+CollectDomainNodesToElemNodes	lulesh.cc	/^void CollectDomainNodesToElemNodes(Domain &domain,$/;"	f	file:
+CommMonoQ	lulesh-comm.cc	/^void CommMonoQ(Domain& domain)$/;"	f
+CommRecv	lulesh-comm.cc	/^void CommRecv(Domain& domain, int msgType, Index_t xferFields,$/;"	f
+CommSBN	lulesh-comm.cc	/^void CommSBN(Domain& domain, int xferFields, Domain_member *fieldData) {$/;"	f
+CommSend	lulesh-comm.cc	/^void CommSend(Domain& domain, int msgType,$/;"	f
+CommSyncPosVel	lulesh-comm.cc	/^void CommSyncPosVel(Domain& domain) {$/;"	f
+CreateRegionIndexSets	lulesh-init.cc	/^Domain::CreateRegionIndexSets(Int_t nr, Int_t balance)$/;"	f	class:Domain
+DeallocateGradients	lulesh.h	/^   void DeallocateGradients()$/;"	f	class:Domain
+DeallocateGradients	lulesh_tuple.h	/^   void DeallocateGradients()$/;"	f	class:Domain
+DeallocateStrains	lulesh.h	/^   void DeallocateStrains()$/;"	f	class:Domain
+DeallocateStrains	lulesh_tuple.h	/^   void DeallocateStrains()$/;"	f	class:Domain
+Domain	lulesh-init.cc	/^Domain::Domain(Int_t numRanks, Index_t colLoc,$/;"	f	class:Domain
+Domain	lulesh.h	/^class Domain {$/;"	c
+Domain	lulesh_tuple.h	/^class Domain {$/;"	c
+Domain_member	lulesh.h	/^typedef Real_t &(Domain::* Domain_member )(Index_t) ;$/;"	t
+Domain_member	lulesh_tuple.h	/^typedef Real_t &(Domain::* Domain_member )(Index_t) ;$/;"	t
+DumpDomainToVisit	lulesh-viz.cc	/^DumpDomainToVisit(DBfile *db, Domain& domain, int myRank)$/;"	f	file:
+DumpMultiblockObjects	lulesh-viz.cc	/^   DumpMultiblockObjects(DBfile *db, PMPIO_baton_t *bat, $/;"	f
+DumpToVisit	lulesh-viz.cc	/^void DumpToVisit(Domain& domain, int numFiles, int myRank, int numRanks) $/;"	f
+DumpToVisit	lulesh-viz.cc	/^void DumpToVisit(Domain& domain, int numFiles, int myRank, int numRanks)$/;"	f
+ETA_M	lulesh.h	70;"	d
+ETA_M	lulesh_tuple.h	72;"	d
+ETA_M_COMM	lulesh.h	73;"	d
+ETA_M_COMM	lulesh_tuple.h	75;"	d
+ETA_M_FREE	lulesh.h	72;"	d
+ETA_M_FREE	lulesh_tuple.h	74;"	d
+ETA_M_SYMM	lulesh.h	71;"	d
+ETA_M_SYMM	lulesh_tuple.h	73;"	d
+ETA_P	lulesh.h	75;"	d
+ETA_P	lulesh_tuple.h	77;"	d
+ETA_P_COMM	lulesh.h	78;"	d
+ETA_P_COMM	lulesh_tuple.h	80;"	d
+ETA_P_FREE	lulesh.h	77;"	d
+ETA_P_FREE	lulesh_tuple.h	79;"	d
+ETA_P_SYMM	lulesh.h	76;"	d
+ETA_P_SYMM	lulesh_tuple.h	78;"	d
+EvalEOSForElems	lulesh.cc	/^void EvalEOSForElems(Domain& domain, Real_t *vnewc,$/;"	f	file:
+FABS	lulesh.h	/^inline real10 FABS(real10 arg) { return fabsl(arg) ; }$/;"	f
+FABS	lulesh.h	/^inline real4  FABS(real4  arg) { return fabsf(arg) ; }$/;"	f
+FABS	lulesh.h	/^inline real8  FABS(real8  arg) { return fabs(arg) ; }$/;"	f
+FABS	lulesh_tuple.h	/^inline real10 FABS(real10 arg) { return fabsl(arg) ; }$/;"	f
+FABS	lulesh_tuple.h	/^inline real4  FABS(real4  arg) { return fabsf(arg) ; }$/;"	f
+FABS	lulesh_tuple.h	/^inline real8  FABS(real8  arg) { return fabs(arg) ; }$/;"	f
+FaceElemConn	lulesh_tuple.h	/^   struct FaceElemConn {$/;"	s	class:Domain
+Index_t	lulesh.h	/^typedef int    Index_t ; \/\/ array subscript and loop index$/;"	t
+Index_t	lulesh_tuple.h	/^typedef int    Index_t ; \/\/ array subscript and loop index$/;"	t
+InitMeshDecomp	lulesh-init.cc	/^void InitMeshDecomp(Int_t numRanks, Int_t myRank,$/;"	f
+InitStressTermsForElems	lulesh.cc	/^void InitStressTermsForElems(Domain &domain,$/;"	f	file:
+Int_t	lulesh.h	/^typedef int    Int_t ;   \/\/ integer representation$/;"	t
+Int_t	lulesh_tuple.h	/^typedef int    Int_t ;   \/\/ integer representation$/;"	t
+IntegrateStressForElems	lulesh.cc	/^void IntegrateStressForElems( Domain &domain,$/;"	f	file:
+LDFLAGS	Makefile	/^LDFLAGS = -g -O3 -L$(GEO_INSTALL_PATH)\/lib -L$(LIBMSR_INSTALL_PATH)\/lib \\$/;"	m
+LULESH_EXEC	Makefile	/^LULESH_EXEC = lulesh2.0.geo$/;"	m
+LULESH_PMPIO_Close	lulesh-viz.cc	/^LULESH_PMPIO_Close(void *file, void *udata)$/;"	f	file:
+LULESH_PMPIO_Create	lulesh-viz.cc	/^LULESH_PMPIO_Create(const char *fname,$/;"	f	file:
+LULESH_PMPIO_Open	lulesh-viz.cc	/^LULESH_PMPIO_Open(const char *fname,$/;"	f	file:
+LagrangeElements	lulesh.cc	/^void LagrangeElements(Domain& domain, Index_t numElem)$/;"	f	file:
+LagrangeLeapFrog	lulesh.cc	/^void LagrangeLeapFrog(Domain& domain)$/;"	f	file:
+LagrangeNodal	lulesh.cc	/^void LagrangeNodal(Domain& domain)$/;"	f	file:
+MAX	lulesh.h	31;"	d
+MAX	lulesh_tuple.h	33;"	d
+MAX_FIELDS_PER_MPI_COMM	lulesh.h	95;"	d
+MAX_FIELDS_PER_MPI_COMM	lulesh_tuple.h	97;"	d
+MPICXX	Makefile	/^MPICXX = mpicxx -DUSE_MPI=1$/;"	m
+MPI_INC	Makefile	/^MPI_INC = \/opt\/local\/include\/openmpi$/;"	m
+MPI_LIB	Makefile	/^MPI_LIB = \/opt\/local\/lib$/;"	m
+MSG_COMM_SBN	lulesh.h	91;"	d
+MSG_COMM_SBN	lulesh_tuple.h	93;"	d
+MSG_MONOQ	lulesh.h	93;"	d
+MSG_MONOQ	lulesh_tuple.h	95;"	d
+MSG_SYNC_POS_VEL	lulesh.h	92;"	d
+MSG_SYNC_POS_VEL	lulesh_tuple.h	94;"	d
+OBJECTS2.0	Makefile	/^OBJECTS2.0 = $(SOURCES2.0:.cc=.o)$/;"	m
+ParseCommandLineOptions	lulesh-util.cc	/^void ParseCommandLineOptions(int argc, char *argv[],$/;"	f
+ParseError	lulesh-util.cc	/^static void ParseError(const char *message, int myRank)$/;"	f	file:
+Pcomponents	lulesh_tuple.h	/^   struct Pcomponents {$/;"	s	class:Domain
+PrintCommandLineOptions	lulesh-util.cc	/^static void PrintCommandLineOptions(char *execname, int myRank)$/;"	f	file:
+QStopError	lulesh.h	/^enum { VolumeError = -1, QStopError = -2 } ;$/;"	e	enum:__anon1
+QStopError	lulesh_tuple.h	/^enum { VolumeError = -1, QStopError = -2 } ;$/;"	e	enum:__anon2
+Qcomponents	lulesh_tuple.h	/^   struct Qcomponents {$/;"	s	class:Domain
+Real_t	lulesh.h	/^typedef real8  Real_t ;  \/\/ floating point representation$/;"	t
+Real_t	lulesh_tuple.h	/^typedef real8  Real_t ;  \/\/ floating point representation$/;"	t
+Release	lulesh.cc	/^void Release(T **ptr)$/;"	f
+SEDOV_SYNC_POS_VEL_EARLY	lulesh.h	21;"	d
+SEDOV_SYNC_POS_VEL_EARLY	lulesh_tuple.h	24;"	d
+SERCXX	Makefile	/^SERCXX = g++ -DUSE_MPI=0$/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES2.0	Makefile	/^SOURCES2.0 = \\$/;"	m
+SQRT	lulesh.h	/^inline real10 SQRT(real10 arg) { return sqrtl(arg) ; }$/;"	f
+SQRT	lulesh.h	/^inline real4  SQRT(real4  arg) { return sqrtf(arg) ; }$/;"	f
+SQRT	lulesh.h	/^inline real8  SQRT(real8  arg) { return sqrt(arg) ; }$/;"	f
+SQRT	lulesh_tuple.h	/^inline real10 SQRT(real10 arg) { return sqrtl(arg) ; }$/;"	f
+SQRT	lulesh_tuple.h	/^inline real4  SQRT(real4  arg) { return sqrtf(arg) ; }$/;"	f
+SQRT	lulesh_tuple.h	/^inline real8  SQRT(real8  arg) { return sqrt(arg) ; }$/;"	f
+SetupBoundaryConditions	lulesh-init.cc	/^Domain::SetupBoundaryConditions(Int_t edgeElems) $/;"	f	class:Domain
+SetupCommBuffers	lulesh-init.cc	/^Domain::SetupCommBuffers(Int_t edgeNodes)$/;"	f	class:Domain
+SetupElementConnectivities	lulesh-init.cc	/^Domain::SetupElementConnectivities(Int_t edgeElems)$/;"	f	class:Domain
+SetupSymmetryPlanes	lulesh-init.cc	/^Domain::SetupSymmetryPlanes(Int_t edgeNodes)$/;"	f	class:Domain
+SetupThreadSupportStructures	lulesh-init.cc	/^Domain::SetupThreadSupportStructures()$/;"	f	class:Domain
+StrToInt	lulesh-util.cc	/^int StrToInt(const char *token, int *retVal)$/;"	f
+SumElemFaceNormal	lulesh.cc	/^void SumElemFaceNormal(Real_t *normalX0, Real_t *normalY0, Real_t *normalZ0,$/;"	f	file:
+SumElemStressesToNodeForces	lulesh.cc	/^void SumElemStressesToNodeForces( const Real_t B[][8],$/;"	f	file:
+TRIPLE_PRODUCT	lulesh.cc	1366;"	d	file:
+TRIPLE_PRODUCT	lulesh.cc	1380;"	d	file:
+TimeIncrement	lulesh.cc	/^void TimeIncrement(Domain& domain)$/;"	f	file:
+Tuple3	lulesh_tuple.h	/^   struct Tuple3 {$/;"	s	class:Domain
+USE_OMP	lulesh.h	8;"	d
+USE_OMP	lulesh_tuple.h	8;"	d
+UpdateVolumesForElems	lulesh.cc	/^void UpdateVolumesForElems(Domain &domain, Real_t *vnew,$/;"	f	file:
+VerifyAndWriteFinalOutput	lulesh-util.cc	/^void VerifyAndWriteFinalOutput(Real_t elapsed_time,$/;"	f
+VoluDer	lulesh.cc	/^void VoluDer(const Real_t x0, const Real_t x1, const Real_t x2,$/;"	f	file:
+Volume	lulesh_tuple.h	/^   struct Volume {$/;"	s	class:Domain
+VolumeError	lulesh.h	/^enum { VolumeError = -1, QStopError = -2 } ;$/;"	e	enum:__anon1
+VolumeError	lulesh_tuple.h	/^enum { VolumeError = -1, QStopError = -2 } ;$/;"	e	enum:__anon2
+XI_M	lulesh.h	60;"	d
+XI_M	lulesh_tuple.h	62;"	d
+XI_M_COMM	lulesh.h	63;"	d
+XI_M_COMM	lulesh_tuple.h	65;"	d
+XI_M_FREE	lulesh.h	62;"	d
+XI_M_FREE	lulesh_tuple.h	64;"	d
+XI_M_SYMM	lulesh.h	61;"	d
+XI_M_SYMM	lulesh_tuple.h	63;"	d
+XI_P	lulesh.h	65;"	d
+XI_P	lulesh_tuple.h	67;"	d
+XI_P_COMM	lulesh.h	68;"	d
+XI_P_COMM	lulesh_tuple.h	70;"	d
+XI_P_FREE	lulesh.h	67;"	d
+XI_P_FREE	lulesh_tuple.h	69;"	d
+XI_P_SYMM	lulesh.h	66;"	d
+XI_P_SYMM	lulesh_tuple.h	68;"	d
+ZETA_M	lulesh.h	80;"	d
+ZETA_M	lulesh_tuple.h	82;"	d
+ZETA_M_COMM	lulesh.h	83;"	d
+ZETA_M_COMM	lulesh_tuple.h	85;"	d
+ZETA_M_FREE	lulesh.h	82;"	d
+ZETA_M_FREE	lulesh_tuple.h	84;"	d
+ZETA_M_SYMM	lulesh.h	81;"	d
+ZETA_M_SYMM	lulesh_tuple.h	83;"	d
+ZETA_P	lulesh.h	85;"	d
+ZETA_P	lulesh_tuple.h	87;"	d
+ZETA_P_COMM	lulesh.h	88;"	d
+ZETA_P_COMM	lulesh_tuple.h	90;"	d
+ZETA_P_FREE	lulesh.h	87;"	d
+ZETA_P_FREE	lulesh_tuple.h	89;"	d
+ZETA_P_SYMM	lulesh.h	86;"	d
+ZETA_P_SYMM	lulesh_tuple.h	88;"	d
+arealg	lulesh.h	/^   Real_t& arealg(Index_t idx)     { return m_arealg[idx] ; }$/;"	f	class:Domain
+arealg	lulesh_tuple.h	/^   Real_t& arealg(Index_t idx)     { return m_arealg[idx] ; }$/;"	f	class:Domain
+balance	lulesh.h	/^   Int_t balance; \/\/ -b$/;"	m	struct:cmdLineOpts
+balance	lulesh_tuple.h	/^   Int_t balance; \/\/ -b$/;"	m	struct:cmdLineOpts
+cmdLineOpts	lulesh.h	/^struct cmdLineOpts {$/;"	s
+cmdLineOpts	lulesh_tuple.h	/^struct cmdLineOpts {$/;"	s
+colLoc	lulesh.h	/^   Index_t&  colLoc()             { return m_colLoc ; }$/;"	f	class:Domain
+colLoc	lulesh_tuple.h	/^   Index_t&  colLoc()             { return m_colLoc ; }$/;"	f	class:Domain
+commDataRecv	lulesh.h	/^   Real_t *commDataRecv ;$/;"	m	class:Domain
+commDataRecv	lulesh_tuple.h	/^   Real_t *commDataRecv ;$/;"	m	class:Domain
+commDataSend	lulesh.h	/^   Real_t *commDataSend ;$/;"	m	class:Domain
+commDataSend	lulesh_tuple.h	/^   Real_t *commDataSend ;$/;"	m	class:Domain
+cost	lulesh.h	/^   Int_t cost; \/\/ -c$/;"	m	struct:cmdLineOpts
+cost	lulesh.h	/^   Int_t&  cost()             { return m_cost ; }$/;"	f	class:Domain
+cost	lulesh_tuple.h	/^   Int_t cost; \/\/ -c$/;"	m	struct:cmdLineOpts
+cost	lulesh_tuple.h	/^   Int_t&  cost()             { return m_cost ; }$/;"	f	class:Domain
+cycle	lulesh.h	/^   Int_t&  cycle()                { return m_cycle ; }$/;"	f	class:Domain
+cycle	lulesh_tuple.h	/^   Int_t&  cycle()                { return m_cycle ; }$/;"	f	class:Domain
+deltatime	lulesh.h	/^   Real_t& deltatime()            { return m_deltatime ; }$/;"	f	class:Domain
+deltatime	lulesh_tuple.h	/^   Real_t& deltatime()            { return m_deltatime ; }$/;"	f	class:Domain
+deltatimemultlb	lulesh.h	/^   Real_t& deltatimemultlb()      { return m_deltatimemultlb ; }$/;"	f	class:Domain
+deltatimemultlb	lulesh_tuple.h	/^   Real_t& deltatimemultlb()      { return m_deltatimemultlb ; }$/;"	f	class:Domain
+deltatimemultub	lulesh.h	/^   Real_t& deltatimemultub()      { return m_deltatimemultub ; }$/;"	f	class:Domain
+deltatimemultub	lulesh_tuple.h	/^   Real_t& deltatimemultub()      { return m_deltatimemultub ; }$/;"	f	class:Domain
+delv	lulesh.h	/^   Real_t& delv(Index_t idx)       { return m_delv[idx] ; }$/;"	f	class:Domain
+delv	lulesh_tuple.h	/^   Real_t& delv(Index_t idx)       { return m_delv[idx] ; }$/;"	f	class:Domain
+delv_eta	lulesh.h	/^   Real_t& delv_eta(Index_t idx)   { return m_delv_eta[idx] ; }$/;"	f	class:Domain
+delv_eta	lulesh_tuple.h	/^   Real_t& delv_eta(Index_t idx)   { return m_delv_eta[idx] ; }$/;"	f	class:Domain
+delv_xi	lulesh.h	/^   Real_t& delv_xi(Index_t idx)    { return m_delv_xi[idx] ; }$/;"	f	class:Domain
+delv_xi	lulesh_tuple.h	/^   Real_t& delv_xi(Index_t idx)    { return m_delv_xi[idx] ; }$/;"	f	class:Domain
+delv_zeta	lulesh.h	/^   Real_t& delv_zeta(Index_t idx)  { return m_delv_zeta[idx] ; }$/;"	f	class:Domain
+delv_zeta	lulesh_tuple.h	/^   Real_t& delv_zeta(Index_t idx)  { return m_delv_zeta[idx] ; }$/;"	f	class:Domain
+delx_eta	lulesh.h	/^   Real_t& delx_eta(Index_t idx)   { return m_delx_eta[idx] ; }$/;"	f	class:Domain
+delx_eta	lulesh_tuple.h	/^   Real_t& delx_eta(Index_t idx)   { return m_delx_eta[idx] ; }$/;"	f	class:Domain
+delx_xi	lulesh.h	/^   Real_t& delx_xi(Index_t idx)    { return m_delx_xi[idx] ; }$/;"	f	class:Domain
+delx_xi	lulesh_tuple.h	/^   Real_t& delx_xi(Index_t idx)    { return m_delx_xi[idx] ; }$/;"	f	class:Domain
+delx_zeta	lulesh.h	/^   Real_t& delx_zeta(Index_t idx)  { return m_delx_zeta[idx] ; }$/;"	f	class:Domain
+delx_zeta	lulesh_tuple.h	/^   Real_t& delx_zeta(Index_t idx)  { return m_delx_zeta[idx] ; }$/;"	f	class:Domain
+dtcourant	lulesh.h	/^   Real_t& dtcourant()            { return m_dtcourant ; }$/;"	f	class:Domain
+dtcourant	lulesh_tuple.h	/^   Real_t& dtcourant()            { return m_dtcourant ; }$/;"	f	class:Domain
+dtfixed	lulesh.h	/^   Real_t& dtfixed()              { return m_dtfixed ; }$/;"	f	class:Domain
+dtfixed	lulesh_tuple.h	/^   Real_t& dtfixed()              { return m_dtfixed ; }$/;"	f	class:Domain
+dthydro	lulesh.h	/^   Real_t& dthydro()              { return m_dthydro ; }$/;"	f	class:Domain
+dthydro	lulesh_tuple.h	/^   Real_t& dthydro()              { return m_dthydro ; }$/;"	f	class:Domain
+dtmax	lulesh.h	/^   Real_t& dtmax()                { return m_dtmax ; }$/;"	f	class:Domain
+dtmax	lulesh_tuple.h	/^   Real_t& dtmax()                { return m_dtmax ; }$/;"	f	class:Domain
+dvovmax	lulesh.h	/^   Real_t dvovmax() const             { return m_dvovmax ; }$/;"	f	class:Domain
+dvovmax	lulesh_tuple.h	/^   Real_t dvovmax() const             { return m_dvovmax ; }$/;"	f	class:Domain
+dxx	lulesh.h	/^   Real_t& dxx(Index_t idx)  { return m_dxx[idx] ; }$/;"	f	class:Domain
+dxx	lulesh_tuple.h	/^   Real_t& dxx(Index_t idx)  { return m_dxx[idx] ; }$/;"	f	class:Domain
+dyy	lulesh.h	/^   Real_t& dyy(Index_t idx)  { return m_dyy[idx] ; }$/;"	f	class:Domain
+dyy	lulesh_tuple.h	/^   Real_t& dyy(Index_t idx)  { return m_dyy[idx] ; }$/;"	f	class:Domain
+dzz	lulesh.h	/^   Real_t& dzz(Index_t idx)  { return m_dzz[idx] ; }$/;"	f	class:Domain
+dzz	lulesh_tuple.h	/^   Real_t& dzz(Index_t idx)  { return m_dzz[idx] ; }$/;"	f	class:Domain
+e	lulesh.h	/^   Real_t& e(Index_t idx)          { return m_e[idx] ; }$/;"	f	class:Domain
+e	lulesh_tuple.h	/^   Real_t& e(Index_t idx)          { return m_e[idx] ; }$/;"	f	class:Domain
+e_cut	lulesh.h	/^   Real_t e_cut() const               { return m_e_cut ; }$/;"	f	class:Domain
+e_cut	lulesh_tuple.h	/^   Real_t e_cut() const               { return m_e_cut ; }$/;"	f	class:Domain
+elemBC	lulesh.h	/^   Int_t&  elemBC(Index_t idx) { return m_elemBC[idx] ; }$/;"	f	class:Domain
+elemBC	lulesh_tuple.h	/^   Int_t&  elemBC(Index_t idx) { return m_elemBC[idx] ; }$/;"	f	class:Domain
+elemMass	lulesh.h	/^   Real_t& elemMass(Index_t idx)  { return m_elemMass[idx] ; }$/;"	f	class:Domain
+elemMass	lulesh_tuple.h	/^   Real_t& elemMass(Index_t idx)  { return m_elemMass[idx] ; }$/;"	f	class:Domain
+emin	lulesh.h	/^   Real_t emin() const                { return m_emin ; }$/;"	f	class:Domain
+emin	lulesh_tuple.h	/^   Real_t emin() const                { return m_emin ; }$/;"	f	class:Domain
+eosvmax	lulesh.h	/^   Real_t eosvmax() const             { return m_eosvmax ; }$/;"	f	class:Domain
+eosvmax	lulesh_tuple.h	/^   Real_t eosvmax() const             { return m_eosvmax ; }$/;"	f	class:Domain
+eosvmin	lulesh.h	/^   Real_t eosvmin() const             { return m_eosvmin ; }$/;"	f	class:Domain
+eosvmin	lulesh_tuple.h	/^   Real_t eosvmin() const             { return m_eosvmin ; }$/;"	f	class:Domain
+fx	lulesh.h	/^   Real_t& fx(Index_t idx)   { return m_fx[idx] ; }$/;"	f	class:Domain
+fx	lulesh_tuple.h	/^   Real_t& fx(Index_t idx)   { return m_force[idx].x ; }$/;"	f	class:Domain
+fy	lulesh.h	/^   Real_t& fy(Index_t idx)   { return m_fy[idx] ; }$/;"	f	class:Domain
+fy	lulesh_tuple.h	/^   Real_t& fy(Index_t idx)   { return m_force[idx].y ; }$/;"	f	class:Domain
+fz	lulesh.h	/^   Real_t& fz(Index_t idx)   { return m_fz[idx] ; }$/;"	f	class:Domain
+fz	lulesh_tuple.h	/^   Real_t& fz(Index_t idx)   { return m_force[idx].z ; }$/;"	f	class:Domain
+hgcoef	lulesh.h	/^   Real_t hgcoef() const              { return m_hgcoef ; }$/;"	f	class:Domain
+hgcoef	lulesh_tuple.h	/^   Real_t hgcoef() const              { return m_hgcoef ; }$/;"	f	class:Domain
+its	lulesh.h	/^   Int_t its; \/\/ -i $/;"	m	struct:cmdLineOpts
+its	lulesh_tuple.h	/^   Int_t its; \/\/ -i $/;"	m	struct:cmdLineOpts
+letam	lulesh.h	/^   Index_t&  letam(Index_t idx) { return m_letam[idx] ; }$/;"	f	class:Domain
+letam	lulesh_tuple.h	/^      Index_t lxim, lxip, letam, letap, lzetam, lzetap ;$/;"	m	struct:Domain::FaceElemConn
+letam	lulesh_tuple.h	/^   Index_t&  letam(Index_t idx) { return m_faceToElem[idx].letam ; }$/;"	f	class:Domain
+letap	lulesh.h	/^   Index_t&  letap(Index_t idx) { return m_letap[idx] ; }$/;"	f	class:Domain
+letap	lulesh_tuple.h	/^      Index_t lxim, lxip, letam, letap, lzetam, lzetap ;$/;"	m	struct:Domain::FaceElemConn
+letap	lulesh_tuple.h	/^   Index_t&  letap(Index_t idx) { return m_faceToElem[idx].letap ; }$/;"	f	class:Domain
+lxim	lulesh.h	/^   Index_t&  lxim(Index_t idx) { return m_lxim[idx] ; }$/;"	f	class:Domain
+lxim	lulesh_tuple.h	/^      Index_t lxim, lxip, letam, letap, lzetam, lzetap ;$/;"	m	struct:Domain::FaceElemConn
+lxim	lulesh_tuple.h	/^   Index_t&  lxim(Index_t idx) { return m_faceToElem[idx].lxim ; }$/;"	f	class:Domain
+lxip	lulesh.h	/^   Index_t&  lxip(Index_t idx) { return m_lxip[idx] ; }$/;"	f	class:Domain
+lxip	lulesh_tuple.h	/^      Index_t lxim, lxip, letam, letap, lzetam, lzetap ;$/;"	m	struct:Domain::FaceElemConn
+lxip	lulesh_tuple.h	/^   Index_t&  lxip(Index_t idx) { return m_faceToElem[idx].lxip ; }$/;"	f	class:Domain
+lzetam	lulesh.h	/^   Index_t&  lzetam(Index_t idx) { return m_lzetam[idx] ; }$/;"	f	class:Domain
+lzetam	lulesh_tuple.h	/^      Index_t lxim, lxip, letam, letap, lzetam, lzetap ;$/;"	m	struct:Domain::FaceElemConn
+lzetam	lulesh_tuple.h	/^   Index_t&  lzetam(Index_t idx) { return m_faceToElem[idx].lzetam ; }$/;"	f	class:Domain
+lzetap	lulesh.h	/^   Index_t&  lzetap(Index_t idx) { return m_lzetap[idx] ; }$/;"	f	class:Domain
+lzetap	lulesh_tuple.h	/^      Index_t lxim, lxip, letam, letap, lzetam, lzetap ;$/;"	m	struct:Domain::FaceElemConn
+lzetap	lulesh_tuple.h	/^   Index_t&  lzetap(Index_t idx) { return m_faceToElem[idx].lzetap ; }$/;"	f	class:Domain
+m_acc	lulesh_tuple.h	/^   std::vector<Tuple3> m_acc ; \/* accelerations *\/$/;"	m	class:Domain
+m_arealg	lulesh.h	/^   std::vector<Real_t> m_arealg ;  \/* characteristic length of an element *\/$/;"	m	class:Domain
+m_arealg	lulesh_tuple.h	/^   std::vector<Real_t> m_arealg ;  \/* characteristic length of an element *\/$/;"	m	class:Domain
+m_colLoc	lulesh.h	/^   Index_t m_colLoc ;$/;"	m	class:Domain
+m_colLoc	lulesh_tuple.h	/^   Index_t m_colLoc ;$/;"	m	class:Domain
+m_colMax	lulesh.h	/^   Index_t m_colMin, m_colMax;$/;"	m	class:Domain
+m_colMax	lulesh_tuple.h	/^   Index_t m_colMin, m_colMax;$/;"	m	class:Domain
+m_colMin	lulesh.h	/^   Index_t m_colMin, m_colMax;$/;"	m	class:Domain
+m_colMin	lulesh_tuple.h	/^   Index_t m_colMin, m_colMax;$/;"	m	class:Domain
+m_coord	lulesh_tuple.h	/^   std::vector<Tuple3> m_coord ;  \/* coordinates *\/$/;"	m	class:Domain
+m_cost	lulesh.h	/^   Int_t    m_cost; \/\/imbalance cost$/;"	m	class:Domain
+m_cost	lulesh_tuple.h	/^   Int_t    m_cost; \/\/imbalance cost$/;"	m	class:Domain
+m_cycle	lulesh.h	/^   Int_t   m_cycle ;             \/\/ iteration count for simulation $/;"	m	class:Domain
+m_cycle	lulesh_tuple.h	/^   Int_t   m_cycle ;             \/\/ iteration count for simulation $/;"	m	class:Domain
+m_deltatime	lulesh.h	/^   Real_t  m_deltatime ;         \/\/ variable time increment $/;"	m	class:Domain
+m_deltatime	lulesh_tuple.h	/^   Real_t  m_deltatime ;         \/\/ variable time increment $/;"	m	class:Domain
+m_deltatimemultlb	lulesh.h	/^   Real_t  m_deltatimemultlb ;$/;"	m	class:Domain
+m_deltatimemultlb	lulesh_tuple.h	/^   Real_t  m_deltatimemultlb ;$/;"	m	class:Domain
+m_deltatimemultub	lulesh.h	/^   Real_t  m_deltatimemultub ;$/;"	m	class:Domain
+m_deltatimemultub	lulesh_tuple.h	/^   Real_t  m_deltatimemultub ;$/;"	m	class:Domain
+m_delv	lulesh.h	/^   std::vector<Real_t> m_delv ;  \/* m_vnew - m_v *\/$/;"	m	class:Domain
+m_delv	lulesh_tuple.h	/^   std::vector<Real_t> m_delv ;  \/* m_vnew - m_v *\/$/;"	m	class:Domain
+m_delv_eta	lulesh.h	/^   std::vector<Real_t> m_delv_eta ;$/;"	m	class:Domain
+m_delv_eta	lulesh_tuple.h	/^   std::vector<Real_t> m_delv_eta ;$/;"	m	class:Domain
+m_delv_xi	lulesh.h	/^   std::vector<Real_t> m_delv_xi ;    \/* velocity gradient -- temporary *\/$/;"	m	class:Domain
+m_delv_xi	lulesh_tuple.h	/^   std::vector<Real_t> m_delv_xi ;    \/* velocity gradient -- temporary *\/$/;"	m	class:Domain
+m_delv_zeta	lulesh.h	/^   std::vector<Real_t> m_delv_zeta ;$/;"	m	class:Domain
+m_delv_zeta	lulesh_tuple.h	/^   std::vector<Real_t> m_delv_zeta ;$/;"	m	class:Domain
+m_delx_eta	lulesh.h	/^   std::vector<Real_t> m_delx_eta ;$/;"	m	class:Domain
+m_delx_eta	lulesh_tuple.h	/^   std::vector<Real_t> m_delx_eta ;$/;"	m	class:Domain
+m_delx_xi	lulesh.h	/^   std::vector<Real_t> m_delx_xi ;    \/* coordinate gradient -- temporary *\/$/;"	m	class:Domain
+m_delx_xi	lulesh_tuple.h	/^   std::vector<Real_t> m_delx_xi ;    \/* coordinate gradient -- temporary *\/$/;"	m	class:Domain
+m_delx_zeta	lulesh.h	/^   std::vector<Real_t> m_delx_zeta ;$/;"	m	class:Domain
+m_delx_zeta	lulesh_tuple.h	/^   std::vector<Real_t> m_delx_zeta ;$/;"	m	class:Domain
+m_dtcourant	lulesh.h	/^   Real_t  m_dtcourant ;         \/\/ courant constraint $/;"	m	class:Domain
+m_dtcourant	lulesh_tuple.h	/^   Real_t  m_dtcourant ;         \/\/ courant constraint $/;"	m	class:Domain
+m_dtfixed	lulesh.h	/^   Real_t  m_dtfixed ;           \/\/ fixed time increment $/;"	m	class:Domain
+m_dtfixed	lulesh_tuple.h	/^   Real_t  m_dtfixed ;           \/\/ fixed time increment $/;"	m	class:Domain
+m_dthydro	lulesh.h	/^   Real_t  m_dthydro ;           \/\/ volume change constraint $/;"	m	class:Domain
+m_dthydro	lulesh_tuple.h	/^   Real_t  m_dthydro ;           \/\/ volume change constraint $/;"	m	class:Domain
+m_dtmax	lulesh.h	/^   Real_t  m_dtmax ;             \/\/ maximum allowable time increment $/;"	m	class:Domain
+m_dtmax	lulesh_tuple.h	/^   Real_t  m_dtmax ;             \/\/ maximum allowable time increment $/;"	m	class:Domain
+m_dvovmax	lulesh.h	/^   const Real_t  m_dvovmax ;           \/\/ maximum allowable volume change $/;"	m	class:Domain
+m_dvovmax	lulesh_tuple.h	/^   const Real_t  m_dvovmax ;           \/\/ maximum allowable volume change $/;"	m	class:Domain
+m_dxx	lulesh.h	/^   std::vector<Real_t> m_dxx ;  \/* principal strains -- temporary *\/$/;"	m	class:Domain
+m_dxx	lulesh_tuple.h	/^   std::vector<Real_t> m_dxx ;  \/* principal strains -- temporary *\/$/;"	m	class:Domain
+m_dyy	lulesh.h	/^   std::vector<Real_t> m_dyy ;$/;"	m	class:Domain
+m_dyy	lulesh_tuple.h	/^   std::vector<Real_t> m_dyy ;$/;"	m	class:Domain
+m_dzz	lulesh.h	/^   std::vector<Real_t> m_dzz ;$/;"	m	class:Domain
+m_dzz	lulesh_tuple.h	/^   std::vector<Real_t> m_dzz ;$/;"	m	class:Domain
+m_e	lulesh.h	/^   std::vector<Real_t> m_e ;   \/* energy *\/$/;"	m	class:Domain
+m_e	lulesh_tuple.h	/^   std::vector<Real_t> m_e ;   \/* energy *\/$/;"	m	class:Domain
+m_e_cut	lulesh.h	/^   const Real_t  m_e_cut ;             \/\/ energy tolerance $/;"	m	class:Domain
+m_e_cut	lulesh_tuple.h	/^   const Real_t  m_e_cut ;             \/\/ energy tolerance $/;"	m	class:Domain
+m_elemBC	lulesh.h	/^   std::vector<Int_t>    m_elemBC ;  \/* symmetry\/free-surface flags for each elem face *\/$/;"	m	class:Domain
+m_elemBC	lulesh_tuple.h	/^   std::vector<Int_t>    m_elemBC ;  \/* symmetry\/free-surface flags for each elem face *\/$/;"	m	class:Domain
+m_elemMass	lulesh.h	/^   std::vector<Real_t> m_elemMass ;  \/* mass *\/$/;"	m	class:Domain
+m_elemMass	lulesh_tuple.h	/^   std::vector<Real_t> m_elemMass ;  \/* mass *\/$/;"	m	class:Domain
+m_emin	lulesh.h	/^   const Real_t  m_emin ;              \/\/ energy floor $/;"	m	class:Domain
+m_emin	lulesh_tuple.h	/^   const Real_t  m_emin ;              \/\/ energy floor $/;"	m	class:Domain
+m_eosvmax	lulesh.h	/^   const Real_t  m_eosvmax ;$/;"	m	class:Domain
+m_eosvmax	lulesh_tuple.h	/^   const Real_t  m_eosvmax ;$/;"	m	class:Domain
+m_eosvmin	lulesh.h	/^   const Real_t  m_eosvmin ;$/;"	m	class:Domain
+m_eosvmin	lulesh_tuple.h	/^   const Real_t  m_eosvmin ;$/;"	m	class:Domain
+m_faceToElem	lulesh_tuple.h	/^   std::vector<FaceElemConn> m_faceToElem ; \/* element conn across faces *\/$/;"	m	class:Domain
+m_force	lulesh_tuple.h	/^   std::vector<Tuple3> m_force ;  \/* forces *\/$/;"	m	class:Domain
+m_fx	lulesh.h	/^   std::vector<Real_t> m_fx ;  \/* forces *\/$/;"	m	class:Domain
+m_fy	lulesh.h	/^   std::vector<Real_t> m_fy ;$/;"	m	class:Domain
+m_fz	lulesh.h	/^   std::vector<Real_t> m_fz ;$/;"	m	class:Domain
+m_hgcoef	lulesh.h	/^   const Real_t  m_hgcoef ;            \/\/ hourglass control $/;"	m	class:Domain
+m_hgcoef	lulesh_tuple.h	/^   const Real_t  m_hgcoef ;            \/\/ hourglass control $/;"	m	class:Domain
+m_letam	lulesh.h	/^   std::vector<Index_t>  m_letam ;$/;"	m	class:Domain
+m_letap	lulesh.h	/^   std::vector<Index_t>  m_letap ;$/;"	m	class:Domain
+m_lxim	lulesh.h	/^   std::vector<Index_t>  m_lxim ;  \/* element connectivity across each face *\/$/;"	m	class:Domain
+m_lxip	lulesh.h	/^   std::vector<Index_t>  m_lxip ;$/;"	m	class:Domain
+m_lzetam	lulesh.h	/^   std::vector<Index_t>  m_lzetam ;$/;"	m	class:Domain
+m_lzetap	lulesh.h	/^   std::vector<Index_t>  m_lzetap ;$/;"	m	class:Domain
+m_maxEdgeSize	lulesh.h	/^   Index_t m_maxEdgeSize ;$/;"	m	class:Domain
+m_maxEdgeSize	lulesh_tuple.h	/^   Index_t m_maxEdgeSize ;$/;"	m	class:Domain
+m_maxPlaneSize	lulesh.h	/^   Index_t m_maxPlaneSize ;$/;"	m	class:Domain
+m_maxPlaneSize	lulesh_tuple.h	/^   Index_t m_maxPlaneSize ;$/;"	m	class:Domain
+m_monoq_limiter_mult	lulesh.h	/^   const Real_t  m_monoq_limiter_mult ;$/;"	m	class:Domain
+m_monoq_limiter_mult	lulesh_tuple.h	/^   const Real_t  m_monoq_limiter_mult ;$/;"	m	class:Domain
+m_monoq_max_slope	lulesh.h	/^   const Real_t  m_monoq_max_slope ;$/;"	m	class:Domain
+m_monoq_max_slope	lulesh_tuple.h	/^   const Real_t  m_monoq_max_slope ;$/;"	m	class:Domain
+m_nodalMass	lulesh.h	/^   std::vector<Real_t> m_nodalMass ;  \/* mass *\/$/;"	m	class:Domain
+m_nodalMass	lulesh_tuple.h	/^   std::vector<Real_t> m_nodalMass ;  \/* mass *\/$/;"	m	class:Domain
+m_nodeElemCornerList	lulesh.h	/^   Index_t *m_nodeElemCornerList ;$/;"	m	class:Domain
+m_nodeElemCornerList	lulesh_tuple.h	/^   Index_t *m_nodeElemCornerList ;$/;"	m	class:Domain
+m_nodeElemStart	lulesh.h	/^   Index_t *m_nodeElemStart ;$/;"	m	class:Domain
+m_nodeElemStart	lulesh_tuple.h	/^   Index_t *m_nodeElemStart ;$/;"	m	class:Domain
+m_nodelist	lulesh.h	/^   std::vector<Index_t>  m_nodelist ;     \/* elemToNode connectivity *\/$/;"	m	class:Domain
+m_nodelist	lulesh_tuple.h	/^   std::vector<Index_t>  m_nodelist ;     \/* elemToNode connectivity *\/$/;"	m	class:Domain
+m_numElem	lulesh.h	/^   Index_t m_numElem ;$/;"	m	class:Domain
+m_numElem	lulesh_tuple.h	/^   Index_t m_numElem ;$/;"	m	class:Domain
+m_numNode	lulesh.h	/^   Index_t m_numNode ;$/;"	m	class:Domain
+m_numNode	lulesh_tuple.h	/^   Index_t m_numNode ;$/;"	m	class:Domain
+m_numRanks	lulesh.h	/^   Int_t   m_numRanks ;$/;"	m	class:Domain
+m_numRanks	lulesh_tuple.h	/^   Int_t   m_numRanks ;$/;"	m	class:Domain
+m_numReg	lulesh.h	/^   Int_t    m_numReg ;$/;"	m	class:Domain
+m_numReg	lulesh_tuple.h	/^   Int_t    m_numReg ;$/;"	m	class:Domain
+m_p	lulesh.h	/^   std::vector<Real_t> m_p ;   \/* pressure *\/$/;"	m	class:Domain
+m_p_cut	lulesh.h	/^   const Real_t  m_p_cut ;             \/\/ pressure tolerance $/;"	m	class:Domain
+m_p_cut	lulesh_tuple.h	/^   const Real_t  m_p_cut ;             \/\/ pressure tolerance $/;"	m	class:Domain
+m_planeLoc	lulesh.h	/^   Index_t m_planeLoc ;$/;"	m	class:Domain
+m_planeLoc	lulesh_tuple.h	/^   Index_t m_planeLoc ;$/;"	m	class:Domain
+m_planeMax	lulesh.h	/^   Index_t m_planeMin, m_planeMax ;$/;"	m	class:Domain
+m_planeMax	lulesh_tuple.h	/^   Index_t m_planeMin, m_planeMax ;$/;"	m	class:Domain
+m_planeMin	lulesh.h	/^   Index_t m_planeMin, m_planeMax ;$/;"	m	class:Domain
+m_planeMin	lulesh_tuple.h	/^   Index_t m_planeMin, m_planeMax ;$/;"	m	class:Domain
+m_pmin	lulesh.h	/^   const Real_t  m_pmin ;              \/\/ pressure floor $/;"	m	class:Domain
+m_pmin	lulesh_tuple.h	/^   const Real_t  m_pmin ;              \/\/ pressure floor $/;"	m	class:Domain
+m_pq	lulesh_tuple.h	/^   std::vector<Pcomponents> m_pq ;   \/* pressure and artificial viscosity *\/$/;"	m	class:Domain
+m_q	lulesh.h	/^   std::vector<Real_t> m_q ;   \/* q *\/$/;"	m	class:Domain
+m_q_cut	lulesh.h	/^   const Real_t  m_q_cut ;             \/\/ q tolerance $/;"	m	class:Domain
+m_q_cut	lulesh_tuple.h	/^   const Real_t  m_q_cut ;             \/\/ q tolerance $/;"	m	class:Domain
+m_ql	lulesh.h	/^   std::vector<Real_t> m_ql ;  \/* linear term for q *\/$/;"	m	class:Domain
+m_qlc_monoq	lulesh.h	/^   const Real_t  m_qlc_monoq ;         \/\/ linear term coef for q $/;"	m	class:Domain
+m_qlc_monoq	lulesh_tuple.h	/^   const Real_t  m_qlc_monoq ;         \/\/ linear term coef for q $/;"	m	class:Domain
+m_qlqq	lulesh_tuple.h	/^   std::vector<Qcomponents> m_qlqq ;  \/* linear and quadratic terms for q *\/$/;"	m	class:Domain
+m_qq	lulesh.h	/^   std::vector<Real_t> m_qq ;  \/* quadratic term for q *\/$/;"	m	class:Domain
+m_qqc	lulesh.h	/^   const Real_t  m_qqc ;$/;"	m	class:Domain
+m_qqc	lulesh_tuple.h	/^   const Real_t  m_qqc ;$/;"	m	class:Domain
+m_qqc_monoq	lulesh.h	/^   const Real_t  m_qqc_monoq ;         \/\/ quadratic term coef for q $/;"	m	class:Domain
+m_qqc_monoq	lulesh_tuple.h	/^   const Real_t  m_qqc_monoq ;         \/\/ quadratic term coef for q $/;"	m	class:Domain
+m_qstop	lulesh.h	/^   const Real_t  m_qstop ;             \/\/ excessive q indicator $/;"	m	class:Domain
+m_qstop	lulesh_tuple.h	/^   const Real_t  m_qstop ;             \/\/ excessive q indicator $/;"	m	class:Domain
+m_refdens	lulesh.h	/^   const Real_t  m_refdens ;           \/\/ reference density $/;"	m	class:Domain
+m_refdens	lulesh_tuple.h	/^   const Real_t  m_refdens ;           \/\/ reference density $/;"	m	class:Domain
+m_regElemSize	lulesh.h	/^   Index_t *m_regElemSize ;   \/\/ Size of region sets$/;"	m	class:Domain
+m_regElemSize	lulesh_tuple.h	/^   Index_t *m_regElemSize ;   \/\/ Size of region sets$/;"	m	class:Domain
+m_regElemlist	lulesh.h	/^   Index_t **m_regElemlist ;  \/\/ region indexset $/;"	m	class:Domain
+m_regElemlist	lulesh_tuple.h	/^   Index_t **m_regElemlist ;  \/\/ region indexset $/;"	m	class:Domain
+m_regNumList	lulesh.h	/^   Index_t *m_regNumList ;    \/\/ Region number per domain element$/;"	m	class:Domain
+m_regNumList	lulesh_tuple.h	/^   Index_t *m_regNumList ;    \/\/ Region number per domain element$/;"	m	class:Domain
+m_rowLoc	lulesh.h	/^   Index_t m_rowLoc ;$/;"	m	class:Domain
+m_rowLoc	lulesh_tuple.h	/^   Index_t m_rowLoc ;$/;"	m	class:Domain
+m_rowMax	lulesh.h	/^   Index_t m_rowMin, m_rowMax;$/;"	m	class:Domain
+m_rowMax	lulesh_tuple.h	/^   Index_t m_rowMin, m_rowMax;$/;"	m	class:Domain
+m_rowMin	lulesh.h	/^   Index_t m_rowMin, m_rowMax;$/;"	m	class:Domain
+m_rowMin	lulesh_tuple.h	/^   Index_t m_rowMin, m_rowMax;$/;"	m	class:Domain
+m_sizeX	lulesh.h	/^   Index_t m_sizeX ;$/;"	m	class:Domain
+m_sizeX	lulesh_tuple.h	/^   Index_t m_sizeX ;$/;"	m	class:Domain
+m_sizeY	lulesh.h	/^   Index_t m_sizeY ;$/;"	m	class:Domain
+m_sizeY	lulesh_tuple.h	/^   Index_t m_sizeY ;$/;"	m	class:Domain
+m_sizeZ	lulesh.h	/^   Index_t m_sizeZ ;$/;"	m	class:Domain
+m_sizeZ	lulesh_tuple.h	/^   Index_t m_sizeZ ;$/;"	m	class:Domain
+m_ss	lulesh.h	/^   std::vector<Real_t> m_ss ;      \/* "sound speed" *\/$/;"	m	class:Domain
+m_ss	lulesh_tuple.h	/^   std::vector<Real_t> m_ss ;      \/* "sound speed" *\/$/;"	m	class:Domain
+m_ss4o3	lulesh.h	/^   const Real_t  m_ss4o3 ;$/;"	m	class:Domain
+m_ss4o3	lulesh_tuple.h	/^   const Real_t  m_ss4o3 ;$/;"	m	class:Domain
+m_stoptime	lulesh.h	/^   Real_t  m_stoptime ;          \/\/ end time for simulation $/;"	m	class:Domain
+m_stoptime	lulesh_tuple.h	/^   Real_t  m_stoptime ;          \/\/ end time for simulation $/;"	m	class:Domain
+m_symmX	lulesh.h	/^   std::vector<Index_t> m_symmX ;  \/* symmetry plane nodesets *\/$/;"	m	class:Domain
+m_symmX	lulesh_tuple.h	/^   std::vector<Index_t> m_symmX ;  \/* symmetry plane nodesets *\/$/;"	m	class:Domain
+m_symmY	lulesh.h	/^   std::vector<Index_t> m_symmY ;$/;"	m	class:Domain
+m_symmY	lulesh_tuple.h	/^   std::vector<Index_t> m_symmY ;$/;"	m	class:Domain
+m_symmZ	lulesh.h	/^   std::vector<Index_t> m_symmZ ;$/;"	m	class:Domain
+m_symmZ	lulesh_tuple.h	/^   std::vector<Index_t> m_symmZ ;$/;"	m	class:Domain
+m_time	lulesh.h	/^   Real_t  m_time ;              \/\/ current time $/;"	m	class:Domain
+m_time	lulesh_tuple.h	/^   Real_t  m_time ;              \/\/ current time $/;"	m	class:Domain
+m_tp	lulesh.h	/^   Index_t m_tp ;$/;"	m	class:Domain
+m_tp	lulesh_tuple.h	/^   Index_t m_tp ;$/;"	m	class:Domain
+m_u_cut	lulesh.h	/^   const Real_t  m_u_cut ;             \/\/ velocity tolerance $/;"	m	class:Domain
+m_u_cut	lulesh_tuple.h	/^   const Real_t  m_u_cut ;             \/\/ velocity tolerance $/;"	m	class:Domain
+m_v	lulesh.h	/^   std::vector<Real_t> m_v ;     \/* relative volume *\/$/;"	m	class:Domain
+m_v_cut	lulesh.h	/^   const Real_t  m_v_cut ;             \/\/ relative volume tolerance $/;"	m	class:Domain
+m_v_cut	lulesh_tuple.h	/^   const Real_t  m_v_cut ;             \/\/ relative volume tolerance $/;"	m	class:Domain
+m_vdov	lulesh.h	/^   std::vector<Real_t> m_vdov ;  \/* volume derivative over volume *\/$/;"	m	class:Domain
+m_vdov	lulesh_tuple.h	/^   std::vector<Real_t> m_vdov ;  \/* volume derivative over volume *\/$/;"	m	class:Domain
+m_vel	lulesh_tuple.h	/^   std::vector<Tuple3> m_vel ; \/* velocities *\/$/;"	m	class:Domain
+m_vnew	lulesh.h	/^   std::vector<Real_t> m_vnew ;  \/* new relative volume -- temporary *\/$/;"	m	class:Domain
+m_vnew	lulesh_tuple.h	/^   std::vector<Real_t> m_vnew ;  \/* new relative volume -- temporary *\/$/;"	m	class:Domain
+m_vol	lulesh_tuple.h	/^   std::vector<Volume> m_vol ;     \/* relative and reference volume *\/$/;"	m	class:Domain
+m_volo	lulesh.h	/^   std::vector<Real_t> m_volo ;  \/* reference volume *\/$/;"	m	class:Domain
+m_x	lulesh.h	/^   std::vector<Real_t> m_x ;  \/* coordinates *\/$/;"	m	class:Domain
+m_xd	lulesh.h	/^   std::vector<Real_t> m_xd ; \/* velocities *\/$/;"	m	class:Domain
+m_xdd	lulesh.h	/^   std::vector<Real_t> m_xdd ; \/* accelerations *\/$/;"	m	class:Domain
+m_y	lulesh.h	/^   std::vector<Real_t> m_y ;$/;"	m	class:Domain
+m_yd	lulesh.h	/^   std::vector<Real_t> m_yd ;$/;"	m	class:Domain
+m_ydd	lulesh.h	/^   std::vector<Real_t> m_ydd ;$/;"	m	class:Domain
+m_z	lulesh.h	/^   std::vector<Real_t> m_z ;$/;"	m	class:Domain
+m_zd	lulesh.h	/^   std::vector<Real_t> m_zd ;$/;"	m	class:Domain
+m_zdd	lulesh.h	/^   std::vector<Real_t> m_zdd ;$/;"	m	class:Domain
+main	lulesh.cc	/^int main(int argc, char *argv[])$/;"	f
+maxEdgeSize	lulesh.h	/^   Index_t&  maxEdgeSize()        { return m_maxEdgeSize ; }$/;"	f	class:Domain
+maxEdgeSize	lulesh_tuple.h	/^   Index_t&  maxEdgeSize()        { return m_maxEdgeSize ; }$/;"	f	class:Domain
+maxPlaneSize	lulesh.h	/^   Index_t&  maxPlaneSize()       { return m_maxPlaneSize ; }$/;"	f	class:Domain
+maxPlaneSize	lulesh_tuple.h	/^   Index_t&  maxPlaneSize()       { return m_maxPlaneSize ; }$/;"	f	class:Domain
+monoq_limiter_mult	lulesh.h	/^   Real_t monoq_limiter_mult() const  { return m_monoq_limiter_mult ; }$/;"	f	class:Domain
+monoq_limiter_mult	lulesh_tuple.h	/^   Real_t monoq_limiter_mult() const  { return m_monoq_limiter_mult ; }$/;"	f	class:Domain
+monoq_max_slope	lulesh.h	/^   Real_t monoq_max_slope() const     { return m_monoq_max_slope ; }$/;"	f	class:Domain
+monoq_max_slope	lulesh_tuple.h	/^   Real_t monoq_max_slope() const     { return m_monoq_max_slope ; }$/;"	f	class:Domain
+nodalMass	lulesh.h	/^   Real_t& nodalMass(Index_t idx) { return m_nodalMass[idx] ; }$/;"	f	class:Domain
+nodalMass	lulesh_tuple.h	/^   Real_t& nodalMass(Index_t idx) { return m_nodalMass[idx] ; }$/;"	f	class:Domain
+nodeElemCornerList	lulesh.h	/^   Index_t *nodeElemCornerList(Index_t idx)$/;"	f	class:Domain
+nodeElemCornerList	lulesh_tuple.h	/^   Index_t *nodeElemCornerList(Index_t idx)$/;"	f	class:Domain
+nodeElemCount	lulesh.h	/^   Index_t nodeElemCount(Index_t idx)$/;"	f	class:Domain
+nodeElemCount	lulesh_tuple.h	/^   Index_t nodeElemCount(Index_t idx)$/;"	f	class:Domain
+nodelist	lulesh.h	/^   Index_t*  nodelist(Index_t idx)    { return &m_nodelist[Index_t(8)*idx] ; }$/;"	f	class:Domain
+nodelist	lulesh_tuple.h	/^   Index_t*  nodelist(Index_t idx)    { return &m_nodelist[Index_t(8)*idx] ; }$/;"	f	class:Domain
+numElem	lulesh.h	/^   Index_t&  numElem()            { return m_numElem ; }$/;"	f	class:Domain
+numElem	lulesh_tuple.h	/^   Index_t&  numElem()            { return m_numElem ; }$/;"	f	class:Domain
+numFiles	lulesh.h	/^   Int_t numFiles; \/\/ -f$/;"	m	struct:cmdLineOpts
+numFiles	lulesh_tuple.h	/^   Int_t numFiles; \/\/ -f$/;"	m	struct:cmdLineOpts
+numNode	lulesh.h	/^   Index_t&  numNode()            { return m_numNode ; }$/;"	f	class:Domain
+numNode	lulesh_tuple.h	/^   Index_t&  numNode()            { return m_numNode ; }$/;"	f	class:Domain
+numRanks	lulesh.h	/^   Index_t&  numRanks()           { return m_numRanks ; }$/;"	f	class:Domain
+numRanks	lulesh_tuple.h	/^   Index_t&  numRanks()           { return m_numRanks ; }$/;"	f	class:Domain
+numReg	lulesh.h	/^   Index_t&  numReg()             { return m_numReg ; }$/;"	f	class:Domain
+numReg	lulesh.h	/^   Int_t numReg; \/\/ -r $/;"	m	struct:cmdLineOpts
+numReg	lulesh_tuple.h	/^   Index_t&  numReg()             { return m_numReg ; }$/;"	f	class:Domain
+numReg	lulesh_tuple.h	/^   Int_t numReg; \/\/ -r $/;"	m	struct:cmdLineOpts
+nx	lulesh.h	/^   Int_t nx;  \/\/ -s $/;"	m	struct:cmdLineOpts
+nx	lulesh_tuple.h	/^   Int_t nx;  \/\/ -s $/;"	m	struct:cmdLineOpts
+p	lulesh.h	/^   Real_t& p(Index_t idx)          { return m_p[idx] ; }$/;"	f	class:Domain
+p	lulesh_tuple.h	/^      Real_t p, q ;$/;"	m	struct:Domain::Pcomponents
+p	lulesh_tuple.h	/^   Real_t& p(Index_t idx)          { return m_pq[idx].p ; }$/;"	f	class:Domain
+p_cut	lulesh.h	/^   Real_t p_cut() const               { return m_p_cut ; }$/;"	f	class:Domain
+p_cut	lulesh_tuple.h	/^   Real_t p_cut() const               { return m_p_cut ; }$/;"	f	class:Domain
+planeLoc	lulesh.h	/^   Index_t&  planeLoc()           { return m_planeLoc ; }$/;"	f	class:Domain
+planeLoc	lulesh_tuple.h	/^   Index_t&  planeLoc()           { return m_planeLoc ; }$/;"	f	class:Domain
+pmin	lulesh.h	/^   Real_t pmin() const                { return m_pmin ; }$/;"	f	class:Domain
+pmin	lulesh_tuple.h	/^   Real_t pmin() const                { return m_pmin ; }$/;"	f	class:Domain
+q	lulesh.h	/^   Real_t& q(Index_t idx)          { return m_q[idx] ; }$/;"	f	class:Domain
+q	lulesh_tuple.h	/^      Real_t p, q ;$/;"	m	struct:Domain::Pcomponents
+q	lulesh_tuple.h	/^   Real_t& q(Index_t idx)          { return m_pq[idx].q ; }$/;"	f	class:Domain
+q_cut	lulesh.h	/^   Real_t q_cut() const               { return m_q_cut ; }$/;"	f	class:Domain
+q_cut	lulesh_tuple.h	/^   Real_t q_cut() const               { return m_q_cut ; }$/;"	f	class:Domain
+ql	lulesh.h	/^   Real_t& ql(Index_t idx)         { return m_ql[idx] ; }$/;"	f	class:Domain
+ql	lulesh_tuple.h	/^      Real_t ql, qq ;$/;"	m	struct:Domain::Qcomponents
+ql	lulesh_tuple.h	/^   Real_t& ql(Index_t idx)         { return m_qlqq[idx].ql ; }$/;"	f	class:Domain
+qlc_monoq	lulesh.h	/^   Real_t qlc_monoq() const           { return m_qlc_monoq ; }$/;"	f	class:Domain
+qlc_monoq	lulesh_tuple.h	/^   Real_t qlc_monoq() const           { return m_qlc_monoq ; }$/;"	f	class:Domain
+qq	lulesh.h	/^   Real_t& qq(Index_t idx)         { return m_qq[idx] ; }$/;"	f	class:Domain
+qq	lulesh_tuple.h	/^      Real_t ql, qq ;$/;"	m	struct:Domain::Qcomponents
+qq	lulesh_tuple.h	/^   Real_t& qq(Index_t idx)         { return m_qlqq[idx].qq ; }$/;"	f	class:Domain
+qqc	lulesh.h	/^   Real_t qqc() const                 { return m_qqc ; }$/;"	f	class:Domain
+qqc	lulesh_tuple.h	/^   Real_t qqc() const                 { return m_qqc ; }$/;"	f	class:Domain
+qqc_monoq	lulesh.h	/^   Real_t qqc_monoq() const           { return m_qqc_monoq ; }$/;"	f	class:Domain
+qqc_monoq	lulesh_tuple.h	/^   Real_t qqc_monoq() const           { return m_qqc_monoq ; }$/;"	f	class:Domain
+qstop	lulesh.h	/^   Real_t qstop() const               { return m_qstop ; }$/;"	f	class:Domain
+qstop	lulesh_tuple.h	/^   Real_t qstop() const               { return m_qstop ; }$/;"	f	class:Domain
+quiet	lulesh.h	/^   Int_t quiet; \/\/ -q$/;"	m	struct:cmdLineOpts
+quiet	lulesh_tuple.h	/^   Int_t quiet; \/\/ -q$/;"	m	struct:cmdLineOpts
+real10	lulesh.h	/^typedef long double  real10 ;  \/\/ 10 bytes on x86$/;"	t
+real10	lulesh_tuple.h	/^typedef long double  real10 ;  \/\/ 10 bytes on x86$/;"	t
+real4	lulesh.h	/^typedef float        real4 ;$/;"	t
+real4	lulesh_tuple.h	/^typedef float        real4 ;$/;"	t
+real8	lulesh.h	/^typedef double       real8 ;$/;"	t
+real8	lulesh_tuple.h	/^typedef double       real8 ;$/;"	t
+recvRequest	lulesh.h	/^   MPI_Request recvRequest[26] ; \/\/ 6 faces + 12 edges + 8 corners $/;"	m	class:Domain
+recvRequest	lulesh_tuple.h	/^   MPI_Request recvRequest[26] ; \/\/ 6 faces + 12 edges + 8 corners $/;"	m	class:Domain
+refdens	lulesh.h	/^   Real_t refdens() const             { return m_refdens ; }$/;"	f	class:Domain
+refdens	lulesh_tuple.h	/^   Real_t refdens() const             { return m_refdens ; }$/;"	f	class:Domain
+regElemSize	lulesh.h	/^   Index_t&  regElemSize(Index_t idx) { return m_regElemSize[idx] ; }$/;"	f	class:Domain
+regElemSize	lulesh_tuple.h	/^   Index_t&  regElemSize(Index_t idx) { return m_regElemSize[idx] ; }$/;"	f	class:Domain
+regElemlist	lulesh.h	/^   Index_t&  regElemlist(Int_t r, Index_t idx) { return m_regElemlist[r][idx] ; }$/;"	f	class:Domain
+regElemlist	lulesh.h	/^   Index_t*  regElemlist(Int_t r)    { return m_regElemlist[r] ; }$/;"	f	class:Domain
+regElemlist	lulesh_tuple.h	/^   Index_t&  regElemlist(Int_t r, Index_t idx) { return m_regElemlist[r][idx] ; }$/;"	f	class:Domain
+regElemlist	lulesh_tuple.h	/^   Index_t*  regElemlist(Int_t r)    { return m_regElemlist[r] ; }$/;"	f	class:Domain
+regNumList	lulesh.h	/^   Index_t&  regNumList(Index_t idx) { return m_regNumList[idx] ; }$/;"	f	class:Domain
+regNumList	lulesh.h	/^   Index_t*  regNumList()            { return &m_regNumList[0] ; }$/;"	f	class:Domain
+regNumList	lulesh_tuple.h	/^   Index_t&  regNumList(Index_t idx) { return m_regNumList[idx] ; }$/;"	f	class:Domain
+regNumList	lulesh_tuple.h	/^   Index_t*  regNumList()            { return &m_regNumList[0] ; }$/;"	f	class:Domain
+rowLoc	lulesh.h	/^   Index_t&  rowLoc()             { return m_rowLoc ; }$/;"	f	class:Domain
+rowLoc	lulesh_tuple.h	/^   Index_t&  rowLoc()             { return m_rowLoc ; }$/;"	f	class:Domain
+sendRequest	lulesh.h	/^   MPI_Request sendRequest[26] ; \/\/ 6 faces + 12 edges + 8 corners $/;"	m	class:Domain
+sendRequest	lulesh_tuple.h	/^   MPI_Request sendRequest[26] ; \/\/ 6 faces + 12 edges + 8 corners $/;"	m	class:Domain
+showProg	lulesh.h	/^   Int_t showProg; \/\/ -p$/;"	m	struct:cmdLineOpts
+showProg	lulesh_tuple.h	/^   Int_t showProg; \/\/ -p$/;"	m	struct:cmdLineOpts
+sizeX	lulesh.h	/^   Index_t&  sizeX()              { return m_sizeX ; }$/;"	f	class:Domain
+sizeX	lulesh_tuple.h	/^   Index_t&  sizeX()              { return m_sizeX ; }$/;"	f	class:Domain
+sizeY	lulesh.h	/^   Index_t&  sizeY()              { return m_sizeY ; }$/;"	f	class:Domain
+sizeY	lulesh_tuple.h	/^   Index_t&  sizeY()              { return m_sizeY ; }$/;"	f	class:Domain
+sizeZ	lulesh.h	/^   Index_t&  sizeZ()              { return m_sizeZ ; }$/;"	f	class:Domain
+sizeZ	lulesh_tuple.h	/^   Index_t&  sizeZ()              { return m_sizeZ ; }$/;"	f	class:Domain
+ss	lulesh.h	/^   Real_t& ss(Index_t idx)         { return m_ss[idx] ; }$/;"	f	class:Domain
+ss	lulesh_tuple.h	/^   Real_t& ss(Index_t idx)         { return m_ss[idx] ; }$/;"	f	class:Domain
+ss4o3	lulesh.h	/^   Real_t ss4o3() const               { return m_ss4o3 ; }$/;"	f	class:Domain
+ss4o3	lulesh_tuple.h	/^   Real_t ss4o3() const               { return m_ss4o3 ; }$/;"	f	class:Domain
+stoptime	lulesh.h	/^   Real_t& stoptime()             { return m_stoptime ; }$/;"	f	class:Domain
+stoptime	lulesh_tuple.h	/^   Real_t& stoptime()             { return m_stoptime ; }$/;"	f	class:Domain
+symmX	lulesh.h	/^   Index_t symmX(Index_t idx) { return m_symmX[idx] ; }$/;"	f	class:Domain
+symmX	lulesh_tuple.h	/^   Index_t symmX(Index_t idx) { return m_symmX[idx] ; }$/;"	f	class:Domain
+symmXempty	lulesh.h	/^   bool symmXempty()          { return m_symmX.empty(); }$/;"	f	class:Domain
+symmXempty	lulesh_tuple.h	/^   bool symmXempty()          { return m_symmX.empty(); }$/;"	f	class:Domain
+symmY	lulesh.h	/^   Index_t symmY(Index_t idx) { return m_symmY[idx] ; }$/;"	f	class:Domain
+symmY	lulesh_tuple.h	/^   Index_t symmY(Index_t idx) { return m_symmY[idx] ; }$/;"	f	class:Domain
+symmYempty	lulesh.h	/^   bool symmYempty()          { return m_symmY.empty(); }$/;"	f	class:Domain
+symmYempty	lulesh_tuple.h	/^   bool symmYempty()          { return m_symmY.empty(); }$/;"	f	class:Domain
+symmZ	lulesh.h	/^   Index_t symmZ(Index_t idx) { return m_symmZ[idx] ; }$/;"	f	class:Domain
+symmZ	lulesh_tuple.h	/^   Index_t symmZ(Index_t idx) { return m_symmZ[idx] ; }$/;"	f	class:Domain
+symmZempty	lulesh.h	/^   bool symmZempty()          { return m_symmZ.empty(); }$/;"	f	class:Domain
+symmZempty	lulesh_tuple.h	/^   bool symmZempty()          { return m_symmZ.empty(); }$/;"	f	class:Domain
+time	lulesh.h	/^   Real_t& time()                 { return m_time ; }$/;"	f	class:Domain
+time	lulesh_tuple.h	/^   Real_t& time()                 { return m_time ; }$/;"	f	class:Domain
+tp	lulesh.h	/^   Index_t&  tp()                 { return m_tp ; }$/;"	f	class:Domain
+tp	lulesh_tuple.h	/^   Index_t&  tp()                 { return m_tp ; }$/;"	f	class:Domain
+u_cut	lulesh.h	/^   Real_t u_cut() const               { return m_u_cut ; }$/;"	f	class:Domain
+u_cut	lulesh_tuple.h	/^   Real_t u_cut() const               { return m_u_cut ; }$/;"	f	class:Domain
+v	lulesh.h	/^   Real_t& v(Index_t idx)          { return m_v[idx] ; }$/;"	f	class:Domain
+v	lulesh_tuple.h	/^      Real_t v, volo ;$/;"	m	struct:Domain::Volume
+v	lulesh_tuple.h	/^   Real_t& v(Index_t idx)          { return m_vol[idx].v ; }$/;"	f	class:Domain
+v_cut	lulesh.h	/^   Real_t v_cut() const               { return m_v_cut ; }$/;"	f	class:Domain
+v_cut	lulesh_tuple.h	/^   Real_t v_cut() const               { return m_v_cut ; }$/;"	f	class:Domain
+vdov	lulesh.h	/^   Real_t& vdov(Index_t idx)       { return m_vdov[idx] ; }$/;"	f	class:Domain
+vdov	lulesh_tuple.h	/^   Real_t& vdov(Index_t idx)       { return m_vdov[idx] ; }$/;"	f	class:Domain
+viz	lulesh.h	/^   Int_t viz; \/\/ -v $/;"	m	struct:cmdLineOpts
+viz	lulesh_tuple.h	/^   Int_t viz; \/\/ -v $/;"	m	struct:cmdLineOpts
+volo	lulesh.h	/^   Real_t& volo(Index_t idx)       { return m_volo[idx] ; }$/;"	f	class:Domain
+volo	lulesh_tuple.h	/^      Real_t v, volo ;$/;"	m	struct:Domain::Volume
+volo	lulesh_tuple.h	/^   Real_t& volo(Index_t idx)       { return m_vol[idx].volo ; }$/;"	f	class:Domain
+x	lulesh.h	/^   Real_t& x(Index_t idx)    { return m_x[idx] ; }$/;"	f	class:Domain
+x	lulesh_tuple.h	/^      Real_t x, y, z ;$/;"	m	struct:Domain::Tuple3
+x	lulesh_tuple.h	/^   Real_t& x(Index_t idx)    { return m_coord[idx].x ; }$/;"	f	class:Domain
+xd	lulesh.h	/^   Real_t& xd(Index_t idx)   { return m_xd[idx] ; }$/;"	f	class:Domain
+xd	lulesh_tuple.h	/^   Real_t& xd(Index_t idx)   { return m_vel[idx].x ; }$/;"	f	class:Domain
+xdd	lulesh.h	/^   Real_t& xdd(Index_t idx)  { return m_xdd[idx] ; }$/;"	f	class:Domain
+xdd	lulesh_tuple.h	/^   Real_t& xdd(Index_t idx)  { return m_acc[idx].x ; }$/;"	f	class:Domain
+y	lulesh.h	/^   Real_t& y(Index_t idx)    { return m_y[idx] ; }$/;"	f	class:Domain
+y	lulesh_tuple.h	/^      Real_t x, y, z ;$/;"	m	struct:Domain::Tuple3
+y	lulesh_tuple.h	/^   Real_t& y(Index_t idx)    { return m_coord[idx].y ; }$/;"	f	class:Domain
+yd	lulesh.h	/^   Real_t& yd(Index_t idx)   { return m_yd[idx] ; }$/;"	f	class:Domain
+yd	lulesh_tuple.h	/^   Real_t& yd(Index_t idx)   { return m_vel[idx].y ; }$/;"	f	class:Domain
+ydd	lulesh.h	/^   Real_t& ydd(Index_t idx)  { return m_ydd[idx] ; }$/;"	f	class:Domain
+ydd	lulesh_tuple.h	/^   Real_t& ydd(Index_t idx)  { return m_acc[idx].y ; }$/;"	f	class:Domain
+z	lulesh.h	/^   Real_t& z(Index_t idx)    { return m_z[idx] ; }$/;"	f	class:Domain
+z	lulesh_tuple.h	/^      Real_t x, y, z ;$/;"	m	struct:Domain::Tuple3
+z	lulesh_tuple.h	/^   Real_t& z(Index_t idx)    { return m_coord[idx].z ; }$/;"	f	class:Domain
+zd	lulesh.h	/^   Real_t& zd(Index_t idx)   { return m_zd[idx] ; }$/;"	f	class:Domain
+zd	lulesh_tuple.h	/^   Real_t& zd(Index_t idx)   { return m_vel[idx].z ; }$/;"	f	class:Domain
+zdd	lulesh.h	/^   Real_t& zdd(Index_t idx)  { return m_zdd[idx] ; }$/;"	f	class:Domain
+zdd	lulesh_tuple.h	/^   Real_t& zdd(Index_t idx)  { return m_acc[idx].z ; }$/;"	f	class:Domain

@@ -1,0 +1,2078 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A11	include/display.h	/^    double A11,A12,A13,A21,A22,A23,A31,A32,A33;\/\/Rotation matrix.$/;"	m	class:SYWindow
+A12	include/display.h	/^    double A11,A12,A13,A21,A22,A23,A31,A32,A33;\/\/Rotation matrix.$/;"	m	class:SYWindow
+A13	include/display.h	/^    double A11,A12,A13,A21,A22,A23,A31,A32,A33;\/\/Rotation matrix.$/;"	m	class:SYWindow
+A21	include/display.h	/^    double A11,A12,A13,A21,A22,A23,A31,A32,A33;\/\/Rotation matrix.$/;"	m	class:SYWindow
+A22	include/display.h	/^    double A11,A12,A13,A21,A22,A23,A31,A32,A33;\/\/Rotation matrix.$/;"	m	class:SYWindow
+A23	include/display.h	/^    double A11,A12,A13,A21,A22,A23,A31,A32,A33;\/\/Rotation matrix.$/;"	m	class:SYWindow
+A31	include/display.h	/^    double A11,A12,A13,A21,A22,A23,A31,A32,A33;\/\/Rotation matrix.$/;"	m	class:SYWindow
+A32	include/display.h	/^    double A11,A12,A13,A21,A22,A23,A31,A32,A33;\/\/Rotation matrix.$/;"	m	class:SYWindow
+A33	include/display.h	/^    double A11,A12,A13,A21,A22,A23,A31,A32,A33;\/\/Rotation matrix.$/;"	m	class:SYWindow
+ALLOC_DUPLICATE_DECOMP	include/Decomp.h	29;"	d
+ALLOC_NEW_DECOMP	include/Decomp.h	28;"	d
+ALL_EPS	include/WriteProp.h	16;"	d
+ASPECTRATIO	include/display.h	/^          PBCTRANSLATION=4,ASPECTRATIO=5,$/;"	e	enum:SYWindow::__anon18
+AddFMCellToTable	src/FMComm.c	/^static FMCell_t *AddFMCellToTable(FMLayer_t *layer, int cellID)$/;"	f	file:
+AddOp	src/Util.c	/^void AddOp (Home_t *home,$/;"	f
+AddSecondaryGhostRequest	src/CommSendSecondaryGhosts.c	/^static void AddSecondaryGhostRequest(Home_t *home, Node_t *node, int segID,$/;"	f	file:
+AddTagMapping	src/InitSendDomains.c	/^void AddTagMapping(Home_t *home, Tag_t *oldTag, Tag_t *newTag)$/;"	f
+AddToSegPairList	src/LocalSegForces.c	/^static void AddToSegPairList(Segment_t *seg1, Segment_t *seg2,$/;"	f	file:
+AddtoArmForce	src/NodeForce.c	/^void AddtoArmForce(Node_t *node, int arm, real8 f[3])$/;"	f
+AddtoNodeForce	src/NodeForce.c	/^void AddtoNodeForce(Node_t *node, real8 f[3])$/;"	f
+AdvanceAllNodes	src/ForwardEulerIntegrator.c	/^static void AdvanceAllNodes(Home_t *home)$/;"	f	file:
+AdvanceAllNodes	src/TrapezoidIntegrator.c	/^static void AdvanceAllNodes(Home_t *home, real8 oldDT)$/;"	f	file:
+AllocColors	src/DisplayC.C	/^void AllocColors()$/;"	f
+AllocNamedColor	src/display.C	/^unsigned long SYWindow::AllocNamedColor(char *name)$/;"	f	class:SYWindow
+AllocNodeArms	src/Util.c	/^void AllocNodeArms(Node_t *node, int n)$/;"	f
+AllocNodeArrays	src/Topology.c	/^static void AllocNodeArrays(Node_t *node, int armCount)$/;"	f	file:
+AllocOwnedFMCells	src/FMComm.c	/^static void AllocOwnedFMCells(Home_t *home, int layerID)$/;"	f	file:
+AllocRBDecomp	src/RBDecomp.c	/^void AllocRBDecomp(Home_t *home, RBDecomp_t *oldDecomp, RBDecomp_t **newDecomp,$/;"	f
+AllocRGBColor	src/display.C	/^unsigned long SYWindow::AllocRGBColor(unsigned r, unsigned g, unsigned b)$/;"	f	class:SYWindow
+AllocShortRGBColor	src/DisplayC.C	/^unsigned long AllocShortRGBColor(unsigned r, unsigned g, unsigned b)$/;"	f
+AllocShortRGBColor	src/display.C	/^unsigned long SYWindow::AllocShortRGBColor(unsigned r, unsigned g, unsigned b)$/;"	f	class:SYWindow
+ApplyDeltaStress	src/ParadisStep.c	/^static void ApplyDeltaStress(Home_t *home, real8 deltaStress[3][3])$/;"	f	file:
+Aspr	include/display.h	/^    double Scale,Scale0,Aspr,Aspr0;\/\/scale and aspect ratio$/;"	m	class:SYWindow
+Aspr0	include/display.h	/^    double Scale,Scale0,Aspr,Aspr0;\/\/scale and aspect ratio$/;"	m	class:SYWindow
+AssignNodeToCell	src/SortNativeNodes.c	/^void AssignNodeToCell(Home_t *home, Node_t *node)$/;"	f
+AssignNodesToDomains	src/ReadRestart.c	/^void AssignNodesToDomains(Home_t *home, InData_t *inData, int nodeCount,$/;"	f
+B	include/display.h	/^    int R, B; \/\/Current radius, box size(in pixels)$/;"	m	class:SYWindow
+B11	include/display.h	/^    double B11,B12,B13,B21,B22,B23,B31,B32,B33;\/\/Incremental rot. matrix.$/;"	m	class:SYWindow
+B12	include/display.h	/^    double B11,B12,B13,B21,B22,B23,B31,B32,B33;\/\/Incremental rot. matrix.$/;"	m	class:SYWindow
+B13	include/display.h	/^    double B11,B12,B13,B21,B22,B23,B31,B32,B33;\/\/Incremental rot. matrix.$/;"	m	class:SYWindow
+B21	include/display.h	/^    double B11,B12,B13,B21,B22,B23,B31,B32,B33;\/\/Incremental rot. matrix.$/;"	m	class:SYWindow
+B22	include/display.h	/^    double B11,B12,B13,B21,B22,B23,B31,B32,B33;\/\/Incremental rot. matrix.$/;"	m	class:SYWindow
+B23	include/display.h	/^    double B11,B12,B13,B21,B22,B23,B31,B32,B33;\/\/Incremental rot. matrix.$/;"	m	class:SYWindow
+B31	include/display.h	/^    double B11,B12,B13,B21,B22,B23,B31,B32,B33;\/\/Incremental rot. matrix.$/;"	m	class:SYWindow
+B32	include/display.h	/^    double B11,B12,B13,B21,B22,B23,B31,B32,B33;\/\/Incremental rot. matrix.$/;"	m	class:SYWindow
+B33	include/display.h	/^    double B11,B12,B13,B21,B22,B23,B31,B32,B33;\/\/Incremental rot. matrix.$/;"	m	class:SYWindow
+BC_type	include/Param.h	/^        int BC_type;            \/* 1: only one free surface at z=zBoundMax *\/$/;"	m	struct:_param
+BINDIR	makefile	/^BINDIR = .\/bin$/;"	m
+BINDIR	src/makefile	/^BINDIR = ..\/bin$/;"	m
+BINDIR	utilities/makefile	/^BINDIR = ..\/bin$/;"	m
+BLUE16	include/display.h	99;"	d
+BLUE32	include/display.h	95;"	d
+BLUEany	include/display.h	103;"	d
+BOLTZMANNS_CONST	include/Constants.h	50;"	d
+BUF_PACK	src/WriteVisit.c	49;"	d	file:
+BUF_UNPACK	src/WriteVisit.c	63;"	d	file:
+BYTES_PER_NODE	src/WriteVisit.c	29;"	d	file:
+BYTES_PER_SEGMENT	src/WriteVisit.c	32;"	d	file:
+BackupNode	src/Topology.c	/^void BackupNode(Home_t *home, Node_t *origNode, Node_t *bkupNode)$/;"	f
+BinFileData_t	include/Typedefs.h	/^} BinFileData_t;$/;"	t	typeref:struct:__anon14
+BinNode_t	include/Typedefs.h	/^typedef struct _binnode BinNode_t;$/;"	t	typeref:struct:_binnode
+BinSeg_t	include/Typedefs.h	/^typedef struct _binseg BinSeg_t;$/;"	t	typeref:struct:_binseg
+BindVar	src/Parse.c	/^void BindVar(ParamList_t *list, char *name, void *addr, int type,$/;"	f
+BoundType_t	include/Typedefs.h	/^} BoundType_t;$/;"	t	typeref:enum:__anon11
+BroadcastDecomp	src/Decomp.c	/^void BroadcastDecomp(Home_t *home, void *decomp)$/;"	f
+BroadcastRBDecomp	src/RBDecomp.c	/^void BroadcastRBDecomp(Home_t *home, RBDecomp_t *decomp)$/;"	f
+BroadcastRSDecomp	src/RSDecomp.c	/^void BroadcastRSDecomp(Home_t *home, RSDecomp_t *decomp)$/;"	f
+BubbleDown	src/Heap.c	/^static void BubbleDown(int *heap, int heapCnt, int index)$/;"	f	file:
+BubbleUp	src/Heap.c	/^static void BubbleUp(int *heap, int index) $/;"	f	file:
+BuildMigLists	src/Migrate.c	/^static void BuildMigLists(Home_t *home, int *migCommList, int **migList,$/;"	f	file:
+BuildSplitList	src/Topology.c	/^static int BuildSplitList(int totalArms, int splitCnt, int level, int countOnly,$/;"	f	file:
+BurgInfo_t	include/Home.h	/^} BurgInfo_t;$/;"	t	typeref:struct:__anon4
+C2Qent_t	include/Typedefs.h	/^} C2Qent_t;$/;"	t	typeref:struct:__anon13
+CALCDENSITY	utilities/makefile	/^CALCDENSITY     = calcdensity$/;"	m
+CALCDENSITY_BIN	utilities/makefile	/^CALCDENSITY_BIN = $(BINDIR)\/$(CALCDENSITY)$/;"	m
+CALCDENSITY_CPP_SRCS	utilities/makefile	/^CALCDENSITY_CPP_SRCS = DisplayC.C     \\$/;"	m
+CALCDENSITY_C_SRCS	utilities/makefile	/^CALCDENSITY_C_SRCS = CalcDensity.c      \\$/;"	m
+CALCDENSITY_OBJS	utilities/makefile	/^CALCDENSITY_OBJS = $(CALCDENSITY_C_SRCS:.c=.o) $(CALCDENSITY_CPP_SRCS:.C=.o)$/;"	m
+CALCDENSITY_SRCS	utilities/makefile	/^CALCDENSITY_SRCS = $(CALCDENSITY_C_SRCS) $(CALCDENSITY_CPP_SRCS)$/;"	m
+CALC_FORCE	include/Timer.h	/^    CALC_FORCE,$/;"	e	enum:__anon10
+CALC_FORCE_BARRIER	include/Timer.h	/^    CALC_FORCE_BARRIER,$/;"	e	enum:__anon10
+CALC_VELOCITY	include/Timer.h	/^    CALC_VELOCITY,$/;"	e	enum:__anon10
+CALC_VELOCITY_BARRIER	include/Timer.h	/^    CALC_VELOCITY_BARRIER,$/;"	e	enum:__anon10
+CCT	include/display.h	/^    unsigned long CCT[3][6];$/;"	m	class:SYWindow
+CELL_CHARGE	include/Timer.h	/^    CELL_CHARGE,$/;"	e	enum:__anon10
+CELL_CHARGE_BARRIER	include/Timer.h	/^    CELL_CHARGE_BARRIER,$/;"	e	enum:__anon10
+CELL_HASH_TABLE_SIZE	include/FM.h	12;"	d
+CHANGE_ARM_BURG	include/Typedefs.h	/^	CHANGE_ARM_BURG,$/;"	e	enum:__anon12
+CHANGE_CONNECTION	include/Typedefs.h	/^	CHANGE_CONNECTION,$/;"	e	enum:__anon12
+COLLISION_HANDLING	include/Timer.h	/^    COLLISION_HANDLING,$/;"	e	enum:__anon10
+COLORNAMELEN	include/DisplayC.h	13;"	d
+COL_FIX_REMESH	include/Timer.h	/^    COL_FIX_REMESH,$/;"	e	enum:__anon10
+COL_FORCE_UPDATE	include/Timer.h	/^    COL_FORCE_UPDATE,$/;"	e	enum:__anon10
+COL_SEND_REMESH	include/Timer.h	/^    COL_SEND_REMESH,$/;"	e	enum:__anon10
+COMM_SEND_GHOSTS	include/Timer.h	/^    COMM_SEND_GHOSTS,$/;"	e	enum:__anon10
+COMM_SEND_VELOCITY	include/Timer.h	/^    COMM_SEND_VELOCITY,$/;"	e	enum:__anon10
+CR	include/display.h	/^    double CR(double r, double z) {if(scalepoints) return CRs(r,z); else return CRf(r,z); }$/;"	f	class:SYWindow
+CRf	include/display.h	/^    double CRf(double r, double z) { return r; }$/;"	f	class:SYWindow
+CRs	include/display.h	/^    double CRs(double r, double z) { return (B*r*Scale\/(D==0?1:(1-z\/D))); }$/;"	f	class:SYWindow
+CSpline	src/Util.c	/^void CSpline(real8 *x, real8 *y, real8 *y2, int numPoints)$/;"	f
+CSplint	src/Util.c	/^void CSplint(real8 *xa, real8 *ya, real8 *y2, int numPoints,$/;"	f
+CTABLEGEN	utilities/makefile	/^CTABLEGEN          = ctablegen$/;"	m
+CTABLEGENP	makefile	/^CTABLEGENP = ctablegenp$/;"	m
+CTABLEGENP	src/makefile	/^CTABLEGENP = ctablegenp$/;"	m
+CTABLEGENP_BIN	src/makefile	/^CTABLEGENP_BIN = $(BINDIR)\/$(CTABLEGENP)$/;"	m
+CTABLEGEN_BIN	utilities/makefile	/^CTABLEGEN_BIN      = $(BINDIR)\/$(CTABLEGEN)$/;"	m
+CTABLEGEN_MAIN_SRC	utilities/makefile	/^CTABLEGEN_MAIN_SRC = CTableGen.c$/;"	m
+CX	include/display.h	/^    double CX(double x, double z) {return (square)?CXs(x,z):CXr(x,z); }$/;"	f	class:SYWindow
+CXr	include/display.h	/^    double CXr(double x, double z)$/;"	f	class:SYWindow
+CXs	include/display.h	/^    double CXs(double x, double z)$/;"	f	class:SYWindow
+CY	include/display.h	/^    double CY(double y, double z) {return (square)?CYs(y,z):CYr(y,z); }$/;"	f	class:SYWindow
+CYr	include/display.h	/^    double CYr(double y, double z)$/;"	f	class:SYWindow
+CYs	include/display.h	/^    double CYs(double y, double z)$/;"	f	class:SYWindow
+CalRijm	utilities/StressTableGen.c	/^static void CalRijm(real8 rt[3], real8 Rijm[10])$/;"	f	file:
+CalcNodeVelocities	src/NodeVelocity.c	/^int CalcNodeVelocities(Home_t *home, int zeroOnErr, int doAll)$/;"	f
+CellCharge	src/CellCharge.c	/^void CellCharge(Home_t *home)$/;"	f
+CellData_t	utilities/ParadisRepart.c	/^} CellData_t;$/;"	t	typeref:struct:__anon35	file:
+CellPriority	src/LocalSegForces.c	/^static int CellPriority(Home_t *home, int cellID1, int cellID2)$/;"	f	file:
+Cell_t	include/Typedefs.h	/^typedef struct _cell Cell_t;$/;"	t	typeref:struct:_cell
+ChangeArmBurg	src/Util.c	/^void ChangeArmBurg(Home_t *home, Node_t *node1, Tag_t *tag2,$/;"	f
+ChangeConnection	src/Util.c	/^int ChangeConnection(Home_t *home, Node_t *node1, Tag_t *tag2,$/;"	f
+CheckArgSanity	utilities/ParadisGen.c	/^static void CheckArgSanity(InArgs_t *inArgs)$/;"	f	file:
+CheckArgs	utilities/StressTableGen.c	/^static void CheckArgs(InArgs_t *inArgs)$/;"	f	file:
+CheckCollisionConditions	src/Topology.c	/^static int CheckCollisionConditions(Home_t *home, Node_t *node1, Node_t *node2)$/;"	f	file:
+CheckForEmptySimulation	src/DebugFunctions.c	/^void CheckForEmptySimulation(Home_t *home)$/;"	f
+CheckForGlidePlanes	src/Initialize.c	/^static void CheckForGlidePlanes(Home_t *home)$/;"	f	file:
+CheckForNANS	src/DebugFunctions.c	/^void CheckForNANS(Home_t *home)$/;"	f
+CheckForUndefinedPlanes	src/DebugFunctions.c	/^void CheckForUndefinedPlanes(Home_t *home, char *msg)$/;"	f
+CheckForces	src/DebugFunctions.c	/^void CheckForces(Home_t *home, char *msg)$/;"	f
+CheckMemUsage	include/ParadisProto.h	130;"	d
+CheckMemUsage	include/ParadisProto.h	132;"	d
+CheckSegLengths	src/DebugFunctions.c	/^void CheckSegLengths(Home_t *home, char *msg)$/;"	f
+Clear	include/display.h	/^    void Clear() { nP=nL=0; }$/;"	f	class:SYWindow
+ClearOpList	src/Util.c	/^void ClearOpList (Home_t *home)$/;"	f
+CollisionNodeOrder	src/Util.c	/^int CollisionNodeOrder(Home_t *home, Tag_t *tagA, Tag_t *tagB)$/;"	f
+CommPackGhostPlanes	src/CommSendGhostPlanes.c	/^static void CommPackGhostPlanes(Home_t *home) $/;"	f	file:
+CommPackGhosts	src/CommSendGhosts.c	/^static void CommPackGhosts(Home_t *home) $/;"	f	file:
+CommSendGhostPlanes	src/CommSendGhostPlanes.c	/^void CommSendGhostPlanes(Home_t *home) $/;"	f
+CommSendGhosts	src/CommSendGhosts.c	/^void CommSendGhosts(Home_t *home) $/;"	f
+CommSendMigrators	src/Migrate.c	/^static void CommSendMigrators(Home_t *home, int *migCommList, int **migList,$/;"	f	file:
+CommSendMirrorNodes	src/CommSendMirrorNodes.c	/^void CommSendMirrorNodes(Home_t *home, int stage)$/;"	f
+CommSendRemesh	src/CommSendRemesh.c	/^void CommSendRemesh(Home_t *home) $/;"	f
+CommSendSecondaryGhosts	src/CommSendSecondaryGhosts.c	/^void CommSendSecondaryGhosts(Home_t *home)$/;"	f
+CommSendSegments	src/CommSendSegments.c	/^void CommSendSegments(Home_t *home, int numRecvBufs, int numSendBufs,$/;"	f
+CommSendVelocity	src/CommSendVelocity.c	/^void CommSendVelocity(Home_t *home)$/;"	f
+CommUnpackGhostPlanes	src/CommSendGhostPlanes.c	/^static void CommUnpackGhostPlanes(Home_t *home) $/;"	f	file:
+CommUnpackGhosts	src/CommSendGhosts.c	/^static void CommUnpackGhosts(Home_t *home) $/;"	f	file:
+CompressArmLists	src/Util.c	/^void CompressArmLists (Node_t *node)$/;"	f
+ComputeForces	src/LocalSegForces.c	/^void ComputeForces(Home_t *home, Node_t *node1, Node_t *node2,$/;"	f
+ComputeRijmTable	utilities/StressTableGen.c	/^static void ComputeRijmTable(InArgs_t *inArgs)$/;"	f	file:
+ComputeSegSigbRem	src/NodeForce.c	/^void ComputeSegSigbRem (Home_t *home, int reqType)$/;"	f
+Connected	src/Util.c	/^int Connected(Node_t *node1, Node_t *node2, int *armID)$/;"	f
+ConvertControlFile	utilities/ParadisConvert.c	/^static int ConvertControlFile(Home_t *home, char *ctrlFileName,$/;"	f	file:
+ConvertDataFile	utilities/ParadisConvert.c	/^static void ConvertDataFile(Home_t *home, char *baseDataFileName)$/;"	f	file:
+CopyNodeArrays	src/Topology.c	/^static void CopyNodeArrays(Node_t *source, Node_t *dest)$/;"	f	file:
+CorrectionTableInit	src/CorrectionTable.c	/^void CorrectionTableInit(Home_t *home)$/;"	f
+CreateCorrectionTable	src/CorrectionTable.c	/^void CreateCorrectionTable(Param_t *param, int numLevels, int pbc[3],$/;"	f
+CreateDataFileFromCtrl	utilities/ParadisConvert.c	/^static int CreateDataFileFromCtrl(Home_t *home, char *dataFileName,$/;"	f	file:
+CreateEdges	utilities/CreateConfig.c	/^void CreateEdges(Home_t *home, InData_t *inData, int cubeLength,$/;"	f
+CreateFCCConfig	utilities/CreateConfig.c	/^void CreateFCCConfig(Home_t *home, InData_t *inData, int cubeLength,$/;"	f
+CreateFCCIrradConfig	utilities/CreateConfig.c	/^void CreateFCCIrradConfig(Home_t *home, InData_t *inData, int cubeLength,$/;"	f
+CreateFCCPerfectLoop	utilities/CreateConfig.c	/^void CreateFCCPerfectLoop(Home_t *home, InData_t *inData, int cubeLength,$/;"	f
+CreateFRSource	utilities/CreateConfig.c	/^void CreateFRSource(Home_t *home, InData_t *inData, int cubeLength,$/;"	f
+CreateFiniteMixedConfig	utilities/CreateConfig.c	/^void CreateFiniteMixedConfig(Home_t *home, InData_t *inData, int cubeLength,$/;"	f
+CreateFragmentList	src/WriteFragments.c	/^void *CreateFragmentList(Home_t *home, int *totalFragmentCount)$/;"	f
+CreateHDFDataset	src/WriteBinaryRestart.c	/^int CreateHDFDataset(hid_t fileID, char *datasetName, hid_t itemType,$/;"	f
+CreateHDFGroup	src/WriteBinaryRestart.c	/^int CreateHDFGroup(hid_t fileID, char *groupName)$/;"	f
+CreatePrismaticLoop	utilities/CreateConfig.c	/^void CreatePrismaticLoop(Home_t *home, InData_t *inData, int cubeLength,$/;"	f
+CreateScrewConfig	utilities/CreateConfig.c	/^void CreateScrewConfig(Home_t *home, InData_t *inData, int cubeLength,$/;"	f
+CrossSlip	src/CrossSlip.c	/^void CrossSlip(Home_t *home)$/;"	f
+CrossSlipBCC	src/CrossSlipBCC.c	/^void CrossSlipBCC(Home_t *home)$/;"	f
+CrossSlipFCC	src/CrossSlipFCC.c	/^void CrossSlipFCC(Home_t *home)$/;"	f
+Cs	src/LoadCurve.c	51;"	d	file:
+CtrlParamInit	src/Param.c	/^void CtrlParamInit(Param_t *param, ParamList_t *CPList)$/;"	f
+CutSurfaceSegments	src/Remesh.c	/^static void CutSurfaceSegments(Home_t *home)$/;"	f	file:
+D	include/display.h	/^    double D,D0; \/\/projection$/;"	m	class:SYWindow
+D0	include/display.h	/^    double D,D0; \/\/projection$/;"	m	class:SYWindow
+DEBUG_CHECK_FOR_ZERO_SEG	src/ParadisStep.c	39;"	d	file:
+DEG	include/display.h	/^    double DEG(double a) { return (M_PI*a\/180); }$/;"	f	class:SYWindow
+DEL_SEG_HALF	include/Constants.h	100;"	d
+DEL_SEG_NONE	include/Constants.h	99;"	d
+DENSITY	include/WriteProp.h	14;"	d
+DENSITY_DELTA	include/WriteProp.h	18;"	d
+DENSITY_FILE_SUFFIX	utilities/CalcDensity.c	51;"	d	file:
+DENSITY_FILE_VERSION	src/WriteProp.c	58;"	d	file:
+DEPTH	include/display.h	70;"	d
+DEPTH_REAL	include/display.h	73;"	d
+DER3IND	utilities/StressTableGen.c	/^static int DER3IND[10][3] = {{0,0,0}, {1,1,1}, {2,2,2},$/;"	v	file:
+DER3INVIND	utilities/StressTableGen.c	/^static int DER3INVIND[3][3][3]={{{0,3,4}, {3,5,9}, {4,9,7}},$/;"	v	file:
+DESTROY_LOCK	include/ParadisThread.h	24;"	d
+DESTROY_LOCK	include/ParadisThread.h	31;"	d
+DIRS	makefile	/^DIRS    = src utilities$/;"	m
+DIR_ARMDATA	include/Constants.h	32;"	d
+DIR_FLUXDATA	include/Constants.h	33;"	d
+DIR_FORCE	include/Constants.h	34;"	d
+DIR_FRAGDATA	include/Constants.h	35;"	d
+DIR_GNUPLOT	include/Constants.h	36;"	d
+DIR_NODAL_TIMESTEP	src/TrapezoidIntegrator.c	26;"	d	file:
+DIR_POLEFIG	include/Constants.h	37;"	d
+DIR_POVRAY	include/Constants.h	38;"	d
+DIR_PROPERTIES	include/Constants.h	39;"	d
+DIR_RESTART	include/Constants.h	40;"	d
+DIR_TECPLOT	include/Constants.h	41;"	d
+DIR_TIMERS	include/Constants.h	42;"	d
+DIR_TIMESTEP_ERROR	src/TrapezoidIntegrator.c	25;"	d	file:
+DIR_VELOCITY	include/Constants.h	43;"	d
+DIR_VISIT	include/Constants.h	44;"	d
+DLBStats	src/Decomp.c	/^static void DLBStats(Home_t *home, real8 *loadData)$/;"	f	file:
+DLBTHRESHOLD	src/RSDecomp.c	58;"	d	file:
+DLB_DEBUG	src/Decomp.c	51;"	d	file:
+DLB_DUMP_DATAFILES	src/Decomp.c	53;"	d	file:
+DLB_PRINT_STATS	src/Decomp.c	52;"	d	file:
+DLB_USE_FORCECALC_COUNT	include/Decomp.h	19;"	d
+DLB_USE_WALLCLK_TIME	include/Decomp.h	18;"	d
+DLBalanceX	src/RSDecomp.c	/^void DLBalanceX(Home_t *home, real8 *loadData)$/;"	f
+DLBalanceY	src/RSDecomp.c	/^void DLBalanceY(Home_t *home, real8 *loadData)$/;"	f
+DLBalanceZ	src/RSDecomp.c	/^void DLBalanceZ(Home_t *home, real8 *loadData)$/;"	f
+DLBfreeOld	src/DLBfreeOld.c	/^void DLBfreeOld(Home_t *home)$/;"	f
+DLBfreq	include/Param.h	/^        int   DLBfreq;          \/* how often to load balance *\/$/;"	m	struct:_param
+DLBnewBounds	src/RSDecomp.c	/^static void DLBnewBounds(real8 *Bold, real8 *Bnew, real8 *times, int numParts,$/;"	f	file:
+DM	src/FMSupport.c	/^static void DM(int n, real8 *rvec, real8 *terms, int npows[][3])$/;"	f	file:
+DOMAIN_CNT_INCREMENT	src/RBDecomp.c	85;"	d	file:
+DOMAIN_CNT_INCREMENT	src/RSDecomp.c	71;"	d	file:
+DSCLEN	include/display.h	/^enum { MaxPoints=40000, MaxLines=80000, rInterval=50, DSCLEN=60};$/;"	e	enum:__anon17
+DSCLEN	src/Plot.c	20;"	d	file:
+DataParamInit	src/Param.c	/^void DataParamInit(Param_t *param, ParamList_t *DPList)$/;"	f
+DcompDomain_t	include/Typedefs.h	/^typedef struct _dcompdomain DcompDomain_t;$/;"	t	typeref:struct:_dcompdomain
+DecodeCell2Idx	src/Util.c	/^void DecodeCell2Idx(Home_t *home, int cell2ID, int *xIndex,$/;"	f
+DecodeCellIdx	src/Util.c	/^void DecodeCellIdx(Home_t *home, int cellID, int *xIndex,$/;"	f
+DecodeDomainIdx	src/Util.c	/^void DecodeDomainIdx(Home_t *home, int domID, int *xIndex,$/;"	f
+DecodeFMCellIndex	src/FMComm.c	/^void DecodeFMCellIndex(int dim[3], int cellID, int *x, int *y, int *z)$/;"	f
+DecompID2DomID	src/RBDecomp.c	/^static int DecompID2DomID(Home_t *home, char *decompID)$/;"	f	file:
+DecompVec	src/Util.c	/^void DecompVec(real8 inVec[3], real8 vec1[3], real8 vec2[3], real8 ansVec[2])$/;"	f
+DelFMCellFromTable	src/FMComm.c	/^static void DelFMCellFromTable(FMLayer_t *layer, int cellID)$/;"	f	file:
+DeleteUnreferencedNodes	utilities/CalcDensity.c	/^static void DeleteUnreferencedNodes(NodeInfo_t *nodeInfo, int *numNodes)$/;"	f	file:
+DeltaPlasticStrain	src/DeltaPlasticStrain.c	/^void DeltaPlasticStrain(Home_t *home)$/;"	f
+DeltaPlasticStrain_BCC	src/DeltaPlasticStrain_BCC.c	/^void DeltaPlasticStrain_BCC(Home_t *home)$/;"	f
+DeltaPlasticStrain_FCC	src/DeltaPlasticStrain_FCC.c	/^void DeltaPlasticStrain_FCC(Home_t *home)$/;"	f
+DisableUnneededParams	src/DisableUnneededParams.c	/^void DisableUnneededParams(Home_t *home)$/;"	f
+DistributeTagMaps	src/RemapInitialTags.c	/^void DistributeTagMaps(Home_t *home) $/;"	f
+DoParallelIO	src/GenerateOutput.c	/^static void DoParallelIO(Home_t *home, int outputTypes, int stage)$/;"	f	file:
+DoTableCorrection	src/CorrectionTable.c	/^void DoTableCorrection(Home_t *home)$/;"	f
+DomID2DecompID	src/RBDecomp.c	/^void DomID2DecompID(Home_t *home, int domID, char decompID[MAX_DECOMP_LVLS])$/;"	f
+DomainOwnsSeg	src/Util.c	/^int DomainOwnsSeg(Home_t *home, int opClass, int thisDomain, Tag_t *endTag)$/;"	f
+DotProduct	include/Util.h	14;"	d
+Draw3DLine	src/display.C	/^void SYWindow::Draw3DLine(YLine line)$/;"	f	class:SYWindow
+Draw3DLinetoPS	src/display.C	/^void SYWindow::Draw3DLinetoPS(FILE *file,YLine line)$/;"	f	class:SYWindow
+Draw3DPixel	src/display.C	/^void SYWindow::Draw3DPixel(YPoint point)$/;"	f	class:SYWindow
+Draw3DPixeltoPS	src/display.C	/^void SYWindow::Draw3DPixeltoPS(FILE *file,YPoint point)$/;"	f	class:SYWindow
+DrawLine	src/display.C	/^void SYWindow::DrawLine(double x0, double y0, double z0,$/;"	f	class:SYWindow
+DrawPoint	src/display.C	/^void SYWindow::DrawPoint(double x, double y, double z, double r,$/;"	f	class:SYWindow
+DumpCrossSlipEvent	src/CrossSlip.c	/^void DumpCrossSlipEvent(Node_t *node, real8 newPlane[3], char *eventDesc)$/;"	f
+DumpNode	src/TrapezoidIntegrator.c	/^static void DumpNode(Node_t *node)$/;"	f	file:
+DumpPerNodeTimestep	src/TrapezoidIntegrator.c	/^void DumpPerNodeTimestep(Home_t *home, double newDT)$/;"	f
+DumpTimestepError	src/TrapezoidIntegrator.c	/^void DumpTimestepError(Home_t *home, real8 deltaT)$/;"	f
+EPS	include/WriteProp.h	15;"	d
+EPSDOT	include/WriteProp.h	17;"	d
+EPVEC_LEN	src/CorrectionTable.c	273;"	d	file:
+EXTRA_GHOST_FLTS	include/Comm.h	22;"	d
+EXTRA_MIRROR_INTS	include/Comm.h	38;"	d
+Ecore	include/Param.h	/^        real8 Ecore;  \/* core energy (wrt. the choice of rc) in unit of Pa *\/$/;"	m	struct:_param
+EncodeCell2Idx	src/Util.c	/^int EncodeCell2Idx(Home_t *home, int xIndex, int yIndex, int zIndex)$/;"	f
+EncodeCellIdx	src/Util.c	/^int EncodeCellIdx(Home_t *home, int xIndex, int yIndex, int zIndex)$/;"	f
+EncodeDomainIdx	src/Util.c	/^int EncodeDomainIdx(Home_t *home, int xIndex, int yIndex, int zIndex)$/;"	f
+EncodeFMCellIndex	src/FMSupport.c	/^int EncodeFMCellIndex(int *dim, int x, int y, int z)$/;"	f
+EstCoarsenForces	src/Remesh.c	/^void EstCoarsenForces(Home_t *home, Node_t *node1, Node_t *node2,$/;"	f
+EstRefinementForces	src/Remesh.c	/^void EstRefinementForces(Home_t *home, Node_t *node1, Node_t *node2,$/;"	f
+EvalMeanTaylor	src/FMSupport.c	/^static void EvalMeanTaylor(Home_t *home, real8 avgStress[3][3])$/;"	f	file:
+EvalTaylor	src/FMSupport.c	/^void EvalTaylor(int uorder, real8 *r, real8 *alpha, real8 sigma[3][3])$/;"	f
+EvaluateMobility	src/Topology.c	/^int EvaluateMobility(Home_t *home, Node_t *nodeA)$/;"	f
+Evolve	src/display.C	/^void SYWindow::Evolve()$/;"	f	class:SYWindow
+Evolve	src/display.C	/^void YWindow::Evolve()$/;"	f	class:YWindow
+ExchangeRBDecomp	src/RBDecomp.c	/^void ExchangeRBDecomp(Home_t *home, RBDecomp_t *decomp)$/;"	f
+ExtKeyHandler	include/display.h	/^    virtual int ExtKeyHandler(KeySym ks){if((int)ks)return 0;else return 1;};$/;"	f	class:SYWindow
+ExtPKForce	src/NodeForce.c	/^void ExtPKForce(real8 str[3][3],$/;"	f
+ExtendNodeKeys	src/InitSendDomains.c	/^static void ExtendNodeKeys(Home_t *home, int newLength)$/;"	f	file:
+ExtendOpList	src/Util.c	/^void ExtendOpList (Home_t *home)$/;"	f
+FCC_Ltot	include/Param.h	/^        real8 FCC_Ltot[6][4],  FCC_fluxtot[6][7];$/;"	m	struct:_param
+FCC_dLtot	include/Param.h	/^        real8 FCC_dLtot[6][4], FCC_dfluxtot[6][7];$/;"	m	struct:_param
+FCC_dfluxtot	include/Param.h	/^        real8 FCC_dLtot[6][4], FCC_dfluxtot[6][7];$/;"	m	struct:_param
+FCC_fluxtot	include/Param.h	/^        real8 FCC_Ltot[6][4],  FCC_fluxtot[6][7];$/;"	m	struct:_param
+FEM_AdjustCollisionPoint	src/Collision.c	/^void FEM_AdjustCollisionPoint(Node_t *seg1Node1, Node_t *seg1Node2,$/;"	f
+FFACTOR_DEWITRMAG	src/deWitInteraction.c	55;"	d	file:
+FFACTOR_LMIN	include/Constants.h	53;"	d
+FFACTOR_LMIN2	include/Constants.h	54;"	d
+FFACTOR_NORMAL	include/Constants.h	52;"	d
+FFACTOR_ORTH	include/Constants.h	51;"	d
+FIRST_BLOCK	include/Constants.h	68;"	d
+FIX_REMESH	include/Timer.h	/^    FIX_REMESH,$/;"	e	enum:__anon10
+FLTS_PER_GHOST2_NODE	include/Comm.h	14;"	d
+FLTS_PER_GHOST2_NODE	include/Comm.h	17;"	d
+FLTS_PER_GHOST_ARM	include/Comm.h	20;"	d
+FLTS_PER_GHOST_CELL	include/Comm.h	21;"	d
+FLTS_PER_GHOST_NODE	include/Comm.h	13;"	d
+FLTS_PER_GHOST_NODE	include/Comm.h	16;"	d
+FLTS_PER_GHOST_PLANE	src/CommSendGhostPlanes.c	46;"	d	file:
+FLTS_PER_GHOST_PLANE_EXTRA	src/CommSendGhostPlanes.c	47;"	d	file:
+FLTS_PER_MIRROR_ARM	include/Comm.h	37;"	d
+FLTS_PER_MIRROR_NODE	include/Comm.h	36;"	d
+FMAddToDomList	src/FMComm.c	/^static void FMAddToDomList(int domID, int *listSize, int *listCnt, int **list)$/;"	f	file:
+FMCellCharge	src/CellCharge.c	/^static void FMCellCharge(Home_t *home)$/;"	f	file:
+FMCell_t	include/FM.h	/^typedef struct _fmcell FMCell_t;$/;"	t	typeref:struct:_fmcell
+FMCommDownPass	src/FMComm.c	/^void FMCommDownPass(Home_t *home, int layerID)$/;"	f
+FMCommUpPass	src/FMComm.c	/^void FMCommUpPass(Home_t *home, int layerID)$/;"	f
+FMDistTaylorExp	src/FMComm.c	/^void FMDistTaylorExp(Home_t *home)$/;"	f
+FMFindNearNbrs	src/FMComm.c	/^void FMFindNearNbrs(Home_t *home, int layerID, int *inMin, int *inMax,$/;"	f
+FMFree	src/FMComm.c	/^void FMFree(Home_t *home)$/;"	f
+FMInit	src/FMComm.c	/^void FMInit(Home_t *home)$/;"	f
+FMLayer_t	include/FM.h	/^typedef struct _fmlayer FMLayer_t;$/;"	t	typeref:struct:_fmlayer
+FMPackDownPassBufs	src/FMComm.c	/^static void FMPackDownPassBufs(Home_t *home, int layerID, int sendCnt,$/;"	f	file:
+FMPackTaylorCoeff	src/FMComm.c	/^static void FMPackTaylorCoeff(Home_t *home, int numCells, int *cellList,$/;"	f	file:
+FMPackUpPassBuf	src/FMComm.c	/^static int FMPackUpPassBuf(Home_t *home, int layerID, int domID, real8 *buf)$/;"	f	file:
+FMSetCellDomLists	src/FMComm.c	/^static void FMSetCellDomLists(Home_t *home)$/;"	f	file:
+FMSetDomLists	src/FMComm.c	/^static void FMSetDomLists(Home_t *home, int layerID)$/;"	f	file:
+FMSetTaylorExpansions	src/CellCharge.c	/^void FMSetTaylorExpansions(Home_t *home)$/;"	f
+FMShift	src/FMSupport.c	/^void FMShift(int norder, real8 *r, real8 *eta, real8 *neta)$/;"	f
+FMSigma2	src/FMSigma2.c	/^void FMSigma2(real8 mu, real8 nu, int norder, real8 Eeta[],$/;"	f
+FMSigma2core	src/FMSigma2.c	/^static void FMSigma2core(int iorder, int pows[][3], real8 terms[],$/;"	f	file:
+FMSigma2core0	src/FMSigma2.c	/^void FMSigma2core0(real8 terms[],real8 mu8pi, real8 two1nu,real8 Eeta[],matrix sigma) {$/;"	f
+FMSigma2core1	src/FMSigma2.c	/^void FMSigma2core1(real8 terms[],real8 mu8pi, real8 two1nu,real8 Eeta[],matrix sigma) {$/;"	f
+FMSigma2core2	src/FMSigma2.c	/^void FMSigma2core2(real8 terms[],real8 mu8pi, real8 two1nu,real8 Eeta[],matrix sigma) {$/;"	f
+FMSigma2core3	src/FMSigma2.c	/^void FMSigma2core3(real8 terms[],real8 mu8pi, real8 two1nu,real8 Eeta[],matrix sigma) {$/;"	f
+FMUnPackDownPassBuf	src/FMComm.c	/^static void FMUnPackDownPassBuf(Home_t *home, int layerID, int bufSize,$/;"	f	file:
+FMUnPackUpPassBuf	src/FMComm.c	/^static void FMUnPackUpPassBuf(Home_t *home, int layerID, int sendDom,$/;"	f	file:
+FMUnpackTaylorCoeff	src/FMComm.c	/^static void FMUnpackTaylorCoeff(Home_t *home, int numCells, real8 *buf)$/;"	f	file:
+FMUpPassMPShift	src/FMComm.c	/^static void FMUpPassMPShift(Home_t *home, int layerID)$/;"	f	file:
+FMUpPassZeroCharges	src/FMComm.c	/^static void FMUpPassZeroCharges(Home_t *home, int layerID)$/;"	f	file:
+FM_MSG_LEN	src/FMComm.c	73;"	d	file:
+FM_MSG_TAYLORCOEFF	src/FMComm.c	75;"	d	file:
+FM_MSG_UPPASS	src/FMComm.c	74;"	d	file:
+FNAME_EDGE	include/ParadisGen.h	48;"	d
+FNAME_FCC	include/ParadisGen.h	52;"	d
+FNAME_FCC_IRRAD	include/ParadisGen.h	53;"	d
+FNAME_FCC_PERFECT_LOOP	include/ParadisGen.h	54;"	d
+FNAME_FINITE_MIXED	include/ParadisGen.h	49;"	d
+FNAME_FRANK_READ	include/ParadisGen.h	51;"	d
+FNAME_PRISMATIC_LOOP	include/ParadisGen.h	50;"	d
+FNAME_SCREW	include/ParadisGen.h	47;"	d
+FORCE_UPDATE_REMESH	include/Timer.h	/^    FORCE_UPDATE_REMESH,$/;"	e	enum:__anon10
+FRAGMENT_FILE_VERSION	src/WriteFragments.c	79;"	d	file:
+FTYPE_EDGE	include/ParadisGen.h	44;"	d
+FTYPE_FCC	include/ParadisGen.h	41;"	d
+FTYPE_FCC_IRRAD	include/ParadisGen.h	42;"	d
+FTYPE_FCC_PERFECT_LOOP	include/ParadisGen.h	43;"	d
+FTYPE_FINITE_MIXED	include/ParadisGen.h	38;"	d
+FTYPE_FRANK_READ	include/ParadisGen.h	40;"	d
+FTYPE_MAX	include/ParadisGen.h	45;"	d
+FTYPE_PRISMATIC_LOOP	include/ParadisGen.h	39;"	d
+FTYPE_SCREW	include/ParadisGen.h	37;"	d
+FULL	include/Constants.h	24;"	d
+Fatal	src/Util.c	/^void Fatal(char *format, ...) $/;"	f
+FindAbsMax	src/Util.c	/^void FindAbsMax(real8 *array, int numElements, real8 *maxVal, int *indexOfMax)$/;"	f
+FindAbsMin	src/Util.c	/^void FindAbsMin(real8 *array, int numElements, real8 *minVal, int *indexOfMin)$/;"	f
+FindBCCGlidePlane	src/FindPreciseGlidePlane.c	/^static void FindBCCGlidePlane(real8 burg[3], real8 dir[3], real8 glidePlane[3])$/;"	f	file:
+FindCellCenter	src/Util.c	/^void FindCellCenter(Param_t *param, real8 x, real8 y, real8 z, int type,$/;"	f
+FindCollisionPoint	src/PredictiveCollision.c	/^static void FindCollisionPoint(Home_t *home, Node_t *node1, Node_t *node2,$/;"	f	file:
+FindCollisionPoint	src/ProximityCollision.c	/^static void FindCollisionPoint(Home_t *home, Node_t *node1, Node_t *node2,$/;"	f	file:
+FindCollisionPointAndTime	src/PredictiveCollision.c	/^static void FindCollisionPointAndTime(Home_t *home, real8 p1[3], real8 p2[3],$/;"	f	file:
+FindCoordDomain	src/Decomp.c	/^int FindCoordDomain(Home_t *home, int updateCoords,$/;"	f
+FindDensity	utilities/CalcDensity.c	/^static void FindDensity(Home_t *home, Seg_t *segList, int *numAllocSegs,$/;"	f	file:
+FindFCCGlidePlane	src/FindPreciseGlidePlane.c	/^static void FindFCCGlidePlane(real8 burg[3], real8 dir[3], real8 glidePlane[3])$/;"	f	file:
+FindFMCellOwner	src/FMComm.c	/^static int FindFMCellOwner(Home_t *home, FMLayer_t *layer, int cellX,$/;"	f	file:
+FindFSegComb	src/LocalSegForces.c	/^void FindFSegComb(Home_t *home, real8 p0[3], real8 p1[3], real8 p2[3],$/;"	f
+FindFragEndpoint	src/WriteFragments.c	/^static void FindFragEndpoint(Home_t *home, Node_t *initialNode, int initialSeg,$/;"	f	file:
+FindIdealCollisionPoint	src/ProximityCollision.c	/^static void FindIdealCollisionPoint(Home_t *home, real8 pos1[3],$/;"	f	file:
+FindInNode	src/ReadBinaryRestart.c	/^static Node_t *FindInNode(Node_t *nodeList, int numNodes, Tag_t *tag)$/;"	f	file:
+FindMax	src/Util.c	/^void FindMax(real8 *array, int numElements, real8 *maxVal, int *indexOfMax)$/;"	f
+FindMin	src/Util.c	/^void FindMin(real8 *array, int numElements, real8 *minVal, int *indexOfMin)$/;"	f
+FindNode	utilities/CalcDensity.c	/^static int FindNode(const void *a, const void *b)$/;"	f	file:
+FindNodeIndex	utilities/CalcDensity.c	/^static int FindNodeIndex(Tag_t *tag, NodeInfo_t *nodeInfo, int numNodes)$/;"	f	file:
+FindPreciseGlidePlane	src/FindPreciseGlidePlane.c	/^void FindPreciseGlidePlane(Home_t *home, real8 burgVecIn[3], real8 dirIn[3],$/;"	f
+FindRBDecompCoordDomain	src/RBDecomp.c	/^int FindRBDecompCoordDomain(RBDecomp_t *decomp, real8 x, real8 y, real8 z)$/;"	f
+FindRSDecompCoordDomain	src/RSDecomp.c	/^int FindRSDecompCoordDomain(Home_t *home, RSDecomp_t *decomp, real8 x,$/;"	f
+FindSubFSeg	src/LocalSegForces.c	/^void FindSubFSeg(Home_t *home, real8 p1[3], real8 p2[3], real8 burg[3],$/;"	f
+FindVolumeDomainList	src/RBDecomp.c	/^static void FindVolumeDomainList(real8 vMin[3], real8 vMax[3],$/;"	f	file:
+FixRemesh	src/FixRemesh.c	/^void FixRemesh(Home_t *home)$/;"	f
+FoldBox	src/Util.c	/^void FoldBox(Param_t *param, real8 *x, real8 *y, real8 *z)$/;"	f
+ForwardEulerIntegrator	src/ForwardEulerIntegrator.c	/^void ForwardEulerIntegrator(Home_t *home)$/;"	f
+FragList_t	src/WriteFragments.c	/^} FragList_t;$/;"	t	typeref:struct:__anon31	file:
+FragPt_t	src/WriteFragments.c	/^} FragPt_t;$/;"	t	typeref:struct:__anon29	file:
+Frag_t	src/WriteFragments.c	/^} Frag_t;$/;"	t	typeref:struct:__anon30	file:
+Free	include/Typedefs.h	/^	Free=1,$/;"	e	enum:__anon11
+FreeBinFileArrays	src/GenerateOutput.c	/^static void FreeBinFileArrays(BinFileData_t *binData)$/;"	f	file:
+FreeCellCenters	src/NodeForce.c	/^void FreeCellCenters(void)$/;"	f
+FreeCorrectionTable	src/CorrectionTable.c	/^void FreeCorrectionTable(void)$/;"	f
+FreeDecomp	src/Decomp.c	/^void FreeDecomp(Home_t *home, void *decomp)$/;"	f
+FreeFragmentList	src/WriteFragments.c	/^static void FreeFragmentList(FragList_t **fragList)$/;"	f	file:
+FreeInNodeArray	src/FreeInitArrays.c	/^void FreeInNodeArray(InData_t *inData, int numNodes)$/;"	f
+FreeInitArrays	src/FreeInitArrays.c	/^void FreeInitArrays(Home_t *home, InData_t *inData)$/;"	f
+FreeMirrorDomain	src/CommSendMirrorNodes.c	/^void FreeMirrorDomain(Home_t *home, int domIndex)$/;"	f
+FreeNode	src/Util.c	/^void FreeNode(Home_t *home, int index)$/;"	f
+FreeNodeArms	src/Util.c	/^void FreeNodeArms(Node_t *node)$/;"	f
+FreeNodeArrays	src/Topology.c	/^void FreeNodeArrays(Node_t *node)$/;"	f
+FreeNodeLists	src/ReadRestart.c	/^void FreeNodeLists(Home_t *home, int ***nodeLists, int **listCounts)$/;"	f
+FreeOpList	src/Util.c	/^void FreeOpList (Home_t *home)$/;"	f
+FreeRBDecomp	src/RBDecomp.c	/^void FreeRBDecomp(RBDecomp_t *decomp)$/;"	f
+FreeRSDecomp	src/RSDecomp.c	/^void FreeRSDecomp(Home_t *home, RSDecomp_t *decomp)$/;"	f
+FreeResource	include/display.h	/^    virtual void FreeResource()$/;"	f	class:SYWindow
+FreeRijm	src/deWitInteraction.c	/^void FreeRijm(void)$/;"	f
+FreeRijmPBC	src/deWitInteraction.c	/^void FreeRijmPBC(void)$/;"	f
+FuncData_t	include/ParadisGen.h	/^} FuncData_t;$/;"	t	typeref:struct:__anon7
+GENERATE_IO	include/Timer.h	/^    GENERATE_IO,$/;"	e	enum:__anon10
+GEN_ARM_DATA	include/Constants.h	76;"	d
+GEN_DENSITY_DATA	include/Constants.h	77;"	d
+GEN_FLUX_DATA	include/Constants.h	78;"	d
+GEN_FORCE_DATA	include/Constants.h	91;"	d
+GEN_FRAG_DATA	include/Constants.h	90;"	d
+GEN_GNUPLOT_DATA	include/Constants.h	79;"	d
+GEN_POLEFIG_DATA	include/Constants.h	80;"	d
+GEN_POSTSCRIPT_DATA	include/Constants.h	82;"	d
+GEN_POVRAY_DATA	include/Constants.h	81;"	d
+GEN_PROPERTIES_DATA	include/Constants.h	83;"	d
+GEN_RESTART_DATA	include/Constants.h	84;"	d
+GEN_TECPLOT_DATA	include/Constants.h	85;"	d
+GEN_TIMER_DATA	include/Constants.h	86;"	d
+GEN_VELOCITY_DATA	include/Constants.h	88;"	d
+GEN_VISIT_DATA	include/Constants.h	87;"	d
+GEN_XWIN_DATA	include/Constants.h	89;"	d
+GETBLUE	include/display.h	78;"	d
+GETBLUE	include/display.h	83;"	d
+GETGREEN	include/display.h	77;"	d
+GETGREEN	include/display.h	82;"	d
+GETPBCINDEX	include/FM.h	33;"	d
+GETRED	include/display.h	76;"	d
+GETRED	include/display.h	81;"	d
+GHOST_COMM_BARRIER	include/Timer.h	/^    GHOST_COMM_BARRIER,$/;"	e	enum:__anon10
+GREEN16	include/display.h	98;"	d
+GREEN32	include/display.h	94;"	d
+GREENany	include/display.h	102;"	d
+GaussQuadCoeff	src/RemoteSegForces.c	/^void GaussQuadCoeff(int intOrder, real8 *positions, real8 *weights)$/;"	f
+GenDomainOutput	src/CommSendMirrorNodes.c	/^static void GenDomainOutput(Home_t *home, int stage, int domIndex, int blkFlag)$/;"	f	file:
+GenUGrid	utilities/ParadisRepart.c	/^static void GenUGrid(Home_t *home, int gridDim[3], real8 **xBoundaries,$/;"	f	file:
+GenerateOutput	src/GenerateOutput.c	/^void GenerateOutput(Home_t *home, int stage)$/;"	f
+GetAllDecompBounds	src/Decomp.c	/^void GetAllDecompBounds(Home_t *home, real8 **bounds, int *numBounds)$/;"	f
+GetAllRBDecompBounds	src/RBDecomp.c	/^void GetAllRBDecompBounds(Home_t *home, RBDecomp_t *decomp, real8 *boundsBuf)$/;"	f
+GetAllRSDecompBounds	src/RSDecomp.c	/^void GetAllRSDecompBounds(Home_t *home, RSDecomp_t *decomp, real8 *bounds)$/;"	f
+GetArgs	utilities/StressTableGen.c	/^static void GetArgs(int argc, char *argv[], InArgs_t *inArgs)$/;"	f	file:
+GetArmID	src/Util.c	/^int GetArmID (Home_t *home, Node_t *node1, Node_t *node2)$/;"	f
+GetBisection	src/RBDecomp.c	/^void GetBisection(real8 newMinCoord, real8 newMaxCoord, int numElements,$/;"	f
+GetBisectionCoord	utilities/ParadisRepart.c	/^static void GetBisectionCoord(real8 *cMin, real8 *cMax, int dim,$/;"	f	file:
+GetBounds	utilities/ParadisRepart.c	/^static void GetBounds(CellData_t *cellList, NodeData_t *nodeList, int dim,$/;"	f	file:
+GetBurgersVectorNormal	src/Util.c	/^void GetBurgersVectorNormal(Home_t *home, Node_t *node1, Node_t *node2,$/;"	f
+GetCellDomainList	src/Decomp.c	/^void GetCellDomainList(Home_t *home, int cellID, int *domCount, int **domList)$/;"	f
+GetConfigFromCtrlFile	utilities/ParadisConvert.c	/^static void GetConfigFromCtrlFile(Home_t *home, FILE *fp, Node_t **nodeConfig)$/;"	f	file:
+GetCounts	src/GenerateOutput.c	/^static void GetCounts(Home_t *home, int *numNodes, int *numSegs, int *numArms,$/;"	f	file:
+GetDecompCnt	src/RBDecomp.c	/^static void GetDecompCnt(int xNumDoms, int yNumDoms, int zNumDoms,$/;"	f	file:
+GetDecompCnt	utilities/ParadisRepart.c	/^static void GetDecompCnt(int xNumDoms, int yNumDoms, int zNumDoms,$/;"	f	file:
+GetDensityDelta	src/GetDensityDelta.c	/^void GetDensityDelta(Home_t *home)$/;"	f
+GetFieldPointStress	src/NodeForce.c	/^void GetFieldPointStress(Home_t *home, real8 x, real8 y, real8 z,$/;"	f
+GetFieldPointStressRem	src/NodeForce.c	/^static void GetFieldPointStressRem(Home_t *home, real8 x, real8 y, real8 z,$/;"	f	file:
+GetForcesFromBkup	src/Topology.c	/^void GetForcesFromBkup(Home_t *home, Node_t *node, Node_t *bkupNodeList)$/;"	f
+GetFreeNodeTag	src/Util.c	/^int GetFreeNodeTag(Home_t *home) $/;"	f
+GetGridOverlap	utilities/ParadisRepart.c	/^static void GetGridOverlap(real8 *cMin, real8 *cMax, int gridDim[3],$/;"	f	file:
+GetInArgs	src/CTableGen.c	/^static void GetInArgs(int argc, char *argv[], Param_t *param, int *numLevels,$/;"	f	file:
+GetInArgs	utilities/ParadisGen.c	/^static void GetInArgs(int argc, char *argv[], InArgs_t *inArgs)$/;"	f	file:
+GetInArgs	utilities/ParadisRepart.c	/^static void GetInArgs(int argc, char *argv[], Param_t *param,$/;"	f	file:
+GetIndex	src/FMComm.c	/^static int GetIndex(int value, int listSize, int *list)$/;"	f	file:
+GetLoadData	src/Decomp.c	/^static void GetLoadData(Home_t *home, int criteria, real8 **loadData)$/;"	f	file:
+GetLocalDomainBounds	src/Decomp.c	/^void GetLocalDomainBounds(Home_t *home, void *decomp)$/;"	f
+GetMinDist	src/Collision.c	/^void GetMinDist(real8 p1x, real8 p1y, real8 p1z,$/;"	f
+GetNbrCoords	src/CommSendMirrorNodes.c	/^void GetNbrCoords(Home_t *home, Node_t *node, int arm, real8 *x,$/;"	f
+GetNeighborNode	src/Util.c	/^Node_t *GetNeighborNode(Home_t *home, Node_t *node, int n)$/;"	f
+GetNewGhostNode	src/GetNewGhostNode.c	/^Node_t *GetNewGhostNode(Home_t *home, int domain, int index)$/;"	f
+GetNewNativeNode	src/GetNewNativeNode.c	/^Node_t *GetNewNativeNode(Home_t *home)$/;"	f
+GetNewTag	src/InitSendDomains.c	/^static void GetNewTag(Home_t *home, Tag_t *oldTag, Tag_t *newTag,$/;"	f	file:
+GetNextToken	src/Parse.c	/^int GetNextToken(FILE *fp, char *token, int maxTokenSize)$/;"	f
+GetNodeFromIndex	src/Util.c	/^Node_t *GetNodeFromIndex(Home_t *home, int domID, int index)$/;"	f
+GetNodeFromTag	src/Util.c	/^Node_t *GetNodeFromTag (Home_t *home, Tag_t tag)$/;"	f
+GetNodesCellID	utilities/ParadisRepart.c	/^static int GetNodesCellID(Param_t *param, real8 cellSizeX, real8 cellSizeY,$/;"	f	file:
+GetOldStyleDataParams	utilities/ParadisConvert.c	/^static void GetOldStyleDataParams(Home_t *home, FILE *fp)$/;"	f	file:
+GetOutputTypes	src/GenerateOutput.c	/^static void GetOutputTypes(Home_t *home, int stage, int *outputTypes)$/;"	f	file:
+GetParallelIOGroup	src/GenerateOutput.c	/^void GetParallelIOGroup(Home_t *home)$/;"	f
+GetParamVals	src/Parse.c	/^int GetParamVals(FILE *fp, int valType, int valsExpected, void *valList)$/;"	f
+GetPlaneNormFromPoints	src/Util.c	/^void GetPlaneNormFromPoints(real8 p1[3], real8 p2[3], real8 p3[3],$/;"	f
+GetPlotFields	tools/ComparePlots.c	/^int GetPlotFields(FILE *fp, int numFields, int axisField, double *fieldList)$/;"	f
+GetRBDecompCellDomainList	src/RBDecomp.c	/^void GetRBDecompCellDomainList(Home_t *home, int cellID, int *domainCnt,$/;"	f
+GetRBDecompLocalDomainBounds	src/RBDecomp.c	/^void GetRBDecompLocalDomainBounds(Home_t *home, RBDecomp_t *decomp)$/;"	f
+GetRSDecompCellDomainList	src/RSDecomp.c	/^void GetRSDecompCellDomainList(Home_t *home, int cellID, int *domCount,$/;"	f
+GetRSDecompLocalDomainBounds	src/RSDecomp.c	/^void GetRSDecompLocalDomainBounds(Home_t *home, RSDecomp_t *decomp)$/;"	f
+GetRecycledNodeTag	src/Util.c	/^int GetRecycledNodeTag(Home_t *home)$/;"	f
+GetRepartULoadData	utilities/ParadisRepart.c	/^static void GetRepartULoadData(int numCells, CellData_t *cellList,$/;"	f	file:
+GetSavedSegForces	src/Topology.c	/^static void GetSavedSegForces(Home_t *home, Node_t *node, SegData_t *segData,$/;"	f	file:
+GetSplitSets	src/SplitSurfaceNodes.c	/^static void GetSplitSets(int nodeSegCnt, int includeDups,$/;"	f	file:
+GetThreadIterationIndices	src/ParadisThread.c	/^void GetThreadIterationIndices(int loopCount, int *threadID, int *startIndex,$/;"	f
+GetUnitVector	src/Util.c	/^void GetUnitVector(int unitFlag, $/;"	f
+GetVelocityStatistics	src/NodeVelocity.c	/^void GetVelocityStatistics(Home_t *home)$/;"	f
+GetWeighting	utilities/ParadisRepart.c	/^static void GetWeighting(Param_t *param, CellData_t *cellList)$/;"	f	file:
+Getline	src/Util.c	/^void Getline(char *string, int len, FILE *fp)$/;"	f
+Gnuplot	src/Gnuplot.c	/^void Gnuplot(Home_t *home, char *baseFileName, int ioGroup, int firstInGroup,$/;"	f
+HDF_DATA_FILE_SUFFIX	include/Param.h	20;"	d
+HEAP_SIZE_INCR	src/Heap.c	53;"	d	file:
+HandleCollisions	src/Collision.c	/^void HandleCollisions(Home_t *home)$/;"	f
+HeapAdd	src/Heap.c	/^void HeapAdd(int **heap, int *heapSize, int *heapCnt, int value)$/;"	f
+HeapRemove	src/Heap.c	/^int HeapRemove(int *heap, int *heapCnt)$/;"	f
+Home_t	include/Typedefs.h	/^typedef struct _home Home_t;$/;"	t	typeref:struct:_home
+INCDIR	src/makefile	/^INCDIR = ..\/include$/;"	m
+INCDIR	utilities/makefile	/^INCDIR = ..\/include$/;"	m
+INFO_Printf	src/display.C	894;"	d	file:
+INITIALIZE	include/Timer.h	/^    INITIALIZE,$/;"	e	enum:__anon10
+INIT_LOCK	include/ParadisThread.h	21;"	d
+INIT_LOCK	include/ParadisThread.h	28;"	d
+INIT_PARAMS	include/Comm.h	24;"	d
+INIT_VALS_PER_ARM	include/Comm.h	26;"	d
+INIT_VALS_PER_NODE	include/Comm.h	25;"	d
+INSERT_ARM	include/Typedefs.h	/^	INSERT_ARM,$/;"	e	enum:__anon12
+INTS_PER_MIRROR_ARM	include/Comm.h	35;"	d
+INTS_PER_MIRROR_NODE	include/Comm.h	34;"	d
+INTS_PER_TAG	include/Comm.h	28;"	d
+IO_BARRIER	include/Timer.h	/^    IO_BARRIER,$/;"	e	enum:__anon10
+InArgs_t	include/ParadisGen.h	/^} InArgs_t;$/;"	t	typeref:struct:__anon9
+InArgs_t	utilities/StressTableGen.c	/^} InArgs_t;$/;"	t	typeref:struct:__anon39	file:
+InData_t	include/Typedefs.h	/^typedef struct _indata InData_t;$/;"	t	typeref:struct:_indata
+InNode_t	include/Typedefs.h	/^typedef struct _innode InNode_t;$/;"	t	typeref:struct:_innode
+IncDislocationDensity	utilities/CreateConfig.c	/^static void IncDislocationDensity(InData_t *inData, real8 *totDislocLen)$/;"	f	file:
+IncrDomSegCommCnts	src/LocalSegForces.c	/^static void IncrDomSegCommCnts(Home_t *home, Node_t *node1, Node_t *node2,$/;"	f	file:
+IndexToCellID	utilities/ParadisRepart.c	/^static int IndexToCellID(Param_t *param, int cellX, int cellY, int cellZ)$/;"	f	file:
+InitArgs	utilities/StressTableGen.c	/^static void InitArgs(InArgs_t *inArgs)$/;"	f	file:
+InitCellDomains	src/InitCellDomains.c	/^void InitCellDomains(Home_t *home)$/;"	f
+InitCellNatives	src/InitCellNatives.c	/^void InitCellNatives(Home_t *home)$/;"	f
+InitCellNeighbors	src/InitCellNeighbors.c	/^void InitCellNeighbors(Home_t *home)$/;"	f
+InitDefaultValues	utilities/ParadisGen.c	/^static void InitDefaultValues(InArgs_t *inArgs)$/;"	f	file:
+InitFMCell	src/FMComm.c	/^static void InitFMCell(Home_t *home, FMLayer_t *layer, FMCell_t *cell,$/;"	f	file:
+InitHome	src/InitHome.c	/^Home_t *InitHome ()$/;"	f
+InitNodeArm	src/Util.c	/^static void InitNodeArm(Node_t *node, int armID)$/;"	f	file:
+InitOpList	src/Util.c	/^void InitOpList (Home_t *home)$/;"	f
+InitRBDecomp	src/RBDecomp.c	/^static void InitRBDecomp(Home_t *home, RBDecomp_t *decomp,$/;"	f	file:
+InitRecycleNodeHeap	src/Initialize.c	/^static void InitRecycleNodeHeap(Home_t *home)$/;"	f	file:
+InitRemesh	utilities/InitRemesh.c	/^void InitRemesh(InData_t *inData, int domValue, int startIndex)$/;"	f
+InitRemoteDomains	src/InitRemoteDomains.c	/^void InitRemoteDomains(Home_t *home)$/;"	f
+InitSem	include/display.h	/^    void InitSem()$/;"	f	class:SYWindow
+InitSem2	include/display.h	/^    void InitSem2()$/;"	f	class:SYWindow
+InitTopologyExemptions	src/Topology.c	/^int InitTopologyExemptions(Home_t *home)$/;"	f
+InitValues	src/CTableGen.c	/^static void InitValues(Param_t *param, int *numLayers, int pbc[3])$/;"	f	file:
+Initialize	src/Initialize.c	/^void Initialize(Home_t *home,int argc, char *argv[]) $/;"	f
+InputSanity	src/InputSanity.c	/^void InputSanity (Home_t *home)$/;"	f
+InsertArm	src/Util.c	/^void InsertArm (Home_t *home, Node_t *nodeA, Tag_t *nodeBtag,$/;"	f
+InterpolateBL	src/Util.c	/^int InterpolateBL(real8 *x, real8 *y, real8 *val, int numElem,$/;"	f
+InterpolateL	src/Util.c	/^void InterpolateL(real8 *xa, real8 *ya, int numPoints, real8 x, real8 *y)$/;"	f
+InterpolateRijm	src/deWitInteraction.c	/^void InterpolateRijm(Home_t *home, real8 rt[3], real8 Rijmarray[10], int pbc)$/;"	f
+IsAlive	include/display.h	/^    bool IsAlive() { return alive; }$/;"	f	class:SYWindow
+IsPaused	include/display.h	/^    bool IsPaused() { return pause; }$/;"	f	class:SYWindow
+LAST_BLOCK	include/Constants.h	69;"	d
+LLB	include/RBDecomp.h	21;"	d
+LLF	include/RBDecomp.h	17;"	d
+LOADCURVE	include/Timer.h	/^    LOADCURVE,$/;"	e	enum:__anon10
+LOAD_BALANCE	include/Timer.h	/^    LOAD_BALANCE,$/;"	e	enum:__anon10
+LOCAL_FORCE	include/Timer.h	/^    LOCAL_FORCE,$/;"	e	enum:__anon10
+LOCK	include/ParadisThread.h	22;"	d
+LOCK	include/ParadisThread.h	29;"	d
+LRB	include/RBDecomp.h	22;"	d
+LRF	include/RBDecomp.h	18;"	d
+LineTensionForce	src/NodeForce.c	/^void LineTensionForce(Home_t *home, real8 x1, real8 y1, real8 z1,$/;"	f
+Lines	include/display.h	/^    }Lines[MaxLines];$/;"	m	class:SYWindow	typeref:struct:SYWindow::YLine
+LoadCurve	src/LoadCurve.c	/^void LoadCurve(Home_t *home, real8 deltaStress[3][3])$/;"	f
+LocalSegForces	src/LocalSegForces.c	/^void LocalSegForces(Home_t *home, int reqType)$/;"	f
+LocateCell	src/Util.c	/^void LocateCell(Home_t *home, int *cellID, real8 coord[3])$/;"	f
+Lock	include/display.h	/^    void Lock()$/;"	f	class:SYWindow
+LockWritegif	include/display.h	/^    void LockWritegif()$/;"	f	class:SYWindow
+LookupFMCell	src/FMSupport.c	/^FMCell_t *LookupFMCell(FMCell_t *cellTable[], int cellID)$/;"	f
+LookupInNode	utilities/InitRemesh.c	/^static Node_t *LookupInNode(InData_t *inData, Tag_t *tag, int *index)$/;"	f	file:
+LookupParam	src/Parse.c	/^int LookupParam(ParamList_t *list, char *token)$/;"	f
+Ltot	include/Param.h	/^        real8 Ltot[4][4],  fluxtot[4][7];$/;"	m	struct:_param
+Lx	include/Param.h	/^        real8 Lx, Ly, Lz;$/;"	m	struct:_param
+Ly	include/Param.h	/^        real8 Lx, Ly, Lz;$/;"	m	struct:_param
+Lz	include/Param.h	/^        real8 Lx, Ly, Lz;$/;"	m	struct:_param
+MARK_FORCES_OBSOLETE	include/Typedefs.h	/^	MARK_FORCES_OBSOLETE,$/;"	e	enum:__anon12
+MAT_TYPE_BCC	include/Mobility.h	/^        MAT_TYPE_BCC = 0,$/;"	e	enum:__anon5
+MAT_TYPE_FCC	include/Mobility.h	/^        MAT_TYPE_FCC,$/;"	e	enum:__anon5
+MAX	include/ParadisProto.h	18;"	d
+MAXCELL2PERCELL	src/SortNodesForCollision.c	38;"	d	file:
+MAXCOLOR	include/DisplayC.h	12;"	d
+MAXDENSITYMESH	src/WriteDensityField.c	10;"	d	file:
+MAXORDER	include/FM.h	10;"	d
+MAXSTRGRID	src/deWitInteraction.c	199;"	d	file:
+MAX_ARMS	src/SplitSurfaceNodes.c	26;"	d	file:
+MAX_BOUND_SHIFT_FACT	src/RBDecomp.c	60;"	d	file:
+MAX_DECOMP_LVLS	include/Decomp.h	67;"	d
+MAX_NBRS	include/Constants.h	49;"	d
+MAX_NODES_PER_BLOCK	include/InData.h	21;"	d
+MAX_NODES_PER_BUF	src/WriteVisit.c	30;"	d	file:
+MAX_SEGS_PER_BUF	src/WriteVisit.c	33;"	d	file:
+MAX_SEG_PER_NODE	src/MobilityLaw_FCC_climb.c	35;"	d	file:
+MAX_SHIFT	src/RSDecomp.c	64;"	d	file:
+MAX_STRING_LEN	include/Constants.h	56;"	d
+MERGE_DOUBLE_LINK	include/Topology.h	33;"	d
+MERGE_NODE_ORPHANED	include/Topology.h	24;"	d
+MERGE_NOT_PERMITTED	include/Topology.h	30;"	d
+MERGE_NO_REPOSITION	include/Topology.h	27;"	d
+MERGE_SUCCESS	include/Topology.h	23;"	d
+MIGRATION	include/Timer.h	/^    MIGRATION,$/;"	e	enum:__anon10
+MIGRATION_BARRIER	include/Timer.h	/^    MIGRATION_BARRIER,$/;"	e	enum:__anon10
+MIN	include/ParadisProto.h	22;"	d
+MIN	src/MobilityLaw_BCC_0.c	26;"	d	file:
+MIN	src/MobilityLaw_BCC_0b.c	30;"	d	file:
+MIN_DELTA_T	src/ForwardEulerIntegrator.c	15;"	d	file:
+MOB_BCC_0	include/Mobility.h	/^        MOB_BCC_0,$/;"	e	enum:__anon6
+MOB_BCC_0B	include/Mobility.h	/^        MOB_BCC_0B,$/;"	e	enum:__anon6
+MOB_BCC_GLIDE	include/Mobility.h	/^        MOB_BCC_GLIDE,$/;"	e	enum:__anon6
+MOB_FCC_0	include/Mobility.h	/^        MOB_FCC_0,$/;"	e	enum:__anon6
+MOB_FCC_0B	include/Mobility.h	/^        MOB_FCC_0B,$/;"	e	enum:__anon6
+MOB_FCC_CLIMB	include/Mobility.h	/^        MOB_FCC_CLIMB,$/;"	e	enum:__anon6
+MP_COEFF	include/FM.h	14;"	d
+MSG_GHOST	include/Comm.h	46;"	d
+MSG_GHOST2_REQ	include/Comm.h	54;"	d
+MSG_GHOST2_REQ_LEN	include/Comm.h	53;"	d
+MSG_GHOST2_RESPONSE	include/Comm.h	56;"	d
+MSG_GHOST2_RESPONSE_LEN	include/Comm.h	55;"	d
+MSG_GHOST_LEN	include/Comm.h	45;"	d
+MSG_GHOST_PLANE	src/CommSendGhostPlanes.c	44;"	d	file:
+MSG_GHOST_PLANE_LEN	src/CommSendGhostPlanes.c	43;"	d	file:
+MSG_INIT_LENS	include/Comm.h	43;"	d
+MSG_INIT_NODES	include/Comm.h	44;"	d
+MSG_MIG	include/Comm.h	48;"	d
+MSG_MIG_LEN	include/Comm.h	47;"	d
+MSG_MIG_LENGTH	src/Migrate.c	29;"	d	file:
+MSG_MIG_NODES	src/Migrate.c	30;"	d	file:
+MSG_MIRRORS	include/Comm.h	51;"	d
+MSG_OLDNEW	include/Comm.h	50;"	d
+MSG_OLDNEW_LEN	include/Comm.h	49;"	d
+MSG_OPLIST	include/Comm.h	60;"	d
+MSG_OPLIST_LEN	include/Comm.h	59;"	d
+MSG_REMESH	include/Comm.h	63;"	d
+MSG_REMESH_LEN	include/Comm.h	62;"	d
+MSG_SEGDATA	include/Comm.h	67;"	d
+MSG_SEGDATA_LEN	include/Comm.h	66;"	d
+MSG_SEND_MIRROR	include/Comm.h	52;"	d
+MSG_TAGREMAP	include/Comm.h	65;"	d
+MSG_TAGREMAP_LEN	include/Comm.h	64;"	d
+MSG_TOKEN_RING	include/Comm.h	61;"	d
+MSG_VELOCITY	include/Comm.h	57;"	d
+MSG_VELOCITY_LEN	include/Comm.h	58;"	d
+MSG_VISIT_COUNTS	include/Comm.h	68;"	d
+M_SQRT3	src/display.C	451;"	d	file:
+MarkNodeForceObsolete	src/Util.c	/^void MarkNodeForceObsolete(Home_t *home, Node_t *node)$/;"	f
+MarkParamDisabled	src/Param.c	/^void MarkParamDisabled(ParamList_t *CPList, char *name)$/;"	f
+MarkParamEnabled	src/Param.c	/^void MarkParamEnabled(ParamList_t *CPList, char *name)$/;"	f
+MatType_t	include/Mobility.h	/^} MatType_t;$/;"	t	typeref:enum:__anon5
+Matrix22Det	src/Matrix.c	/^real8 Matrix22Det(real8 a[2][2])$/;"	f
+Matrix22Invert	src/Matrix.c	/^void Matrix22Invert(real8 A[2][2], real8 B[2][2])$/;"	f
+Matrix22Vector2Mult	src/Matrix.c	/^void Matrix22Vector2Mult(real8 a[2][2], real8 b[2], real8 c[2])$/;"	f
+Matrix31Vector3Mult	src/Matrix.c	/^void Matrix31Vector3Mult(real8 mat[3], real8 vec[3], real8 result[3][3])$/;"	f
+Matrix33Det	src/Matrix.c	/^real8 Matrix33Det(real8 a[3][3])$/;"	f
+Matrix33Invert	src/Matrix.c	/^int Matrix33Invert(real8 a[3][3], real8 b[3][3])$/;"	f
+Matrix33Mult33	src/Matrix.c	/^void Matrix33Mult33(real8 a[3][3], real8 b[3][3], real8 c[3][3])$/;"	f
+Matrix33Transpose	src/Matrix.c	/^void Matrix33Transpose(real8 mat[3][3], real8 trans[3][3])$/;"	f
+Matrix33Vector3Multiply	src/Matrix.c	/^void Matrix33Vector3Multiply(real8 A[3][3], real8 x[3], real8 y[3])$/;"	f
+Matrix43Vector3Multiply	src/Matrix.c	/^void Matrix43Vector3Multiply(real8 A[4][3], real8 x[3], real8 y[4])$/;"	f
+MatrixInvert	src/Matrix.c	/^int MatrixInvert(real8 *mat, real8 *invMat, int order, int lda)$/;"	f
+MatrixMult	src/Matrix.c	/^void MatrixMult(real8 *a, int aRows, int aCols, int aLD,$/;"	f
+MatrixMultArb	src/Matrix.c	/^void MatrixMultArb(real8 *a, int aCols, int aRowOffset,$/;"	f
+MaxLines	include/display.h	/^enum { MaxPoints=40000, MaxLines=80000, rInterval=50, DSCLEN=60};$/;"	e	enum:__anon17
+MaxPoints	include/display.h	/^enum { MaxPoints=40000, MaxLines=80000, rInterval=50, DSCLEN=60};$/;"	e	enum:__anon17
+MeanStressCorrection	src/FMSupport.c	/^void MeanStressCorrection(Home_t *home)$/;"	f
+MemBlock_t	src/MemCheck.c	/^} MemBlock_t;$/;"	t	typeref:struct:__anon25	file:
+Meminfo	src/Meminfo.c	/^void Meminfo(int *wss)$/;"	f
+MergeNode	src/Topology.c	/^void MergeNode(Home_t *home, int opClass, Node_t *node1, Node_t *node2,$/;"	f
+MeshCoarsen	src/RemeshRule_2.c	/^static void MeshCoarsen(Home_t *home)$/;"	f	file:
+MeshCoarsen	src/RemeshRule_3.c	/^static void MeshCoarsen(Home_t *home)$/;"	f	file:
+MeshRefine	src/RemeshRule_2.c	/^static void MeshRefine(Home_t *home)$/;"	f	file:
+MeshRefine	src/RemeshRule_3.c	/^static void MeshRefine(Home_t *home)$/;"	f	file:
+Migrate	src/Migrate.c	/^void Migrate(Home_t *home)$/;"	f
+MirrorDomain_t	include/Typedefs.h	/^typedef struct _mirrordomain MirrorDomain_t;$/;"	t	typeref:struct:_mirrordomain
+MkTaylor	src/FMSupport.c	/^void MkTaylor(real8 mu, real8 nu, int norder, int uorder, int maxorder,$/;"	f
+MobClimb	include/Param.h	/^        real8 MobClimb;$/;"	m	struct:_param
+MobEdge	include/Param.h	/^        real8 MobEdge;$/;"	m	struct:_param
+MobGlide	include/Param.h	/^        real8 MobGlide;  \/* floor on mobility for glide dislocations *\/$/;"	m	struct:_param
+MobLine	include/Param.h	/^        real8 MobLine;$/;"	m	struct:_param
+MobScrew	include/Param.h	/^        real8 MobScrew;$/;"	m	struct:_param
+MobType_t	include/Mobility.h	/^} MobType_t;$/;"	t	typeref:enum:__anon6
+Mobility_BCC_0	src/MobilityLaw_BCC_0.c	/^int  Mobility_BCC_0(Home_t *home, Node_t *node)$/;"	f
+Mobility_BCC_0b	src/MobilityLaw_BCC_0b.c	/^int Mobility_BCC_0b(Home_t *home, Node_t *node)$/;"	f
+Mobility_BCC_glide	src/MobilityLaw_BCC_glide.c	/^int Mobility_BCC_glide(Home_t *home, Node_t *node)$/;"	f
+Mobility_FCC_0	src/MobilityLaw_FCC_0.c	/^int Mobility_FCC_0(Home_t *home, Node_t *node)$/;"	f
+Mobility_FCC_0b	src/MobilityLaw_FCC_0b.c	/^int Mobility_FCC_0b(Home_t *home, Node_t *node)$/;"	f
+Mobility_FCC_climb	src/MobilityLaw_FCC_climb.c	/^int Mobility_FCC_climb(Home_t *home, Node_t *node)$/;"	f
+MonopoleCellCharge	src/CellCharge.c	/^static void MonopoleCellCharge (Home_t *home)$/;"	f	file:
+NEW_NODEKEY_INC	include/Constants.h	15;"	d
+NMAX	include/FM.h	8;"	d
+NODEDATA_FILE_SUFFIX	include/Param.h	21;"	d
+NODEDATA_FILE_VERSION	include/Param.h	22;"	d
+NODE_BLOCK_COUNT	include/Constants.h	17;"	d
+NODE_BLOCK_INC	utilities/CalcDensity.c	54;"	d	file:
+NODE_CHK_DBL_LINK	include/Node.h	34;"	d
+NODE_CURR_VEL	include/Node.h	41;"	d
+NODE_OLD_VEL	include/Node.h	42;"	d
+NODE_OUTSIDE_SURF	include/Node.h	31;"	d
+NODE_POSITION	include/Node.h	40;"	d
+NODE_READ_BLOCK_CNT	utilities/CalcDensity.c	55;"	d	file:
+NODE_RESET_FORCES	include/Node.h	30;"	d
+NO_COLLISIONS	include/Node.h	32;"	d
+NO_MESH_COARSEN	include/Node.h	33;"	d
+NTMAX	include/FM.h	9;"	d
+NUM_BURG	src/DeltaPlasticStrain_FCC.c	25;"	d	file:
+NUM_EXPCELL_INC	src/InitRemoteDomains.c	26;"	d	file:
+NUM_PLANES	src/DeltaPlasticStrain_FCC.c	26;"	d	file:
+NUM_VALS_PER_SEGMENT	src/CommSendSegments.c	31;"	d	file:
+NativeSeg_t	src/LocalSegForces.c	/^} NativeSeg_t;$/;"	t	typeref:struct:__anon24	file:
+NodeBlock_t	include/Typedefs.h	/^typedef struct _nodeblock NodeBlock_t;$/;"	t	typeref:struct:_nodeblock
+NodeData_t	utilities/ParadisRepart.c	/^} NodeData_t;$/;"	t	typeref:struct:__anon34	file:
+NodeDistance	src/Util.c	/^static real8 NodeDistance(Home_t *home, Node_t *node1, Node_t *node2)$/;"	f	file:
+NodeForce	src/NodeForce.c	/^void NodeForce(Home_t *home, int reqType)$/;"	f
+NodeHasSessileBurg	src/Util.c	/^int NodeHasSessileBurg(Home_t *home, Node_t *node)$/;"	f
+NodeInfo_t	utilities/CalcDensity.c	/^} NodeInfo_t;$/;"	t	typeref:struct:__anon33	file:
+NodeOwnsSeg	src/LocalSegForces.c	/^int NodeOwnsSeg(Home_t *home, Node_t *node1, Node_t *node2)$/;"	f
+NodePinned	src/Util.c	/^int NodePinned(Home_t *home, Node_t *node, int planeIndex,$/;"	f
+Node_t	include/Typedefs.h	/^typedef struct _node Node_t;$/;"	t	typeref:struct:_node
+Normal	src/Util.c	/^real8 Normal(real8 a[3])$/;"	f
+Normalize	src/Util.c	/^void Normalize(real8 *ax, real8 *ay, real8 *az)$/;"	f
+NormalizeVec	src/Util.c	/^void NormalizeVec(real8 vec[3])$/;"	f
+NormalizedCrossVector	src/Util.c	/^void NormalizedCrossVector(real8 a[3], real8 b[3], real8 c[3])$/;"	f
+OPCLASS_COLLISION	include/Topology.h	52;"	d
+OPCLASS_REMESH	include/Topology.h	53;"	d
+OPCLASS_SEPARATION	include/Topology.h	51;"	d
+OPT_CELLS	utilities/ParadisRepart.c	/^        OPT_CELLS,$/;"	e	enum:__anon36	file:
+OPT_CUBEL	include/ParadisGen.h	76;"	d
+OPT_CUBESIZE	src/CTableGen.c	/^    OPT_CUBESIZE = 0,$/;"	e	enum:__anon19	file:
+OPT_DECOMPTYPE	utilities/ParadisRepart.c	/^        OPT_DECOMPTYPE,$/;"	e	enum:__anon36	file:
+OPT_DOMAINS	utilities/ParadisRepart.c	/^        OPT_DOMAINS,$/;"	e	enum:__anon36	file:
+OPT_FRLEN	include/ParadisGen.h	77;"	d
+OPT_HELP	include/ParadisGen.h	78;"	d
+OPT_HELP	src/CTableGen.c	/^    OPT_HELP,$/;"	e	enum:__anon19	file:
+OPT_HELP	utilities/ParadisRepart.c	/^        OPT_HELP,$/;"	e	enum:__anon36	file:
+OPT_HELP	utilities/StressTableGen.c	59;"	d	file:
+OPT_HEXSIZE	include/ParadisGen.h	79;"	d
+OPT_INFILE	utilities/ParadisRepart.c	/^        OPT_INFILE,$/;"	e	enum:__anon36	file:
+OPT_LEVELS	src/CTableGen.c	/^    OPT_LEVELS,$/;"	e	enum:__anon19	file:
+OPT_LOOPTYPE	include/ParadisGen.h	80;"	d
+OPT_MAX	include/ParadisGen.h	94;"	d
+OPT_MAX	src/CTableGen.c	/^    OPT_MAX       \/* This MUST be the last element in the enumerated list *\/$/;"	e	enum:__anon19	file:
+OPT_MAX	utilities/ParadisRepart.c	/^        OPT_MAX$/;"	e	enum:__anon36	file:
+OPT_MAX	utilities/StressTableGen.c	70;"	d	file:
+OPT_MAXSEG	include/ParadisGen.h	81;"	d
+OPT_MPORDER	src/CTableGen.c	/^    OPT_MPORDER,$/;"	e	enum:__anon19	file:
+OPT_MU	src/CTableGen.c	/^    OPT_MU,$/;"	e	enum:__anon19	file:
+OPT_NCHAINS	include/ParadisGen.h	82;"	d
+OPT_NFRSRCS	include/ParadisGen.h	83;"	d
+OPT_NIMGX	utilities/StressTableGen.c	61;"	d	file:
+OPT_NIMGY	utilities/StressTableGen.c	62;"	d	file:
+OPT_NIMGZ	utilities/StressTableGen.c	63;"	d	file:
+OPT_NLOOPS	include/ParadisGen.h	84;"	d
+OPT_NOPBC	utilities/StressTableGen.c	67;"	d	file:
+OPT_NU	src/CTableGen.c	/^    OPT_NU,$/;"	e	enum:__anon19	file:
+OPT_NX	utilities/StressTableGen.c	64;"	d	file:
+OPT_NY	utilities/StressTableGen.c	65;"	d	file:
+OPT_NZ	utilities/StressTableGen.c	66;"	d	file:
+OPT_OUTFILE	include/ParadisGen.h	85;"	d
+OPT_OUTFILE	src/CTableGen.c	/^    OPT_OUTFILE,$/;"	e	enum:__anon19	file:
+OPT_OUTFILE	utilities/ParadisRepart.c	/^        OPT_OUTFILE,$/;"	e	enum:__anon36	file:
+OPT_OUTFILE	utilities/StressTableGen.c	68;"	d	file:
+OPT_PBC	include/ParadisGen.h	86;"	d
+OPT_PBC	src/CTableGen.c	/^    OPT_PBC,$/;"	e	enum:__anon19	file:
+OPT_PBC	utilities/ParadisRepart.c	/^        OPT_PBC,$/;"	e	enum:__anon36	file:
+OPT_PBC	utilities/StressTableGen.c	69;"	d	file:
+OPT_RADIUS	include/ParadisGen.h	87;"	d
+OPT_SEED	include/ParadisGen.h	88;"	d
+OPT_SIZE	utilities/StressTableGen.c	60;"	d	file:
+OPT_TORDER	src/CTableGen.c	/^    OPT_TORDER,$/;"	e	enum:__anon19	file:
+OPT_TYPE	include/ParadisGen.h	89;"	d
+OPT_VACANCY	include/ParadisGen.h	90;"	d
+OPT_XSURF	include/ParadisGen.h	91;"	d
+OPT_YSURF	include/ParadisGen.h	92;"	d
+OPT_ZSURF	include/ParadisGen.h	93;"	d
+Offset1	src/deWitInteraction.c	/^static int   Offset1, Offset2, Offset3;$/;"	v	file:
+Offset2	src/deWitInteraction.c	/^static int   Offset1, Offset2, Offset3;$/;"	v	file:
+Offset3	src/deWitInteraction.c	/^static int   Offset1, Offset2, Offset3;$/;"	v	file:
+OpBlock_Count	include/OpList.h	16;"	d
+OpCount	include/Home.h	/^        int       OpCount;$/;"	m	struct:_home
+OpListLen	include/Home.h	/^        int       OpListLen;$/;"	m	struct:_home
+OpType_t	include/Typedefs.h	/^} OpType_t;$/;"	t	typeref:enum:__anon12
+OpenDir	src/Initialize.c	/^int OpenDir(Home_t *home)$/;"	f
+Operate_t	include/Typedefs.h	/^typedef struct _operate Operate_t;$/;"	t	typeref:struct:_operate
+Option_t	include/ParadisGen.h	/^} Option_t;$/;"	t	typeref:struct:__anon8
+Option_t	src/CTableGen.c	/^} Option_t;$/;"	t	typeref:struct:__anon20	file:
+Option_t	utilities/ParadisRepart.c	/^} Option_t;$/;"	t	typeref:struct:__anon37	file:
+Option_t	utilities/StressTableGen.c	/^} Option_t;$/;"	t	typeref:struct:__anon38	file:
+OrderNodes	src/Util.c	/^int OrderNodes(const void *a, const void *b)$/;"	f
+OrderTags	src/Util.c	/^int OrderTags(const void *a, const void *b)$/;"	f
+Orthogonalize	src/Util.c	/^void Orthogonalize(real8 *ax, real8 *ay, real8 *az,$/;"	f
+OsmoticForce	src/OsmoticForce.c	/^void OsmoticForce(Home_t *home, real8 x1, real8 y1, real8 z1,$/;"	f
+PARADIS	makefile	/^PARADIS    = paradis$/;"	m
+PARADIS	src/makefile	/^PARADIS = paradis$/;"	m
+PARADISCONVERT	utilities/makefile	/^PARADISCONVERT     = paradisconvert$/;"	m
+PARADISCONVERT_BIN	utilities/makefile	/^PARADISCONVERT_BIN = $(BINDIR)\/$(PARADISCONVERT)$/;"	m
+PARADISCONVERT_CPP_SRCS	utilities/makefile	/^PARADISCONVERT_CPP_SRCS = DisplayC.C     \\$/;"	m
+PARADISCONVERT_C_SRCS	utilities/makefile	/^PARADISCONVERT_C_SRCS = ParadisConvert.c \\$/;"	m
+PARADISCONVERT_OBJS	utilities/makefile	/^PARADISCONVERT_OBJS = $(PARADISCONVERT_C_SRCS:.c=.o) $(PARADISCONVERT_CPP_SRCS:.C=.o)$/;"	m
+PARADISCONVERT_SRCS	utilities/makefile	/^PARADISCONVERT_SRCS = $(PARADISCONVERT_C_SRCS) $(PARADISCONVERT_CPP_SRCS)$/;"	m
+PARADISGEN	utilities/makefile	/^PARADISGEN     = paradisgen$/;"	m
+PARADISGEN_BIN	utilities/makefile	/^PARADISGEN_BIN = $(BINDIR)\/$(PARADISGEN)$/;"	m
+PARADISGEN_CPP_SRCS	utilities/makefile	/^PARADISGEN_CPP_SRCS = DisplayC.C   \\$/;"	m
+PARADISGEN_C_SRCS	utilities/makefile	/^PARADISGEN_C_SRCS = ParadisGen.c   \\$/;"	m
+PARADISGEN_OBJS	utilities/makefile	/^PARADISGEN_OBJS = $(PARADISGEN_C_SRCS:.c=.o) $(PARADISGEN_CPP_SRCS:.C=.o)$/;"	m
+PARADISGEN_SRCS	utilities/makefile	/^PARADISGEN_SRCS = $(PARADISGEN_C_SRCS) $(PARADISGEN_CPP_SRCS)$/;"	m
+PARADISREPART	utilities/makefile	/^PARADISREPART     = paradisrepart$/;"	m
+PARADISREPART_BIN	utilities/makefile	/^PARADISREPART_BIN = $(BINDIR)\/$(PARADISREPART)$/;"	m
+PARADISREPART_CPP_SRCS	utilities/makefile	/^PARADISREPART_CPP_SRCS = DisplayC.C     \\$/;"	m
+PARADISREPART_C_SRCS	utilities/makefile	/^PARADISREPART_C_SRCS = ParadisRepart.c  \\$/;"	m
+PARADISREPART_OBJS	utilities/makefile	/^PARADISREPART_OBJS = $(PARADISREPART_C_SRCS:.c=.o) $(PARADISREPART_CPP_SRCS:.C=.o)$/;"	m
+PARADISREPART_SRCS	utilities/makefile	/^PARADISREPART_SRCS = $(PARADISREPART_C_SRCS) $(PARADISREPART_CPP_SRCS)$/;"	m
+PARADIS_BIN	src/makefile	/^PARADIS_BIN = $(BINDIR)\/$(PARADIS)$/;"	m
+PARADIS_DBG	makefile	/^PARADIS_DBG    = paradis_dbg$/;"	m
+PARADIS_DBG	src/makefile	/^PARADIS_DBG = paradis_dbg$/;"	m
+PARADIS_DBG_BIN	src/makefile	/^PARADIS_DBG_BIN = $(BINDIR)\/$(PARADIS_DBG)$/;"	m
+PARADIS_MAX_NAMELEN	src/MemCheck.c	35;"	d	file:
+PARADIS_MEMBLOCK_INCREMENT	src/MemCheck.c	36;"	d	file:
+PARADIS_MEM_HEADER_LEN	src/MemCheck.c	32;"	d	file:
+PARADIS_MEM_TRAILER_LEN	src/MemCheck.c	33;"	d	file:
+PARADIS_PRISTINE	makefile	/^PARADIS_PRISTINE = paradis_pristine$/;"	m
+PARADIS_PRISTINE	src/makefile	/^PARADIS_PRISTINE = paradis_pristine$/;"	m
+PARADIS_PRISTINE_BIN	src/makefile	/^PARADIS_PRISTINE_BIN = $(BINDIR)\/$(PARADIS_PRISTINE)$/;"	m
+PARTIAL	include/Constants.h	23;"	d
+PBCGLIDE	include/display.h	/^          PBCX=6,PBCY=7,PBCZ=8,PBCGLIDE=9,$/;"	e	enum:SYWindow::__anon18
+PBCPOSITION	src/Util.c	/^void PBCPOSITION(Param_t *param, real8 x0, real8 y0, real8 z0,$/;"	f
+PBCSHIFT	src/display.C	70;"	d	file:
+PBCTRANSLATION	include/display.h	/^          PBCTRANSLATION=4,ASPECTRATIO=5,$/;"	e	enum:SYWindow::__anon18
+PBCX	include/display.h	/^          PBCX=6,PBCY=7,PBCZ=8,PBCGLIDE=9,$/;"	e	enum:SYWindow::__anon18
+PBCY	include/display.h	/^          PBCX=6,PBCY=7,PBCZ=8,PBCGLIDE=9,$/;"	e	enum:SYWindow::__anon18
+PBCZ	include/display.h	/^          PBCX=6,PBCY=7,PBCZ=8,PBCGLIDE=9,$/;"	e	enum:SYWindow::__anon18
+PINNED_NODE	include/Node.h	24;"	d
+PKForce	src/NodeForce.c	/^void PKForce(real8 sigb[3],$/;"	f
+PLOT	include/Timer.h	/^    PLOT,$/;"	e	enum:__anon10
+POSSIBLE_SPLITS	src/Topology.c	/^static int POSSIBLE_SPLITS[16] =$/;"	v	file:
+POST_COLLISION_BARRIER	include/Timer.h	/^    POST_COLLISION_BARRIER,$/;"	e	enum:__anon10
+PRINT_PE	src/FMSigma2.c	34;"	d	file:
+PROJECTION	include/display.h	/^    enum{ ROTATION=0,TRANSLATION=1,SCALING=2,PROJECTION=3,$/;"	e	enum:SYWindow::__anon18
+Pack1SecondaryGhost	src/CommSendSecondaryGhosts.c	/^static void Pack1SecondaryGhost(Node_t *node, real8 **outBuf, int *outBufSize,$/;"	f	file:
+PackInitialNodeData	src/InitSendDomains.c	/^static void PackInitialNodeData(InData_t *inData, int *nodeList,$/;"	f	file:
+PackMigrators	src/Migrate.c	/^static void PackMigrators(Home_t *home, int remDomID, int *migList,$/;"	f	file:
+PackMirrorNodes	src/CommSendMirrorNodes.c	/^static void PackMirrorNodes(Home_t *home, int *numNodes)$/;"	f	file:
+PackSecondaryGhostResponse	src/CommSendSecondaryGhosts.c	/^static void PackSecondaryGhostResponse(Home_t *home, int *inBuf, int inBufSize,$/;"	f	file:
+PackSegmentData	src/CommSendSegments.c	/^static void PackSegmentData(Home_t *home, int numSendBufs, int *sendDomList,$/;"	f	file:
+PackTagMap	src/RemapInitialTags.c	/^static void PackTagMap(Home_t *home, int **buf, int *bufSize)$/;"	f	file:
+PackVelocity	src/CommSendVelocity.c	/^static void PackVelocity(Home_t *home)$/;"	f	file:
+ParadisCalloc	src/MemCheck.c	/^void *ParadisCalloc(char *fileName, int lineNum, size_t numElem, size_t size)$/;"	f
+ParadisFinish	src/ParadisFinish.c	/^void ParadisFinish(Home_t *home)$/;"	f
+ParadisFree	src/MemCheck.c	/^void ParadisFree(char *fileName, int lineNum, void *ptr)$/;"	f
+ParadisInit	src/ParadisInit.c	/^void ParadisInit(int argc, char *argv[], Home_t **homeptr)$/;"	f
+ParadisMalloc	src/MemCheck.c	/^void *ParadisMalloc(char *fileName, int lineNum, size_t size)$/;"	f
+ParadisMemCheck	src/MemCheck.c	/^void ParadisMemCheck(void)$/;"	f
+ParadisRealloc	src/MemCheck.c	/^void *ParadisRealloc(char *fileName, int lineNum, void *ptr, size_t size)$/;"	f
+ParadisStep	src/ParadisStep.c	/^void ParadisStep(Home_t *home)$/;"	f
+ParamList_t	include/Typedefs.h	/^} ParamList_t;$/;"	t	typeref:struct:__anon16
+Param_t	include/Typedefs.h	/^typedef struct _param Param_t;$/;"	t	typeref:struct:_param
+ParseWindowSpecFile	src/DisplayC.C	/^void ParseWindowSpecFile(FILE *fp, ParamList_t *WPList)$/;"	f
+Periodic	include/Typedefs.h	/^	Periodic=0,$/;"	e	enum:__anon11
+PickBCCScrewGlidePlane	src/PickScrewGlidePlane.c	/^static void PickBCCScrewGlidePlane(real8 burgVec[3], real8 glidePlane[3])$/;"	f	file:
+PickFCCScrewGlidePlane	src/PickScrewGlidePlane.c	/^static void PickFCCScrewGlidePlane(real8 burgVec[3], real8 glidePlane[3])$/;"	f	file:
+PickScrewGlidePlane	src/PickScrewGlidePlane.c	/^void PickScrewGlidePlane(Home_t *home, real8 burgVecIn[3], real8 glidePlane[3])$/;"	f
+PixDepth	include/display.h	/^    int PixDepth;$/;"	m	class:SYWindow
+Plot	src/Plot.c	/^void Plot(Home_t *home, int domIndex, int blkFlag) $/;"	f
+Points	include/display.h	/^    }Points[MaxPoints];$/;"	m	class:SYWindow	typeref:struct:SYWindow::YPoint
+PopFreeNodeQ	src/QueueOps.c	/^Node_t *PopFreeNodeQ(Home_t *home)$/;"	f
+PredictiveCollisions	src/PredictiveCollision.c	/^void PredictiveCollisions(Home_t *home)$/;"	f
+PreserveNodalData	src/ForwardEulerIntegrator.c	/^static void PreserveNodalData(Home_t *home)$/;"	f	file:
+PreserveNodalData	src/TrapezoidIntegrator.c	/^static void PreserveNodalData(Home_t *home, int items)$/;"	f	file:
+PrintArgs	utilities/ParadisGen.c	/^static void PrintArgs(InArgs_t *inArgs)$/;"	f	file:
+PrintBanner	src/Initialize.c	/^static void PrintBanner(Home_t *home, int argc, char *argv[])$/;"	f	file:
+PrintHelp	src/CTableGen.c	/^static void PrintHelp(char *program)$/;"	f	file:
+PrintHelp	utilities/ParadisGen.c	/^static void PrintHelp(char *program)$/;"	f	file:
+PrintHelp	utilities/ParadisRepart.c	/^static void PrintHelp(char *prog)$/;"	f	file:
+PrintHelp	utilities/StressTableGen.c	/^static void PrintHelp(char *program)$/;"	f	file:
+PrintNode	src/Util.c	/^void PrintNode(Node_t *node)$/;"	f
+ProcessBinNodalData	utilities/CalcDensity.c	/^static void ProcessBinNodalData(Home_t *home, hid_t fileID, char *baseFileName,$/;"	f	file:
+ProcessNodalData	utilities/CalcDensity.c	/^static void ProcessNodalData(Home_t *home, FILE *fpData, char *baseFileName,$/;"	f	file:
+ProximityCollisions	src/ProximityCollision.c	/^void ProximityCollisions(Home_t *home)$/;"	f
+PushFreeNodeQ	src/QueueOps.c	/^void PushFreeNodeQ(Home_t *home, Node_t *node)$/;"	f
+PushGhostNodeQ	src/QueueOps.c	/^void PushGhostNodeQ(Home_t *home, Node_t *node)$/;"	f
+PushNativeNodeQ	src/QueueOps.c	/^void PushNativeNodeQ(Home_t *home, Node_t *node)$/;"	f
+R	include/display.h	/^    int R, B; \/\/Current radius, box size(in pixels)$/;"	m	class:SYWindow
+RBCheckLoadBalance	src/RBDecomp.c	/^real8 RBCheckLoadBalance(Home_t *home, RBDecomp_t *decomp, real8 *loadData,$/;"	f
+RBDecomp	src/RBDecomp.c	/^void RBDecomp(Home_t *home, RBDecomp_t *decomp, RBDecomp_t *oldDecomp,$/;"	f
+RBDecomp_t	include/Decomp.h	/^typedef struct _rbdecomp RBDecomp_t;$/;"	t	typeref:struct:_rbdecomp
+RECYC_NODESTACK_INC	include/Constants.h	16;"	d
+RED16	include/display.h	97;"	d
+RED32	include/display.h	93;"	d
+REDany	include/display.h	101;"	d
+REMESH	include/Timer.h	/^    REMESH,$/;"	e	enum:__anon10
+REMESH_END_BARRIER	include/Timer.h	/^    REMESH_END_BARRIER ,$/;"	e	enum:__anon10
+REMESH_START_BARRIER	include/Timer.h	/^    REMESH_START_BARRIER,$/;"	e	enum:__anon10
+REMOTE_FORCE	include/Timer.h	/^    REMOTE_FORCE,$/;"	e	enum:__anon10
+REMOVE_NODE	include/Typedefs.h	/^	REMOVE_NODE,$/;"	e	enum:__anon12
+RESET_COORD	include/Typedefs.h	/^	RESET_COORD,$/;"	e	enum:__anon12
+RESET_GLIDE_PLANE	include/Typedefs.h	/^        RESET_GLIDE_PLANE$/;"	e	enum:__anon12
+RESET_SEG_FORCES	include/Typedefs.h	/^	RESET_SEG_FORCES,$/;"	e	enum:__anon12
+RESET_SEG_FORCES2	include/Typedefs.h	/^	RESET_SEG_FORCES2,$/;"	e	enum:__anon12
+RGB	include/display.h	75;"	d
+RGB	include/display.h	80;"	d
+RGB16	include/display.h	87;"	d
+RGB32	include/display.h	86;"	d
+RGBTable	src/DisplayC.C	/^struct { int r, g, b; const char *name; } RGBTable[]={$/;"	v	typeref:struct:__anon21
+RGBany	include/display.h	89;"	d
+RIJMLX	src/deWitInteraction.c	/^static real8 RIJMLX, RIJMLY, RIJMLZ;$/;"	v	file:
+RIJMLY	src/deWitInteraction.c	/^static real8 RIJMLX, RIJMLY, RIJMLZ;$/;"	v	file:
+RIJMLZ	src/deWitInteraction.c	/^static real8 RIJMLX, RIJMLY, RIJMLZ;$/;"	v	file:
+RIJMPBCTABLE	src/deWitInteraction.c	/^static real8 *RIJMPBCTABLE;$/;"	v	file:
+RIJMTABLE	src/deWitInteraction.c	/^static real8 *RIJMTABLE;$/;"	v	file:
+ROTATION	include/display.h	/^    enum{ ROTATION=0,TRANSLATION=1,SCALING=2,PROJECTION=3,$/;"	e	enum:SYWindow::__anon18
+RSDecomp_t	include/Decomp.h	/^} RSDecomp_t;$/;"	t	typeref:struct:__anon1
+ReadBinDataFile	src/ReadBinaryRestart.c	/^void ReadBinDataFile(Home_t *home, InData_t *inData, char *dataFile)$/;"	f
+ReadBinDataParams	src/ReadBinaryRestart.c	/^int ReadBinDataParams(Home_t *home, hid_t fileID)$/;"	f
+ReadBinRBDecompBounds	src/RBDecomp.c	/^void ReadBinRBDecompBounds(Home_t *home, void *filePtr, int numXDoms,$/;"	f
+ReadBinRSDecompBounds	src/RSDecomp.c	/^void ReadBinRSDecompBounds(void *filePtr, int numXDoms, int numYDoms,$/;"	f
+ReadControlFile	src/ReadRestart.c	/^void ReadControlFile(Home_t *home, char *ctrlFileName)$/;"	f
+ReadDataFile	utilities/ParadisRepart.c	/^static void ReadDataFile(Home_t *home, char *fileName, CellData_t *cellList,$/;"	f	file:
+ReadDataParams	utilities/CalcDensity.c	/^static void ReadDataParams(Home_t *home, FILE *fpData)$/;"	f	file:
+ReadDecompBounds	src/Decomp.c	/^void ReadDecompBounds(Home_t *home, void **filePtr, int doBinRead,$/;"	f
+ReadHDFDataset	src/ReadBinaryRestart.c	/^int ReadHDFDataset(hid_t fileID, char *datasetName, hid_t itemType,$/;"	f
+ReadNodeDataFile	src/ReadRestart.c	/^void ReadNodeDataFile(Home_t *home, InData_t *inData, char *dataFile)$/;"	f
+ReadPreV4DataParams	src/ReadRestart.c	/^void ReadPreV4DataParams(Home_t *home, FILE *fp, void **dataDecomp)$/;"	f
+ReadRBDecompBounds	src/RBDecomp.c	/^void ReadRBDecompBounds(Home_t *home, void **filePtr, int numXDoms,$/;"	f
+ReadRSDecompBounds	src/RSDecomp.c	/^void ReadRSDecompBounds(void **filePtr, int numXDoms, int numYDoms,$/;"	f
+ReadRijm	src/deWitInteraction.c	/^void ReadRijm(Home_t *home)$/;"	f
+ReadRijmPBC	src/deWitInteraction.c	/^void ReadRijmPBC(Home_t *home)$/;"	f
+ReadTabulatedData	src/Util.c	/^void ReadTabulatedData(char *fileName, int numCols, real8 ***colData,$/;"	f
+ReadWindowSpec	src/DisplayC.C	/^void ReadWindowSpec(char *fname)$/;"	f
+ReallocNodeArms	src/Util.c	/^void ReallocNodeArms(Node_t *node, int n)$/;"	f
+ReallocNodeInfo	utilities/CalcDensity.c	/^static void ReallocNodeInfo(NodeInfo_t **nodeInfo, int *numAllocNodes, int numNodes)$/;"	f	file:
+ReallocSegList	utilities/CalcDensity.c	/^static void ReallocSegList(Seg_t **segList, int *numAllocSegs, int numSegs)$/;"	f	file:
+Rebalance	src/Decomp.c	/^void Rebalance(Home_t *home, int criteria)$/;"	f
+RecalcSegGlidePlane	src/Util.c	/^void RecalcSegGlidePlane(Home_t *home, Node_t *node1, Node_t *node2,$/;"	f
+RecvWriteToken	src/GenerateOutput.c	/^static void RecvWriteToken(int taskRank)$/;"	f	file:
+RecycleGhostNodes	src/QueueOps.c	/^void RecycleGhostNodes(Home_t *home)$/;"	f
+RecycleNodeTag	src/Util.c	/^void RecycleNodeTag(Home_t *home, int tagIndex)$/;"	f
+ReevaluateForces	src/ParadisStep.c	/^void ReevaluateForces(Home_t *home)$/;"	f
+Reflecting	include/Typedefs.h	/^	Reflecting=2$/;"	e	enum:__anon11
+Refresh	include/display.h	/^    void Refresh() { dirty=true; }$/;"	f	class:SYWindow
+ReleaseMemory	src/ParadisFinish.c	/^void ReleaseMemory(Home_t *home)$/;"	f
+RemapArmTags	src/RemapInitialTags.c	/^static void RemapArmTags(Home_t *home)$/;"	f	file:
+RemapDomains	src/Initialize.c	/^static void RemapDomains(Home_t *home)$/;"	f	file:
+Remesh	src/Remesh.c	/^void Remesh(Home_t *home)$/;"	f
+RemeshRule_2	src/RemeshRule_2.c	/^void RemeshRule_2(Home_t *home)$/;"	f
+RemeshRule_3	src/RemeshRule_3.c	/^void RemeshRule_3(Home_t *home)$/;"	f
+RemoteDomain_t	include/Typedefs.h	/^typedef struct _remotedomain RemoteDomain_t;$/;"	t	typeref:struct:_remotedomain
+RemoteForceOneSeg	src/RemoteSegForces.c	/^void RemoteForceOneSeg(Home_t *home, Node_t *node1, Node_t *node2,$/;"	f
+RemoveDoubleLinks	src/Topology.c	/^int RemoveDoubleLinks(Home_t *home, Node_t *node, int globalOp)$/;"	f
+RemoveNode	src/RemoveNode.c	/^void RemoveNode(Home_t *home, Node_t *node, int Log)$/;"	f
+RemoveNodeFromCell2Q	src/QueueOps.c	/^void RemoveNodeFromCell2Q(Home_t *home, Node_t *node)$/;"	f
+RemoveNodeFromCellQ	src/QueueOps.c	/^void RemoveNodeFromCellQ(Home_t *home, Node_t *node)$/;"	f
+RemoveOrphanedNodes	src/Topology.c	/^void RemoveOrphanedNodes(Home_t *home)$/;"	f
+RemoveSem	include/display.h	/^    void RemoveSem()$/;"	f	class:SYWindow
+RemoveSem2	include/display.h	/^    void RemoveSem2()$/;"	f	class:SYWindow
+RenameAllFiles	utilities/ParadisConvert.c	/^static void RenameAllFiles(Home_t *home, char *ctrlFileName,$/;"	f	file:
+RepartOpt_t	utilities/ParadisRepart.c	/^} RepartOpt_t;$/;"	t	typeref:enum:__anon36	file:
+RepartRBDecomp	utilities/ParadisRepart.c	/^static void RepartRBDecomp(Home_t *home, RBDecomp_t *decomp,$/;"	f	file:
+RepartRSDecomp	utilities/ParadisRepart.c	/^static void RepartRSDecomp(Home_t *home, NodeData_t *nodeList,$/;"	f	file:
+RepositionNode	src/Util.c	/^void RepositionNode(Home_t *home, real8 newPos[3], Tag_t *tag, int globalOp)$/;"	f
+ResetGlidePlane	src/Util.c	/^void ResetGlidePlane(Home_t *home, real8 newPlane[3], Tag_t *tag1,$/;"	f
+ResetGlidePlanes	src/ResetGlidePlanes.c	/^void ResetGlidePlanes(Home_t *home)$/;"	f
+ResetPosition	src/CrossSlip.c	/^void ResetPosition(Param_t *param, Node_t *node, real8 pos[3])$/;"	f
+ResetSegForces	src/Util.c	/^void ResetSegForces(Home_t *home, Node_t *nodeA, Tag_t *nodeBtag,$/;"	f
+ResetSegForces2	src/Util.c	/^void ResetSegForces2(Home_t *home, Node_t *nodeA, Tag_t *nodeBtag,$/;"	f
+RestoreCrossSlipForce	src/CrossSlip.c	/^void RestoreCrossSlipForce(Node_t *node, Node_t *nbr1, Node_t *nbr2,$/;"	f
+RestoreNode	src/Topology.c	/^void RestoreNode(Home_t *home, Node_t *origNode, Node_t *bkupNode)$/;"	f
+RijmPBCfile	include/Param.h	/^        char RijmPBCfile[MAX_STRING_LEN];$/;"	m	struct:_param
+Rijmfile	include/Param.h	/^        char Rijmfile[MAX_STRING_LEN];$/;"	m	struct:_param
+Root	include/display.h	/^    Window theWindow, Root;$/;"	m	class:SYWindow
+Routine	include/display.h	/^    virtual void Routine()$/;"	f	class:SYWindow
+Run	src/display.C	/^void SYWindow::Run() \/\/initiate a new thread to run Routine()$/;"	f	class:SYWindow
+SCALING	include/display.h	/^    enum{ ROTATION=0,TRANSLATION=1,SCALING=2,PROJECTION=3,$/;"	e	enum:SYWindow::__anon18
+SEGFORCE_COMM	include/Timer.h	/^    SEGFORCE_COMM,$/;"	e	enum:__anon10
+SEG_BLOCK_INC	utilities/CalcDensity.c	53;"	d	file:
+SEND_REMESH	include/Timer.h	/^    SEND_REMESH,$/;"	e	enum:__anon10
+SHIFTNEG	include/FM.h	26;"	d
+SHIFTPOS	include/FM.h	25;"	d
+SORT_NATIVE_NODES	include/Timer.h	/^    SORT_NATIVE_NODES,$/;"	e	enum:__anon10
+SOURCE_DIR	makefile	/^SOURCE_DIR=\/g\/g92\/marathe1\/work\/benchmarks\/LLNL\/paradis$/;"	m
+SOURCE_DIR	src/makefile	/^SOURCE_DIR=\/g\/g92\/marathe1\/work\/benchmarks\/LLNL\/paradis$/;"	m
+SOURCE_DIR	utilities/makefile	/^SOURCE_DIR=\/g\/g92\/marathe1\/work\/benchmarks\/LLNL\/paradis$/;"	m
+SPLIT_DUP_SURFACE_PROP	include/Topology.h	48;"	d
+SPLIT_FAILED	include/Topology.h	41;"	d
+SPLIT_MULTI_NODES	include/Timer.h	/^    SPLIT_MULTI_NODES,$/;"	e	enum:__anon10
+SPLIT_NODE	include/Typedefs.h	/^	SPLIT_NODE,$/;"	e	enum:__anon12
+SPLIT_SUCCESS	include/Topology.h	42;"	d
+SRCDIR	utilities/makefile	/^SRCDIR = ..\/src$/;"	m
+STAGE_CYCLE	include/Constants.h	65;"	d
+STAGE_INIT	include/Constants.h	64;"	d
+STAGE_TERM	include/Constants.h	66;"	d
+STRESSTABLEGEN	utilities/makefile	/^STRESSTABLEGEN     = stresstablegen$/;"	m
+STRESSTABLEGEN_BIN	utilities/makefile	/^STRESSTABLEGEN_BIN = $(BINDIR)\/$(STRESSTABLEGEN)$/;"	m
+STRESSTABLEGEN_OBJS	utilities/makefile	/^STRESSTABLEGEN_OBJS = $(STRESSTABLEGEN_SRCS:.c=.o)$/;"	m
+STRESSTABLEGEN_SRCS	utilities/makefile	/^STRESSTABLEGEN_SRCS = StressTableGen.c \\$/;"	m
+SURFACE_NODE	include/Node.h	23;"	d
+SURF_NEG_X	utilities/CalcDensity.c	44;"	d	file:
+SURF_NEG_Y	utilities/CalcDensity.c	46;"	d	file:
+SURF_NEG_Z	utilities/CalcDensity.c	48;"	d	file:
+SURF_NONE	utilities/CalcDensity.c	43;"	d	file:
+SURF_POS_X	utilities/CalcDensity.c	45;"	d	file:
+SURF_POS_Y	utilities/CalcDensity.c	47;"	d	file:
+SURF_POS_Z	utilities/CalcDensity.c	49;"	d	file:
+SYWindow	include/display.h	/^    SYWindow(const SYWindow &){}$/;"	f	class:SYWindow
+SYWindow	include/display.h	/^class SYWindow\/\/simple-display$/;"	c
+SYWindow	src/display.C	/^SYWindow::SYWindow(int width_hint, int height_hint,$/;"	f	class:SYWindow
+SaveCrossSlipInfo	src/CrossSlip.c	/^void SaveCrossSlipInfo(Node_t *node, Node_t *nbr1, Node_t *nbr2,$/;"	f
+SaveSegForces	src/Topology.c	/^static void SaveSegForces(Home_t *home, Node_t *node, SegData_t *segData,$/;"	f	file:
+Scale	include/display.h	/^    double Scale,Scale0,Aspr,Aspr0;\/\/scale and aspect ratio$/;"	m	class:SYWindow
+Scale0	include/display.h	/^    double Scale,Scale0,Aspr,Aspr0;\/\/scale and aspect ratio$/;"	m	class:SYWindow
+SegData_t	src/Topology.c	/^} SegData_t;$/;"	t	typeref:struct:__anon28	file:
+SegForceFromTaylorExp	src/RemoteSegForces.c	/^void SegForceFromTaylorExp(Home_t *home, int cellID,$/;"	f
+SegPair_t	src/NodeForce.c	/^} SegPair_t;$/;"	t	typeref:struct:__anon26	file:
+SegSegForce	src/LocalSegForces.c	/^void SegSegForce(real8 p1x, real8 p1y, real8 p1z,$/;"	f
+SegSegForceIsotropic	src/LocalSegForces.c	/^void SegSegForceIsotropic(real8 p1x, real8 p1y, real8 p1z,$/;"	f
+Seg_t	utilities/CalcDensity.c	/^} Seg_t;$/;"	t	typeref:struct:__anon32	file:
+SegmentPair_t	src/LocalSegForces.c	/^} SegmentPair_t;$/;"	t	typeref:struct:__anon23	file:
+Segment_t	include/Home.h	/^} Segment_t;$/;"	t	typeref:struct:__anon3
+SelfForce	src/NodeForce.c	/^void SelfForce(int coreOnly, real8 MU, real8 NU,$/;"	f
+SelfForceIsotropic	src/NodeForce.c	/^void SelfForceIsotropic(int coreOnly, real8 MU, real8 NU,$/;"	f
+SemiInfiniteSegSegForce	src/SemiInfiniteSegSegForce.c	/^void SemiInfiniteSegSegForce(real8 p1x, real8 p1y, real8 p1z,$/;"	f
+SendInfo_t	src/FMComm.c	/^} SendInfo_t;$/;"	t	typeref:struct:__anon22	file:
+SendInitialNodeData	src/InitSendDomains.c	/^void SendInitialNodeData(Home_t *home, InData_t *inData, int *msgCount,$/;"	f
+SendWriteToken	src/GenerateOutput.c	/^static void SendWriteToken(int taskRank)$/;"	f	file:
+SetAllRBDecompBounds	src/RBDecomp.c	/^static void SetAllRBDecompBounds(Param_t *param, RBDecomp_t *decomp,$/;"	f	file:
+SetBinFileArrays	src/GenerateOutput.c	/^static void SetBinFileArrays(Home_t *home, BinFileData_t *binData)$/;"	f	file:
+SetDensity	utilities/CalcDensity.c	/^static void SetDensity(Home_t *home, real8 *densGrid, int gridSize[3],$/;"	f	file:
+SetLatestRestart	src/WriteRestart.c	/^void SetLatestRestart(char *fileName)$/;"	f
+SetOneNodeForce	src/NodeForce.c	/^void SetOneNodeForce(Home_t *home, Node_t *nodeA)$/;"	f
+SetRemainingDefaults	src/Initialize.c	/^void SetRemainingDefaults(Home_t *home)$/;"	f
+Sign	src/Util.c	/^int Sign(real8 x)$/;"	f
+Sleep	src/DisplayC.C	/^void Sleep()$/;"	f
+SortNativeNodes	src/SortNativeNodes.c	/^void SortNativeNodes (Home_t *home)$/;"	f
+SortNode_t	include/Typedefs.h	/^typedef struct _sortnode SortNode_t;$/;"	t	typeref:struct:_sortnode
+SortNodesForCollision	src/SortNodesForCollision.c	/^void SortNodesForCollision(Home_t *home)$/;"	f
+SpecialSegSegForce	src/LocalSegForces.c	/^static void SpecialSegSegForce(real8 p1x, real8 p1y, real8 p1z,$/;"	f	file:
+SpecialSegSegForceHalf	src/LocalSegForces.c	/^static void SpecialSegSegForceHalf(real8 p1x, real8 p1y, real8 p1z,$/;"	f	file:
+SpecialSemiInfiniteSegSegForce	src/SemiInfiniteSegSegForce.c	/^static void SpecialSemiInfiniteSegSegForce(real8 p1x, real8 p1y, real8 p1z,$/;"	f	file:
+SpinMatrix	src/LoadCurve.c	/^static void SpinMatrix(real8 p1, real8 p2, real8 p3, real8 Rspin[3][3])$/;"	f	file:
+SplitMultiNodes	src/Topology.c	/^void SplitMultiNodes(Home_t *home)$/;"	f
+SplitNode	src/Topology.c	/^int SplitNode(Home_t *home, int opClass, Node_t *node, real8 *pos1,$/;"	f
+SplitSurfaceNodes	src/SplitSurfaceNodes.c	/^void SplitSurfaceNodes(Home_t *home)$/;"	f
+Ss	src/LoadCurve.c	50;"	d	file:
+StdColor	include/display.h	/^    unsigned long StdColor(int c)$/;"	f	class:SYWindow
+Stitch	tools/stitch	/^function Stitch$/;"	f
+Str2RGB	src/DisplayC.C	/^int Str2RGB(const char *name, int *r, int *g, int *b)$/;"	f
+StressDueToSeg	src/NodeForce.c	/^void StressDueToSeg(real8 px, real8 py, real8 pz,$/;"	f
+SubtractSegForce	src/Util.c	/^void SubtractSegForce(Home_t *home, Node_t *node1, Node_t *node2)$/;"	f
+Synchronize	src/ParadisStep.c	50;"	d	file:
+Synchronize	src/ParadisStep.c	52;"	d	file:
+TASK_DISTRIBUTION_DEFLT	src/Initialize.c	43;"	d	file:
+TASK_MAP_ENV_VAR	src/Initialize.c	42;"	d	file:
+TASK_MAP_MISMATCH_ABORT	src/Initialize.c	41;"	d	file:
+TASK_MAP_MISMATCH_USE_LOGICAL	src/Initialize.c	40;"	d	file:
+TASK_MAP_MISMATCH_USE_PHYSICAL	src/Initialize.c	39;"	d	file:
+TAYLOR_COEFF	include/FM.h	15;"	d
+THINFILM	include/display.h	/^          THINFILM=10};$/;"	e	enum:SYWindow::__anon18
+TIMER_BLOCK_SIZE	include/Timer.h	/^    TIMER_BLOCK_SIZE  \/* MUST BE LAST IN THE LIST *\/$/;"	e	enum:__anon10
+TOKEN_BEGIN_VAL_LIST	include/Parse.h	21;"	d
+TOKEN_END_VAL_LIST	include/Parse.h	22;"	d
+TOKEN_EQUAL	include/Parse.h	20;"	d
+TOKEN_ERR	include/Parse.h	17;"	d
+TOKEN_GENERIC	include/Parse.h	19;"	d
+TOKEN_NULL	include/Parse.h	18;"	d
+TOTAL_TIME	include/Timer.h	/^    TOTAL_TIME = 0,$/;"	e	enum:__anon10
+TRANSLATION	include/display.h	/^    enum{ ROTATION=0,TRANSLATION=1,SCALING=2,PROJECTION=3,$/;"	e	enum:SYWindow::__anon18
+TYPEDEFS_H	include/Typedefs.h	13;"	d
+TagMapCompare	src/RemapInitialTags.c	/^static int TagMapCompare(const void *a, const void *b)$/;"	f	file:
+TagMap_t	include/Home.h	/^} TagMap_t;$/;"	t	typeref:struct:__anon2
+Tag_t	include/Typedefs.h	/^typedef struct _tag Tag_t;$/;"	t	typeref:struct:_tag
+TaylorShift	src/FMSupport.c	/^void TaylorShift(int norder, real8 *r, real8 *alpha, real8 *beta)$/;"	f
+Tecplot	src/Tecplot.c	/^void Tecplot(Home_t *home, char *baseFileName, int ioGroup, int firstInGroup,$/;"	f
+TempK	include/Param.h	/^        real8 TempK;         \/* Temperature in deg K *\/$/;"	m	struct:_param
+TensionFactor	include/Param.h	/^        real8 TensionFactor;$/;"	m	struct:_param
+TestSurfaceSplit	src/SplitSurfaceNodes.c	/^static void TestSurfaceSplit(Home_t *home, Node_t *node, int segCnt,$/;"	f	file:
+TimeAtRestart	src/Timer.c	/^void TimeAtRestart(Home_t *home, int stage) $/;"	f
+TimerClear	src/Timer.c	/^void TimerClear(Home_t *home, int index)$/;"	f
+TimerClearAll	src/Timer.c	/^void TimerClearAll(Home_t *home)$/;"	f
+TimerInit	src/Timer.c	/^void TimerInit(Home_t *home)$/;"	f
+TimerInitDLBReset	src/Timer.c	/^void TimerInitDLBReset(Home_t *home)$/;"	f
+TimerPrint	src/Timer.c	/^void TimerPrint(Home_t *home) $/;"	f
+TimerRegister	src/Timer.c	/^static void TimerRegister(Home_t *home, int index, char *label) $/;"	f	file:
+TimerReinitialize	src/Timer.c	/^void TimerReinitialize(Home_t *home)$/;"	f
+TimerSave	src/Timer.c	/^void TimerSave(Home_t *home, int index)$/;"	f
+TimerStart	src/Timer.c	/^void TimerStart(Home_t *home, int index)$/;"	f
+TimerStop	src/Timer.c	/^void TimerStop(Home_t *home, int index)$/;"	f
+Timer_t	include/Typedefs.h	/^typedef struct _timer Timer_t;$/;"	t	typeref:struct:_timer
+TogglePause	include/display.h	/^    bool TogglePause() { pause=!pause; return pause;}$/;"	f	class:SYWindow
+TrapezoidIntegrator	src/TrapezoidIntegrator.c	/^void TrapezoidIntegrator(Home_t *home)$/;"	f
+TrySegBisect	src/RemeshRule_2.c	/^static int TrySegBisect(Home_t *home, Node_t **origNode, Node_t *nbr,$/;"	f	file:
+ULB	include/RBDecomp.h	23;"	d
+ULF	include/RBDecomp.h	19;"	d
+UNCONSTRAINED	include/Node.h	22;"	d
+UNLOCK	include/ParadisThread.h	23;"	d
+UNLOCK	include/ParadisThread.h	30;"	d
+URB	include/RBDecomp.h	24;"	d
+URF	include/RBDecomp.h	20;"	d
+UTILS	makefile	/^UTILS      = utils$/;"	m
+UnMappedArm_t	include/Typedefs.h	/^typedef struct _unmappedarm_t UnMappedArm_t;$/;"	t	typeref:struct:_unmappedarm_t
+UniformDecomp	src/Decomp.c	/^void UniformDecomp(Home_t *home, void **decomp)$/;"	f
+UniformRBDecomp	src/RBDecomp.c	/^void UniformRBDecomp(Param_t *param, RBDecomp_t *decomp, int level)$/;"	f
+UniformRSDecomp	src/RSDecomp.c	/^void UniformRSDecomp(Param_t *param, RSDecomp_t **uniDecomp)$/;"	f
+Uniq	src/Util.c	/^void Uniq (int *list, int *count) $/;"	f
+Unlock	include/display.h	/^    void Unlock()$/;"	f	class:SYWindow
+UnlockWritegif	include/display.h	/^    void UnlockWritegif()$/;"	f	class:SYWindow
+UnpackInitialNodeData	src/InitSendDomains.c	/^static void UnpackInitialNodeData(Home_t *home, real8 *buf,$/;"	f	file:
+UnpackMigrators	src/Migrate.c	/^static void UnpackMigrators(Home_t *home, real8 *buf, int remDomID)$/;"	f	file:
+UnpackMirrorNodes	src/CommSendMirrorNodes.c	/^static void UnpackMirrorNodes(Home_t *home, int domIndex) $/;"	f	file:
+UnpackSecondaryGhostResponse	src/CommSendSecondaryGhosts.c	/^static void UnpackSecondaryGhostResponse(Home_t *home, real8 *inBuf)$/;"	f	file:
+UnpackSegmentData	src/CommSendSegments.c	/^static void UnpackSegmentData(Home_t *home, real8 *buf)$/;"	f	file:
+UnpackTagMap	src/RemapInitialTags.c	/^static void UnpackTagMap(Home_t *home, int *buf)$/;"	f	file:
+UnpackVelocity	src/CommSendVelocity.c	/^static void UnpackVelocity(Home_t *home)$/;"	f	file:
+Usage	src/CTableGen.c	/^static void Usage(char *program)$/;"	f	file:
+Usage	src/Initialize.c	/^static void Usage(char *program)$/;"	f	file:
+Usage	tools/ComparePlots.c	/^void Usage(char *progname)$/;"	f
+Usage	tools/countnodes	/^function Usage$/;"	f
+Usage	tools/genPovrayFrames	/^function Usage$/;"	f
+Usage	tools/gnuplot2povray	/^function Usage$/;"	f
+Usage	tools/stitch	/^function Usage$/;"	f
+Usage	utilities/CalcDensity.c	/^static void Usage(char *progName)$/;"	f	file:
+Usage	utilities/ParadisConvert.c	/^static void Usage(char *progName)$/;"	f	file:
+Usage	utilities/ParadisGen.c	/^static void Usage(char *program)$/;"	f	file:
+Usage	utilities/ParadisRepart.c	/^static void Usage(char *prog)$/;"	f	file:
+Usage	utilities/StressTableGen.c	/^static void Usage(char *program)$/;"	f	file:
+VALS_PER_MIG_ARM	src/Migrate.c	43;"	d	file:
+VALS_PER_MIG_EXTRA	src/Migrate.c	44;"	d	file:
+VALS_PER_MIG_NODE	src/Migrate.c	38;"	d	file:
+VALS_PER_MIG_NODE	src/Migrate.c	40;"	d	file:
+VECTOR_ADD	include/ParadisProto.h	32;"	d
+VECTOR_COPY	include/ParadisProto.h	33;"	d
+VECTOR_ZERO	include/ParadisProto.h	34;"	d
+VEL_FLTS_EXTRA	src/CommSendVelocity.c	22;"	d	file:
+VEL_FLTS_PER_ARM	src/CommSendVelocity.c	21;"	d	file:
+VEL_FLTS_PER_NODE	src/CommSendVelocity.c	20;"	d	file:
+VERSION	src/CorrectionTable.c	40;"	d	file:
+VERSION_STR	src/CorrectionTable.c	39;"	d	file:
+VFLAG_ALIAS	include/Parse.h	35;"	d
+VFLAG_DISABLED	include/Parse.h	37;"	d
+VFLAG_INITIALIZED	include/Parse.h	36;"	d
+VFLAG_NULL	include/Parse.h	34;"	d
+VFLAG_SET_BY_USER	include/Parse.h	38;"	d
+VISIT_METADATA_FILE_SUFFIX	src/WriteVisit.c	41;"	d	file:
+VISIT_METADATA_FILE_VERSION	src/WriteVisit.c	42;"	d	file:
+VISIT_NODE_FILE_SUFFIX	src/WriteVisit.c	40;"	d	file:
+VISIT_SEG_FILE_SUFFIX	src/WriteVisit.c	39;"	d	file:
+VStatTypes_t	src/NodeVelocity.c	/^} VStatTypes_t;$/;"	t	typeref:enum:__anon27	file:
+V_AVERAGE_X	src/NodeVelocity.c	/^        V_AVERAGE_X,$/;"	e	enum:__anon27	file:
+V_AVERAGE_Y	src/NodeVelocity.c	/^        V_AVERAGE_Y,$/;"	e	enum:__anon27	file:
+V_AVERAGE_Z	src/NodeVelocity.c	/^        V_AVERAGE_Z,$/;"	e	enum:__anon27	file:
+V_COMMENT	include/Parse.h	32;"	d
+V_DBL	include/Parse.h	29;"	d
+V_INT	include/Parse.h	30;"	d
+V_MAXSTATS	src/NodeVelocity.c	/^        V_MAXSTATS$/;"	e	enum:__anon27	file:
+V_NODE_COUNT	src/NodeVelocity.c	/^        V_NODE_COUNT = 0,$/;"	e	enum:__anon27	file:
+V_NULL	include/Parse.h	28;"	d
+V_STRING	include/Parse.h	31;"	d
+V_VAR	src/NodeVelocity.c	/^        V_VAR,$/;"	e	enum:__anon27	file:
+VarData_t	include/Typedefs.h	/^} VarData_t;$/;"	t	typeref:struct:__anon15
+Vec3TransposeAndMult	src/Matrix.c	/^void Vec3TransposeAndMult(real8 vec[3], real8 result[3][3])$/;"	f
+Vector3Matrix33Mult	src/Matrix.c	/^void Vector3Matrix33Mult(real8 vec[3], real8 mat[3][3], real8 result[3])$/;"	f
+VerifyBurgersVectors	src/Initialize.c	/^static void VerifyBurgersVectors(Home_t *home)$/;"	f	file:
+VirtualSegForce	src/LocalSegForces.c	/^ *-------------------------------------------------------------------------*\/void VirtualSegForce(Home_t *home, real8 p1[3], real8 p2[3], real8 burg[3],$/;"	f
+WinAlive	src/DisplayC.C	/^int WinAlive()$/;"	f
+WinClear	src/DisplayC.C	/^void WinClear()$/;"	f
+WinDrawLine	src/DisplayC.C	/^void WinDrawLine(double x0,double y0,double z0,$/;"	f
+WinDrawPoint	src/DisplayC.C	/^void WinDrawPoint(double x,double y,double z,double r,$/;"	f
+WinDrawPointS	src/DisplayC.C	/^void WinDrawPointS(double x,double y,double z,double r,$/;"	f
+WinEvolve	src/DisplayC.C	/^void WinEvolve()$/;"	f
+WinIsPaused	src/DisplayC.C	/^int WinIsPaused()$/;"	f
+WinLock	src/DisplayC.C	/^void WinLock()$/;"	f
+WinRefresh	src/DisplayC.C	/^void WinRefresh()$/;"	f
+WinRoutine	src/DisplayC.C	/^void WinRoutine()$/;"	f
+WinSemRemove	src/DisplayC.C	/^void WinSemRemove()$/;"	f
+WinTogglePause	src/DisplayC.C	/^int WinTogglePause()$/;"	f
+WinUnlock	src/DisplayC.C	/^void WinUnlock()$/;"	f
+WinWritePS	src/DisplayC.C	/^void WinWritePS()$/;"	f
+WindowParamInit	src/DisplayC.C	/^void WindowParamInit(ParamList_t *WPList)$/;"	f
+WriteArms	src/WriteArms.c	/^void WriteArms(Home_t *home, char *baseFileName, int ioGroup, int firstInGroup,$/;"	f
+WriteBinDataParams	src/WriteBinaryRestart.c	/^int WriteBinDataParams(Home_t *home, hid_t fileID)$/;"	f
+WriteBinaryRestart	src/WriteBinaryRestart.c	/^void WriteBinaryRestart(Home_t *home, char *baseFileName, int ioGroup,$/;"	f
+WriteDecompBounds	src/Decomp.c	/^void WriteDecompBounds(Home_t *home, FILE *fp)$/;"	f
+WriteDensFlux	src/WriteDensFlux.c	/^void WriteDensFlux(char *fluxname, Home_t *home)$/;"	f
+WriteDensFlux_BCC	src/WriteDensFlux.c	/^static void WriteDensFlux_BCC(Home_t *home, real8 pstnijk, real8 tmpstn)$/;"	f	file:
+WriteDensFlux_FCC	src/WriteDensFlux.c	/^static void WriteDensFlux_FCC(Home_t *home, real8 pstnijk, real8 tmpstn)$/;"	f	file:
+WriteDensityField	src/WriteDensityField.c	/^void WriteDensityField(Home_t *home, char *fileName)$/;"	f
+WriteForce	src/WriteForce.c	/^void WriteForce(Home_t *home, char *baseFileName, int ioGroup,$/;"	f
+WriteFragments	src/WriteFragments.c	/^void WriteFragments(Home_t *home, char *baseFileName, int ioGroup,$/;"	f
+WriteInitialNodeData	utilities/ParadisGen.c	/^void WriteInitialNodeData(Home_t *home, InData_t *inData, int lastBlock)$/;"	f
+WriteParam	src/Parse.c	/^void WriteParam(ParamList_t *list, int index, FILE *fp)$/;"	f
+WritePoleFig	src/WritePoleFig.c	/^void WritePoleFig(Home_t *home, char *baseFileName, int ioGroup,$/;"	f
+WritePovray	src/WritePovray.c	/^void WritePovray(Home_t *home, char *baseFileName, int ioGroup,$/;"	f
+WriteProp	src/WriteProp.c	/^void WriteProp(Home_t *home, int property)$/;"	f
+WriteRBDecompBounds	src/RBDecomp.c	/^void WriteRBDecompBounds(Home_t *home, FILE *fp, RBDecomp_t *decomp,$/;"	f
+WriteRSDecompBounds	src/RSDecomp.c	/^void WriteRSDecompBounds(Home_t *home, FILE *fp, RSDecomp_t *decomp)$/;"	f
+WriteRestart	src/WriteRestart.c	/^void WriteRestart(Home_t *home, char *baseFileName, int ioGroup,$/;"	f
+WriteRijm	utilities/StressTableGen.c	/^static void WriteRijm(InArgs_t *inArgs)$/;"	f	file:
+WriteRijmPBC	utilities/StressTableGen.c	/^static void WriteRijmPBC(InArgs_t *inArgs)$/;"	f	file:
+WriteVelocity	src/WriteVelocity.c	/^void WriteVelocity(Home_t *home, char *baseFileName, int ioGroup,$/;"	f
+WriteVisit	src/WriteVisit.c	/^void WriteVisit(Home_t *home, char *baseFileName, int writePrologue,$/;"	f
+WriteVisitMetaDataFile	src/WriteVisit.c	/^void WriteVisitMetaDataFile(Home_t *home, char *baseFileName,$/;"	f
+WriteVisitNodesBinary	src/WriteVisit.c	/^static void WriteVisitNodesBinary(Home_t *home, char *baseFileName,$/;"	f	file:
+WriteVisitNodesText	src/WriteVisit.c	/^static void WriteVisitNodesText(Home_t *home, char *baseFileName,$/;"	f	file:
+WriteVisitSegmentsBinary	src/WriteVisit.c	/^static void WriteVisitSegmentsBinary(Home_t *home, char *baseFileName,$/;"	f	file:
+WriteVisitSegmentsText	src/WriteVisit.c	/^static void WriteVisitSegmentsText(Home_t *home, char *baseFileName, $/;"	f	file:
+X	include/FM.h	4;"	d
+X0	include/display.h	/^    int X0,Y0,X00,Y00;\/\/offset$/;"	m	class:SYWindow
+X00	include/display.h	/^    int X0,Y0,X00,Y00;\/\/offset$/;"	m	class:SYWindow
+XCmp	utilities/ParadisRepart.c	/^static int XCmp(const void *a, const void *b)$/;"	f	file:
+XPlotDecomp	src/Decomp.c	/^void XPlotDecomp(Home_t *home, real8 xMin, real8 yMin, real8 zMin, real8 lMax,$/;"	f
+XPlotRBDecomp	src/RBDecomp.c	/^void XPlotRBDecomp(Home_t *home, RBDecomp_t *decomp, real8 xMin,$/;"	f
+XPlotRSDecomp	src/RSDecomp.c	/^void XPlotRSDecomp(Home_t *home, real8 xMin, real8 yMin, real8 zMin,$/;"	f
+X_BIT	src/RBDecomp.c	72;"	d	file:
+X_BITMASK	src/RBDecomp.c	76;"	d	file:
+Xp	include/display.h	/^    int Xp,Yp;$/;"	m	class:SYWindow
+Y	include/FM.h	5;"	d
+Y0	include/display.h	/^    int X0,Y0,X00,Y00;\/\/offset$/;"	m	class:SYWindow
+Y00	include/display.h	/^    int X0,Y0,X00,Y00;\/\/offset$/;"	m	class:SYWindow
+YCmp	utilities/ParadisRepart.c	/^static int YCmp(const void *a, const void *b)$/;"	f	file:
+YLine	include/display.h	/^    struct YLine$/;"	s	class:SYWindow
+YPoint	include/display.h	/^    struct YPoint$/;"	s	class:SYWindow
+YWindow	include/display.h	/^    YWindow(int w,int h,const char *n,bool s=true,bool so=true,bool fm=true):$/;"	f	class:YWindow
+YWindow	include/display.h	/^class YWindow: public SYWindow$/;"	c
+Y_BIT	src/RBDecomp.c	73;"	d	file:
+Y_BITMASK	src/RBDecomp.c	77;"	d	file:
+YoungsModulus	include/Param.h	/^        real8 YoungsModulus;$/;"	m	struct:_param
+Yp	include/display.h	/^    int Xp,Yp;$/;"	m	class:SYWindow
+Z	include/FM.h	6;"	d
+Z	include/display.h	/^        double Z;$/;"	m	struct:SYWindow::ZInd
+ZCmp	utilities/ParadisRepart.c	/^static int ZCmp(const void *a, const void *b)$/;"	f	file:
+ZImage	src/Util.c	/^void ZImage(Param_t *param, real8 *x, real8 *y, real8 *z)$/;"	f
+ZInd	include/display.h	/^    struct ZInd$/;"	s	class:SYWindow
+Z_BIT	src/RBDecomp.c	74;"	d	file:
+Z_BITMASK	src/RBDecomp.c	78;"	d	file:
+Z_ind	include/display.h	/^    }Z_ind[MaxLines+MaxPoints];$/;"	m	class:SYWindow	typeref:struct:SYWindow::ZInd
+ZeroNodeForces	src/NodeForce.c	/^void ZeroNodeForces(Home_t *home, int reqType)$/;"	f
+_CONSTANTS_H	include/Constants.h	2;"	d
+_Cell_h	include/Cell.h	10;"	d
+_CheckMemUsage	src/Meminfo.c	/^void _CheckMemUsage(Home_t *home, char *msg)$/;"	f
+_Comm_h	include/Comm.h	8;"	d
+_DEBUGFUNCTIONS_H	include/DebugFunctions.h	2;"	d
+_DISPLAYC_H	include/DisplayC.h	10;"	d
+_DISPLAY_H	include/display.h	10;"	d
+_DISPLAY_VERSION	include/display.h	12;"	d
+_Decomp_h	include/Decomp.h	11;"	d
+_DoDraw	src/display.C	1274;"	d	file:
+_ENABLE_LINE_CONSTRAINT	src/MobilityLaw_FCC_0.c	27;"	d	file:
+_FM_h	include/FM.h	2;"	d
+_FORCE_H	include/Force.h	2;"	d
+_Home_h	include/Home.h	22;"	d
+_InData_h	include/InData.h	7;"	d
+_Init_h	include/Init.h	8;"	d
+_MOBILITY_H	include/Mobility.h	10;"	d
+_Matrix_h	include/Matrix.h	2;"	d
+_MirrorDomain_h	include/MirrorDomain.h	11;"	d
+_Node_h	include/Node.h	12;"	d
+_OPLIST_H	include/OpList.h	10;"	d
+_PARAM_H	include/Param.h	8;"	d
+_PARSE_H	include/Parse.h	2;"	d
+_ParadisGen_h	include/ParadisGen.h	2;"	d
+_ParadisProto_h	include/ParadisProto.h	11;"	d
+_ParadisThread_h	include/ParadisThread.h	8;"	d
+_QueueOps_h	include/QueueOps.h	8;"	d
+_RBDecomp_h	include/RBDecomp.h	11;"	d
+_RSDecomp_h	include/RSDecomp.h	11;"	d
+_RemoteDomain_h	include/RemoteDomain.h	9;"	d
+_Restart_h	include/Restart.h	8;"	d
+_SEM_SEMUN_UNDEFINED	include/display.h	19;"	d
+_Synchronize	src/ParadisStep.c	/^void _Synchronize(Home_t *home, char *msg)$/;"	f
+_TOPOLOGY_H	include/Topology.h	12;"	d
+_Tag_h	include/Tag.h	8;"	d
+_Timer_h	include/Timer.h	8;"	d
+_Util_h	include/Util.h	9;"	d
+_WriteProp_h	include/WriteProp.h	8;"	d
+_XDash	src/display.C	1285;"	d	file:
+_XDrawLine	src/display.C	1282;"	d	file:
+_XSetLine	src/display.C	1288;"	d	file:
+_XSold	src/display.C	1286;"	d	file:
+__buf	include/display.h	/^    struct seminfo *__buf;      \/* buffer for IPC_INFO *\/$/;"	m	union:semun	typeref:struct:semun::seminfo
+_cell	include/Cell.h	/^struct _cell {$/;"	s
+_fmcell	include/FM.h	/^struct _fmcell {$/;"	s
+_fmlayer	include/FM.h	/^struct _fmlayer {$/;"	s
+_home	include/Home.h	/^struct _home {$/;"	s
+_indata	include/InData.h	/^struct _indata {$/;"	s
+_mirrordomain	include/MirrorDomain.h	/^struct _mirrordomain {$/;"	s
+_node	include/Node.h	/^struct _node {$/;"	s
+_nodeblock	include/Node.h	/^struct _nodeblock {$/;"	s
+_operate	include/OpList.h	/^struct _operate {$/;"	s
+_param	include/Param.h	/^struct _param {$/;"	s
+_rbdecomp	include/Decomp.h	/^struct _rbdecomp {$/;"	s
+_remotedomain	include/RemoteDomain.h	/^struct _remotedomain {$/;"	s
+_tag	include/Tag.h	/^struct _tag {$/;"	s
+_timer	include/Timer.h	/^struct _timer {$/;"	s
+_toler	src/display.C	1505;"	d	file:
+a11	include/display.h	/^    double a11,a12,a13,a21,a22,a23,a31,a32,a33;\/\/saved Rotation matrix.$/;"	m	class:SYWindow
+a12	include/display.h	/^    double a11,a12,a13,a21,a22,a23,a31,a32,a33;\/\/saved Rotation matrix.$/;"	m	class:SYWindow
+a13	include/display.h	/^    double a11,a12,a13,a21,a22,a23,a31,a32,a33;\/\/saved Rotation matrix.$/;"	m	class:SYWindow
+a21	include/display.h	/^    double a11,a12,a13,a21,a22,a23,a31,a32,a33;\/\/saved Rotation matrix.$/;"	m	class:SYWindow
+a22	include/display.h	/^    double a11,a12,a13,a21,a22,a23,a31,a32,a33;\/\/saved Rotation matrix.$/;"	m	class:SYWindow
+a23	include/display.h	/^    double a11,a12,a13,a21,a22,a23,a31,a32,a33;\/\/saved Rotation matrix.$/;"	m	class:SYWindow
+a31	include/display.h	/^    double a11,a12,a13,a21,a22,a23,a31,a32,a33;\/\/saved Rotation matrix.$/;"	m	class:SYWindow
+a32	include/display.h	/^    double a11,a12,a13,a21,a22,a23,a31,a32,a33;\/\/saved Rotation matrix.$/;"	m	class:SYWindow
+a33	include/display.h	/^    double a11,a12,a13,a21,a22,a23,a31,a32,a33;\/\/saved Rotation matrix.$/;"	m	class:SYWindow
+accum	include/Timer.h	/^	real8	accum;     \/* accumulated time for this event type *\/$/;"	m	struct:_timer
+alive	include/display.h	/^    bool alive,pause,drawframe;$/;"	m	class:SYWindow
+allocedPtrs	src/WriteFragments.c	/^        int     allocedPtrs;$/;"	m	struct:__anon31	file:
+allocedPts	src/WriteFragments.c	/^        int       allocedPts;$/;"	m	struct:__anon30	file:
+allowFuzzyGlidePlanes	include/Param.h	/^        int   allowFuzzyGlidePlanes;$/;"	m	struct:_param
+appliedStress	include/Param.h	/^        real8 appliedStress[6]; \/* External stress in units of Pa  *\/$/;"	m	struct:_param
+applyRotate	src/display.C	/^void YWindow::applyRotate()$/;"	f	class:YWindow
+armCoordIndex	include/Node.h	/^	int	*armCoordIndex;		\/* Array of indices (1 per arm) into *\/$/;"	m	struct:_node
+armX	include/MirrorDomain.h	/^        real8 *armX; \/* arm[XYZ] are pointers to the corresponding *\/$/;"	m	struct:_mirrordomain
+armY	include/MirrorDomain.h	/^        real8 *armY; \/* X,Y and Z coordinates of nodes at the far *\/$/;"	m	struct:_mirrordomain
+armZ	include/MirrorDomain.h	/^        real8 *armZ; \/* end of arms.  These arrays are only used *\/$/;"	m	struct:_mirrordomain
+armfile	include/Param.h	/^        int   armfile, armfilefreq, armfilecounter;$/;"	m	struct:_param
+armfilecounter	include/Param.h	/^        int   armfile, armfilefreq, armfilecounter;$/;"	m	struct:_param
+armfiledt	include/Param.h	/^        real8 armfiledt, armfiletime;$/;"	m	struct:_param
+armfilefreq	include/Param.h	/^        int   armfile, armfilefreq, armfilecounter;$/;"	m	struct:_param
+armfiletime	include/Param.h	/^        real8 armfiledt, armfiletime;$/;"	m	struct:_param
+armfx	include/Node.h	/^	real8	*armfx, *armfy, *armfz;	\/* arm specific force contribution *\/$/;"	m	struct:_node
+armfy	include/Node.h	/^	real8	*armfx, *armfy, *armfz;	\/* arm specific force contribution *\/$/;"	m	struct:_node
+armfz	include/Node.h	/^	real8	*armfx, *armfy, *armfz;	\/* arm specific force contribution *\/$/;"	m	struct:_node
+array	include/display.h	/^    unsigned short int *array;  \/* array for GETALL, SETALL *\/$/;"	m	union:semun
+attr	include/display.h	/^        unsigned long attr;\/\/0:disc 1:circle$/;"	m	struct:SYWindow::YLine
+attr	include/display.h	/^        unsigned long attr;\/\/0:disc 1:circle$/;"	m	struct:SYWindow::YPoint
+attr	include/display.h	/^    XSetWindowAttributes attr;$/;"	m	class:SYWindow
+autowritegif	include/display.h	/^    bool autowritegif;$/;"	m	class:SYWindow
+b	src/DisplayC.C	/^struct { int r, g, b; const char *name; } RGBTable[]={$/;"	m	struct:__anon21	file:
+baseIdx	include/Cell.h	/^   int     baseIdx ;   \/* encoded index of corresp' base cell (-1 if not *\/$/;"	m	struct:_cell
+bgcolor	include/display.h	/^    unsigned long cblack, cwhite, bgcolor, framecolor;$/;"	m	class:SYWindow
+bgcolor_name	src/DisplayC.C	/^char bgcolor_name[COLORNAMELEN];$/;"	v
+bool	include/display.h	23;"	d
+buf	include/display.h	/^    struct semid_ds *buf;       \/* buffer for IPC_STAT, IPC_SET *\/$/;"	m	union:semun	typeref:struct:semun::semid_ds
+burgData	include/Home.h	/^        BurgInfo_t burgData;$/;"	m	struct:_home
+burgFirstPlaneIndex	include/Home.h	/^        int   *burgFirstPlaneIndex; \/* Index (0 offset) of the first plane *\/$/;"	m	struct:__anon4
+burgList	include/Home.h	/^        real8 (*burgList)[3];       \/* Array of burgers vectors *\/$/;"	m	struct:__anon4
+burgMag	include/Param.h	/^        real8 burgMag;$/;"	m	struct:_param
+burgVolFactor	include/Param.h	/^        real8 burgVolFactor;  \/* Volume factor used to convert dislocation *\/$/;"	m	struct:_param
+burgX	include/Home.h	/^        real8     *burgX;$/;"	m	struct:_home
+burgX	include/InData.h	/^	real8	*burgX;		\/* Array of XYZ burgers vector values *\/$/;"	m	struct:_indata
+burgX	include/Node.h	/^	real8	*burgX, *burgY, *burgZ;	\/* burgers vector *\/        $/;"	m	struct:_node
+burgY	include/Home.h	/^        real8     *burgY;$/;"	m	struct:_home
+burgY	include/InData.h	/^	real8	*burgY;		\/* which are now only used to support *\/$/;"	m	struct:_indata
+burgY	include/Node.h	/^	real8	*burgX, *burgY, *burgZ;	\/* burgers vector *\/        $/;"	m	struct:_node
+burgZ	include/Home.h	/^        real8     *burgZ;$/;"	m	struct:_home
+burgZ	include/InData.h	/^	real8	*burgZ;		\/* old format ctrl files which include*\/$/;"	m	struct:_indata
+burgZ	include/Node.h	/^	real8	*burgX, *burgY, *burgZ;	\/* burgers vector *\/        $/;"	m	struct:_node
+burgersVec	include/Typedefs.h	/^        real8 *burgersVec;$/;"	m	struct:__anon14
+bx	include/OpList.h	/^	real8		bx;$/;"	m	struct:_operate
+by	include/OpList.h	/^	real8		by;$/;"	m	struct:_operate
+bz	include/OpList.h	/^	real8		bz;$/;"	m	struct:_operate
+c	include/display.h	/^        unsigned long c;$/;"	m	struct:SYWindow::YLine
+c	include/display.h	/^        unsigned long c;$/;"	m	struct:SYWindow::YPoint
+cMax	include/Decomp.h	/^        double       cMax[3];$/;"	m	struct:_rbdecomp
+cMin	include/Decomp.h	/^        double       cMin[3];$/;"	m	struct:_rbdecomp
+cTimeOld	include/Param.h	/^        real8 cTimeOld;      \/* Timestep related to cyclic loading *\/$/;"	m	struct:_param
+calloc	include/Home.h	82;"	d
+cblack	include/display.h	/^    unsigned long cblack, cwhite, bgcolor, framecolor;$/;"	m	class:SYWindow
+cell	src/LocalSegForces.c	/^        Cell_t    *cell;$/;"	m	struct:__anon24	file:
+cell2	include/Home.h	/^        int       *cell2;$/;"	m	struct:_home
+cell2Idx	include/Node.h	/^	int	cell2Idx;	\/* cell2 node is currently sorted into *\/$/;"	m	struct:_node
+cell2QentArray	include/Home.h	/^        C2Qent_t  *cell2QentArray;$/;"	m	struct:_home
+cell2QentIdx	include/Node.h	/^	int	cell2QentIdx;	\/* Index of this node's entry in the *\/$/;"	m	struct:_node
+cell2nx	include/Home.h	/^        int       cell2nx;$/;"	m	struct:_home
+cell2ny	include/Home.h	/^        int       cell2ny;$/;"	m	struct:_home
+cell2nz	include/Home.h	/^        int       cell2nz;$/;"	m	struct:_home
+cellBlockWeight	utilities/ParadisRepart.c	/^        real8 cellBlockWeight;$/;"	m	struct:__anon35	file:
+cellCenter	src/NodeForce.c	/^        real8  cellCenter[3];$/;"	m	struct:__anon26	file:
+cellCenterX	src/NodeForce.c	/^static real8 *cellCenterX = (real8 *)NULL;$/;"	v	file:
+cellCenterY	src/NodeForce.c	/^static real8 *cellCenterY = (real8 *)NULL;$/;"	v	file:
+cellCenterZ	src/NodeForce.c	/^static real8 *cellCenterZ = (real8 *)NULL;$/;"	v	file:
+cellCharge	include/Home.h	/^        real8     *cellCharge;$/;"	m	struct:_home
+cellCnt	src/FMComm.c	/^        int cellCnt;$/;"	m	struct:__anon22	file:
+cellCount	include/Home.h	/^        int       cellCount;$/;"	m	struct:_home
+cellCtr	include/FM.h	/^        real8 cellCtr[3]; \/* Coordinates of the center of the cell *\/$/;"	m	struct:_fmcell
+cellID	include/FM.h	/^        int   cellID;     \/* ID of the cell in this FM layer *\/$/;"	m	struct:_fmcell
+cellID	src/LocalSegForces.c	/^        int       cellID;$/;"	m	struct:__anon24	file:
+cellID	utilities/ParadisRepart.c	/^        int   cellID;$/;"	m	struct:__anon34	file:
+cellIdx	include/Node.h	/^	int	cellIdx;	\/* cell node is currently sorted into *\/$/;"	m	struct:_node
+cellKeys	include/Home.h	/^        Cell_t    **cellKeys;$/;"	m	struct:_home
+cellList	include/FM.h	/^        int   *cellList; \/* List of cellIDs that have been added to *\/$/;"	m	struct:_fmlayer
+cellList	include/Home.h	/^        int       *cellList;$/;"	m	struct:_home
+cellList	src/FMComm.c	/^        int *cellList;$/;"	m	struct:__anon22	file:
+cellNodeCount	utilities/ParadisRepart.c	/^        int   cellNodeCount;$/;"	m	struct:__anon35	file:
+cellSize	include/FM.h	/^        real8 cellSize[3]; \/* dimensions of each cell at this layer *\/$/;"	m	struct:_fmlayer
+cellTable	include/FM.h	/^        FMCell_t *cellTable[CELL_HASH_TABLE_SIZE]; \/* Hash table of  *\/$/;"	m	struct:_fmlayer
+cellWeight	utilities/ParadisRepart.c	/^        real8 cellWeight;$/;"	m	struct:__anon35	file:
+cmap	include/display.h	/^    Colormap cmap;$/;"	m	class:SYWindow
+cmp	src/display.C	/^int SYWindow::cmp(const void *p1, const void *p2)$/;"	f	class:SYWindow
+collisionMethod	include/Param.h	/^        int collisionMethod;$/;"	m	struct:_param
+color_name	src/DisplayC.C	/^char color_name[MAXCOLOR][COLORNAMELEN];$/;"	v
+color_scheme	src/DisplayC.C	/^int color_scheme;$/;"	v
+colorconvert_16	src/display.C	/^unsigned long colorconvert_16[3][6]={{0xF8,8,0,0xF800,11,0x1F},$/;"	v
+colorconvert_32	src/display.C	/^unsigned long colorconvert_32[3][6]={{0xFF,16,0,0xFF0000,16,0xFF},$/;"	v
+colors	src/DisplayC.C	/^unsigned colors[MAXCOLOR];$/;"	v
+commLastInIOGroup	include/Home.h	/^        MPI_Comm commLastInIOGroup;  \/* Communicator encompassing only   *\/$/;"	m	struct:_home
+constraint	include/Node.h	/^	int	constraint;     \/* constraint =  1 : any surface node   *\/$/;"	m	struct:_node
+coord	utilities/ParadisRepart.c	/^        real8 coord[3];$/;"	m	struct:__anon34	file:
+coordinates	src/WriteFragments.c	/^        real8   coordinates[3];$/;"	m	struct:__anon29	file:
+copyRot	include/display.h	/^    void copyRot()$/;"	f	class:SYWindow
+correctionTbl	src/CorrectionTable.c	/^static real8 *correctionTbl = NULL;$/;"	v	file:
+countit	src/CorrectionTable.c	/^static void countit(int norder, int *nlist_p, int **idxlist_p) {$/;"	f	file:
+cross	src/Util.c	/^void cross(real8 a[3], real8 b[3], real8 c[3])$/;"	f
+ctab_MU	src/CorrectionTable.c	/^static real8 ctab_MU     = 0.0;$/;"	v	file:
+ctab_NU	src/CorrectionTable.c	/^static real8 ctab_NU     = 0.0;$/;"	v	file:
+ctab_boxl	src/CorrectionTable.c	/^static real8 ctab_boxl   = 0.0;$/;"	v	file:
+ctab_levels	src/CorrectionTable.c	/^static int   ctab_levels = 0;$/;"	v	file:
+ctab_norder	src/CorrectionTable.c	/^static int   ctab_norder = 0;$/;"	v	file:
+ctab_uorder	src/CorrectionTable.c	/^static int   ctab_uorder = 0;$/;"	v	file:
+ctrlParamList	include/Home.h	/^        ParamList_t *ctrlParamList;$/;"	m	struct:_home
+cubeLength	include/ParadisGen.h	/^        int     cubeLength;$/;"	m	struct:__anon9
+currentMirrors	include/Home.h	/^        int             currentMirrors;         \/* 1 if mirrors already sent *\/$/;"	m	struct:_home
+currvX	include/Node.h	/^        real8   currvX, currvY, currvZ; \/* nodal velocity at beginning of the *\/$/;"	m	struct:_node
+currvY	include/Node.h	/^        real8   currvX, currvY, currvZ; \/* nodal velocity at beginning of the *\/$/;"	m	struct:_node
+currvZ	include/Node.h	/^        real8   currvX, currvY, currvZ; \/* nodal velocity at beginning of the *\/$/;"	m	struct:_node
+cwhite	include/display.h	/^    unsigned long cblack, cwhite, bgcolor, framecolor;$/;"	m	class:SYWindow
+cycle	include/Home.h	/^        int       cycle;       \/* current cycle *\/$/;"	m	struct:_home
+cycleForceCalcCount	include/Home.h	/^        int       cycleForceCalcCount;$/;"	m	struct:_home
+cycleStart	include/Param.h	/^        int   cycleStart;    \/* Starting cycle number for the simulation *\/$/;"	m	struct:_param
+dCyclicStrain	include/Param.h	/^        real8 dCyclicStrain; \/* Incremental strain under cyclic load *\/$/;"	m	struct:_param
+dLtot	include/Param.h	/^        real8 dLtot[4][4], dfluxtot[4][7];$/;"	m	struct:_param
+dSegImgStress	src/deWitInteraction.c	/^void dSegImgStress(Home_t *home,$/;"	f
+dataDecompGeometry	include/Param.h	/^        int   dataDecompGeometry[3]; \/* domain geometry used when gen-  *\/$/;"	m	struct:_param
+dataDecompType	include/Param.h	/^        int   dataDecompType;        \/* Type of decomposition used when *\/$/;"	m	struct:_param
+dataFileVersion	include/Param.h	/^        int   dataFileVersion;       \/* Version number of the data file *\/$/;"	m	struct:_param
+dataParamList	include/Home.h	/^        ParamList_t *dataParamList;$/;"	m	struct:_home
+dbgDom	src/CrossSlipBCC.c	/^static int dbgDom;$/;"	v	file:
+dbgDom	src/CrossSlipFCC.c	/^static int dbgDom;$/;"	v	file:
+dbgDom	src/PredictiveCollision.c	/^static int dbgDom;$/;"	v	file:
+dbgDom	src/ProximityCollision.c	/^static int dbgDom;$/;"	v	file:
+dbgDom	src/RemeshRule_2.c	/^static int dbgDom;$/;"	v	file:
+dbgDom	src/RemeshRule_3.c	/^static int dbgDom;$/;"	v	file:
+dbgDom	src/SplitSurfaceNodes.c	/^static int dbgDom;$/;"	v	file:
+dbgDom	src/Topology.c	/^static int dbgDom;$/;"	v	file:
+deWitInteraction	src/deWitInteraction.c	/^void deWitInteraction(real8 MU, real8 NU,$/;"	f
+deWitStress	src/deWitInteraction.c	/^void deWitStress(real8 MU, real8 NU,$/;"	f
+decomp	include/Home.h	/^        void      *decomp;$/;"	m	struct:_home
+decomp	include/InData.h	/^        void    *decomp;        \/* pointer to memory allocated to hold   *\/$/;"	m	struct:_indata
+decompID	include/Decomp.h	/^        char         decompID[MAX_DECOMP_LVLS];$/;"	m	struct:_rbdecomp
+decompType	include/Param.h	/^        int   decompType;       \/* Selects decomposition type *\/$/;"	m	struct:_param
+dedgepStrain	include/Param.h	/^        real8 dedgepStrain[6],   dscrewpStrain[6];$/;"	m	struct:_param
+delSegLength	include/Param.h	/^        real8 delSegLength;  \/* accumulated length of deleted segments    *\/$/;"	m	struct:_param
+delSig	include/Param.h	/^        real8 delpStrain[6],delSig[6],totpStn[6];$/;"	m	struct:_param
+delay	include/display.h	/^inline void delay(long sec, long usec)$/;"	f
+delpSpin	include/Param.h	/^        real8 delpSpin[6],totpSpn[6];$/;"	m	struct:_param
+delpStrain	include/Param.h	/^        real8 delpStrain[6],delSig[6],totpStn[6];$/;"	m	struct:_param
+deltaTT	include/Param.h	/^        real8 deltaTT;       \/* duration of previous timestep *\/$/;"	m	struct:_param
+densityChange	include/Param.h	/^        real8 densityChange[14];  \/* For tracking density change by burgers *\/$/;"	m	struct:_param
+depth	include/display.h	/^    unsigned int depth;$/;"	m	class:SYWindow
+dfluxtot	include/Param.h	/^        real8 dLtot[4][4], dfluxtot[4][7];$/;"	m	struct:_param
+dirmax	include/Param.h	/^        int dirmax;             \/* Iterative solver used if number of fem *\/$/;"	m	struct:_param
+dirname	include/Param.h	/^        char dirname[MAX_STRING_LEN];$/;"	m	struct:_param
+dirty	include/display.h	/^    bool dirty; \/\/true if need update$/;"	m	class:SYWindow
+disloDensity	include/Param.h	/^        real8 disloDensity;$/;"	m	struct:_param
+dmsym3	src/FMSupport.c	/^static void dmsym3(int n,vector r,real8 *rvec\/*,int npows[][3]*\/)$/;"	f	file:
+dmsym3init	src/FMSupport.c	/^static void dmsym3init(int n,int M[][13][13],real8 drdata[])$/;"	f	file:
+doBinRead	include/Param.h	/^        int  doBinRead;  \/* If set, will attempt to read binary format *\/$/;"	m	struct:_param
+doMemCheck	src/MemCheck.c	/^int        doMemCheck = 0;$/;"	v
+dom1	include/OpList.h	/^	int		dom1;$/;"	m	struct:_operate
+dom2	include/OpList.h	/^	int		dom2;$/;"	m	struct:_operate
+dom3	include/OpList.h	/^	int		dom3;$/;"	m	struct:_operate
+domBoundX	include/Decomp.h	/^        real8 *domBoundX;$/;"	m	struct:__anon1
+domBoundY	include/Decomp.h	/^        real8 **domBoundY;$/;"	m	struct:__anon1
+domBoundZ	include/Decomp.h	/^        real8 ***domBoundZ;$/;"	m	struct:__anon1
+domBuf	include/FM.h	/^        int        *domBuf;$/;"	m	struct:_fmlayer
+domCnt	include/FM.h	/^        int   domCnt;     \/* number of domains intersecting this cell.    *\/$/;"	m	struct:_fmcell
+domCount	include/Cell.h	/^   int      domCount ; \/* number of intersecting domains *\/$/;"	m	struct:_cell
+domID	include/Decomp.h	/^        int          domID;$/;"	m	struct:_rbdecomp
+domID	src/FMComm.c	/^        int domID;$/;"	m	struct:__anon22	file:
+domList	include/FM.h	/^        int   *domList;   \/* list of all domains that intersect this cell.*\/$/;"	m	struct:_fmcell
+domXmax	include/Home.h	/^        real8     domXmax;$/;"	m	struct:_home
+domXmin	include/Home.h	/^        real8     domXmin;$/;"	m	struct:_home
+domYmax	include/Home.h	/^        real8     domYmax;$/;"	m	struct:_home
+domYmin	include/Home.h	/^        real8     domYmin;$/;"	m	struct:_home
+domZmax	include/Home.h	/^        real8     domZmax;$/;"	m	struct:_home
+domZmin	include/Home.h	/^        real8     domZmin;$/;"	m	struct:_home
+domainID	include/Tag.h	/^   int domainID ;$/;"	m	struct:_tag
+domainIdx	include/RemoteDomain.h	/^	int	domainIdx;	\/* encoded index of this domain *\/$/;"	m	struct:_remotedomain
+domains	include/Cell.h	/^   int     *domains ;  \/* domains that intersect cell (encoded indices) *\/$/;"	m	struct:_cell
+drawBoxFrame	src/display.C	/^void YWindow::drawBoxFrame()$/;"	f	class:YWindow
+drawframe	include/display.h	/^    bool alive,pause,drawframe;$/;"	m	class:SYWindow
+drawsline	src/Plot.c	22;"	d	file:
+dscrewpStrain	include/Param.h	/^        real8 dedgepStrain[6],   dscrewpStrain[6];$/;"	m	struct:_param
+dscrpt	include/display.h	/^        char dscrpt[DSCLEN];$/;"	m	struct:SYWindow::YPoint
+dtDecrementFact	include/Param.h	/^        real8 dtDecrementFact;  \/* Factor by which delta time is        *\/$/;"	m	struct:_param
+dtExponent	include/Param.h	/^        real8 dtExponent;       \/* Used in calculating variable delta   *\/$/;"	m	struct:_param
+dtIncrementFact	include/Param.h	/^        real8 dtIncrementFact;  \/* Maximum delta time increment allowed *\/$/;"	m	struct:_param
+dtVariableAdjustment	include/Param.h	/^        int   dtVariableAdjustment;  \/* Flag indicating if timestep     *\/$/;"	m	struct:_param
+eAmp	include/Param.h	/^        real8 eAmp;          \/* Strain amplitude used with cyclic loading *\/$/;"	m	struct:_param
+eRate	include/Param.h	/^        real8 eRate;         \/* Strain rate. Used when loadType == 1 *\/$/;"	m	struct:_param
+edotdir	include/Param.h	/^        real8 edotdir[3];    \/* Uniaxial loading direction accompanying *\/$/;"	m	struct:_param
+elasticinteraction	include/Param.h	/^        int elasticinteraction;$/;"	m	struct:_param
+enableCrossSlip	include/Param.h	/^        int   enableCrossSlip;$/;"	m	struct:_param
+enableRot	include/display.h	/^    bool enableRot;$/;"	m	class:YWindow
+enable_pbc	include/display.h	/^    int enable_pbc;$/;"	m	class:SYWindow
+enable_window	src/DisplayC.C	/^int enable_window;$/;"	v
+enforceGlidePlanes	include/Param.h	/^        int   enforceGlidePlanes;$/;"	m	struct:_param
+expCells	include/RemoteDomain.h	/^	int	*expCells;	\/* list of encoded indices of the *\/$/;"	m	struct:_remotedomain
+f1	include/Home.h	/^        real8      f1[3];$/;"	m	struct:__anon3
+f1x	src/Topology.c	/^        real8 f1x, f2x;$/;"	m	struct:__anon28	file:
+f1y	src/Topology.c	/^        real8 f1y, f2y;$/;"	m	struct:__anon28	file:
+f1z	src/Topology.c	/^        real8 f1z, f2z;$/;"	m	struct:__anon28	file:
+f2	include/Home.h	/^        real8      f2[3];$/;"	m	struct:__anon3
+f2x	src/Topology.c	/^        real8 f1x, f2x;$/;"	m	struct:__anon28	file:
+f2y	src/Topology.c	/^        real8 f1y, f2y;$/;"	m	struct:__anon28	file:
+f2z	src/Topology.c	/^        real8 f1z, f2z;$/;"	m	struct:__anon28	file:
+fX	include/Node.h	/^	real8	fX, fY, fZ;		\/* nodal force: units=Pa*b^2) *\/$/;"	m	struct:_node
+fY	include/Node.h	/^	real8	fX, fY, fZ;		\/* nodal force: units=Pa*b^2) *\/$/;"	m	struct:_node
+fZ	include/Node.h	/^	real8	fX, fY, fZ;		\/* nodal force: units=Pa*b^2) *\/$/;"	m	struct:_node
+false	include/display.h	25;"	d
+fem_Surface	include/Node.h	/^        int     fem_Surface[2];$/;"	m	struct:_node
+fem_Surface_Norm	include/Node.h	/^        real8   fem_Surface_Norm[3];$/;"	m	struct:_node
+fem_ageom_x	include/Param.h	/^        real8 fem_ageom_x[3];   \/* vector defining X axis of cylinder   *\/$/;"	m	struct:_param
+fem_ageom_z	include/Param.h	/^        real8 fem_ageom_z[3];   \/* vector defining Z axis of cylinder   *\/$/;"	m	struct:_param
+fem_base_diagonal_half	include/Param.h	/^        real8 fem_base_diagonal_half; \/* half diagonal distance of the base *\/$/;"	m	struct:_param
+fem_cube_edge_length	include/Param.h	/^        real8 fem_cube_edge_length;\/* void???*\/$/;"	m	struct:_param
+fem_delSegLength	include/Param.h	/^        real8 fem_delSegLength; \/* Used for tracking dislocation length  *\/$/;"	m	struct:_param
+fem_grid_base	include/Param.h	/^        int   fem_grid_base;          \/* number of fem mesh nodes along     *\/$/;"	m	struct:_param
+fem_grid_vertical	include/Param.h	/^        int   fem_grid_vertical;      \/* number of fem mesh nodes along     *\/$/;"	m	struct:_param
+fem_height	include/Param.h	/^        real8 fem_height;       \/* height of the cylinder (units of b)  *\/$/;"	m	struct:_param
+fem_nh	include/Param.h	/^        int   fem_nh;           \/* # of fem elements along height of    *\/$/;"	m	struct:_param
+fem_nr	include/Param.h	/^        int   fem_nr;           \/* # of fem elements along circumference*\/$/;"	m	struct:_param
+fem_numelm_arc	include/Param.h	/^        int   fem_numelm_arc;      \/* void??*\/$/;"	m	struct:_param
+fem_nx	include/Param.h	/^        int fem_nx;             \/* number of fem elements along x, y and *\/$/;"	m	struct:_param
+fem_ny	include/Param.h	/^        int fem_ny;             \/* z respectively                        *\/$/;"	m	struct:_param
+fem_nz	include/Param.h	/^        int fem_nz;$/;"	m	struct:_param
+fem_radius	include/Param.h	/^        real8 fem_radius;       \/* radius of the cylinder (units of b)  *\/$/;"	m	struct:_param
+fem_void_radius	include/Param.h	/^        real8 fem_void_radius;     \/* radius of void *\/$/;"	m	struct:_param
+fileName	src/MemCheck.c	/^        char fileName[PARADIS_MAX_NAMELEN]; \/* module from which memory block *\/$/;"	m	struct:__anon25	file:
+film_zmax	include/display.h	/^    bool thinfilm; double film_zmin, film_zmax;$/;"	m	class:SYWindow
+film_zmin	include/display.h	/^    bool thinfilm; double film_zmin, film_zmax;$/;"	m	class:SYWindow
+firstInGroup	include/Typedefs.h	/^        int   firstInGroup;$/;"	m	struct:__anon14
+firstInIOGroup	include/Home.h	/^        int   firstInIOGroup, lastInIOGroup; \/* first and last processes in *\/$/;"	m	struct:_home
+flags	include/Node.h	/^	int	flags;$/;"	m	struct:_node
+flags	include/Typedefs.h	/^        int  flags;$/;"	m	struct:__anon15
+fluxcounter	include/Param.h	/^        int   fluxfile, fluxfreq, fluxcounter;$/;"	m	struct:_param
+fluxdt	include/Param.h	/^        real8 fluxdt, fluxtime;$/;"	m	struct:_param
+fluxfile	include/Param.h	/^        int   fluxfile, fluxfreq, fluxcounter;$/;"	m	struct:_param
+fluxfreq	include/Param.h	/^        int   fluxfile, fluxfreq, fluxcounter;$/;"	m	struct:_param
+fluxtime	include/Param.h	/^        real8 fluxdt, fluxtime;$/;"	m	struct:_param
+fluxtot	include/Param.h	/^        real8 Ltot[4][4],  fluxtot[4][7];$/;"	m	struct:_param
+fmCorrectionTbl	include/Param.h	/^        char fmCorrectionTbl[MAX_STRING_LEN];$/;"	m	struct:_param
+fmDownPassRecvDomCnt	include/FM.h	/^        int   fmDownPassRecvDomCnt;$/;"	m	struct:_fmlayer
+fmDownPassRecvDomList	include/FM.h	/^        int   *fmDownPassRecvDomList;$/;"	m	struct:_fmlayer
+fmDownPassSendDomCnt	include/FM.h	/^        int   fmDownPassSendDomCnt;$/;"	m	struct:_fmlayer
+fmDownPassSendDomList	include/FM.h	/^        int   *fmDownPassSendDomList;$/;"	m	struct:_fmlayer
+fmEnabled	include/Param.h	/^        int fmEnabled;    \/* Set to 1 remote forces are caculated *\/$/;"	m	struct:_param
+fmLayer	include/Home.h	/^        FMLayer_t *fmLayer;         \/* Pointer to array of structures *\/$/;"	m	struct:_home
+fmMPOrder	include/Param.h	/^        int fmMPOrder;    \/* Order used for multipole expansions  *\/$/;"	m	struct:_param
+fmNumLayers	include/Param.h	/^        int fmNumLayers;  \/* Number of layers of cells defined for*\/$/;"	m	struct:_param
+fmNumMPCoeff	include/Home.h	/^        int       fmNumMPCoeff;     \/* Number of coefficients required*\/$/;"	m	struct:_home
+fmNumPoints	include/Param.h	/^        int fmNumPoints;  \/* Number of points along each segment    *\/$/;"	m	struct:_param
+fmNumTaylorCoeff	include/Home.h	/^        int       fmNumTaylorCoeff; \/* Number of coefficients required*\/$/;"	m	struct:_home
+fmTaylorOrder	include/Param.h	/^        int fmTaylorOrder;\/* Order used for taylor expansions     *\/$/;"	m	struct:_param
+fmUpPassRecvDomCnt	include/FM.h	/^        int   fmUpPassRecvDomCnt;$/;"	m	struct:_fmlayer
+fmUpPassRecvDomList	include/FM.h	/^        int   *fmUpPassRecvDomList;$/;"	m	struct:_fmlayer
+fmUpPassSendDomCnt	include/FM.h	/^        int   fmUpPassSendDomCnt;$/;"	m	struct:_fmlayer
+fmUpPassSendDomList	include/FM.h	/^        int   *fmUpPassSendDomList;$/;"	m	struct:_fmlayer
+fmsigma	src/CorrectionTable.c	/^static void fmsigma(real8 mu, real8 nu, int norder,$/;"	f	file:
+forcesSet	include/Home.h	/^        int        forcesSet;$/;"	m	struct:__anon3
+frLenMax	include/ParadisGen.h	/^        int     frLenMax;$/;"	m	struct:__anon9
+frLenMin	include/ParadisGen.h	/^        int     frLenMin;$/;"	m	struct:__anon9
+fragBurgersVec	src/WriteFragments.c	/^        real8     fragBurgersVec[3];$/;"	m	struct:__anon30	file:
+fragEndPt	src/WriteFragments.c	/^        FragPt_t  fragEndPt[2];$/;"	m	struct:__anon30	file:
+fragInteriorPt	src/WriteFragments.c	/^        FragPt_t  *fragInteriorPt;$/;"	m	struct:__anon30	file:
+fragcounter	include/Param.h	/^        int   fragfile, fragfreq, fragcounter;$/;"	m	struct:_param
+fragdt	include/Param.h	/^        real8 fragdt, fragtime;$/;"	m	struct:_param
+fragfile	include/Param.h	/^        int   fragfile, fragfreq, fragcounter;$/;"	m	struct:_param
+fragfreq	include/Param.h	/^        int   fragfile, fragfreq, fragcounter;$/;"	m	struct:_param
+fragment	src/WriteFragments.c	/^        Frag_t  **fragment;$/;"	m	struct:__anon31	file:
+fragtime	include/Param.h	/^        real8 fragdt, fragtime;$/;"	m	struct:_param
+framecolor	include/display.h	/^    unsigned long cblack, cwhite, bgcolor, framecolor;$/;"	m	class:SYWindow
+free	include/Home.h	80;"	d
+freeNodeQ	include/Home.h	/^        Node_t    *freeNodeQ;$/;"	m	struct:_home
+funcData	utilities/ParadisGen.c	/^FuncData_t funcData[FTYPE_MAX] = {$/;"	v
+funcName	include/ParadisGen.h	/^        char  *funcName;$/;"	m	struct:__anon7
+funcType	include/ParadisGen.h	/^        int   funcType;$/;"	m	struct:__anon7
+g	src/DisplayC.C	/^struct { int r, g, b; const char *name; } RGBTable[]={$/;"	m	struct:__anon21	file:
+gc	include/display.h	/^    GC gc;$/;"	m	class:SYWindow
+ghostNodeQ	include/Home.h	/^        Node_t    *ghostNodeQ;$/;"	m	struct:_home
+gifcount	include/display.h	/^    int gifcount,pscount;$/;"	m	class:SYWindow
+glPositions	include/Home.h	/^        real8     *glPositions;$/;"	m	struct:_home
+glWeights	include/Home.h	/^        real8     *glWeights;$/;"	m	struct:_home
+glidePlane	include/Typedefs.h	/^        real8 *glidePlane;$/;"	m	struct:__anon14
+gnuplot	include/Param.h	/^        int   gnuplot, gnuplotfreq, gnuplotcounter;$/;"	m	struct:_param
+gnuplotcounter	include/Param.h	/^        int   gnuplot, gnuplotfreq, gnuplotcounter;$/;"	m	struct:_param
+gnuplotdt	include/Param.h	/^        real8 gnuplotdt, gnuplottime;$/;"	m	struct:_param
+gnuplotfreq	include/Param.h	/^        int   gnuplot, gnuplotfreq, gnuplotcounter;$/;"	m	struct:_param
+gnuplottime	include/Param.h	/^        real8 gnuplotdt, gnuplottime;$/;"	m	struct:_param
+gqwp	src/FMSupport.c	/^static void gqwp(int n, real8 *xx, real8 *ww)$/;"	f	file:
+header	src/MemCheck.c	/^        char *header;                    \/* pointer to header prepended to *\/$/;"	m	struct:__anon25	file:
+height	include/display.h	/^    unsigned int width, height;$/;"	m	class:SYWindow
+help	src/display.C	/^void YWindow::help()$/;"	f	class:YWindow
+hexl	include/ParadisGen.h	/^        int     hexl;$/;"	m	struct:__anon9
+horizontalRot	src/display.C	/^void YWindow::horizontalRot(double arc)$/;"	f	class:YWindow
+iCellNatMax	include/Param.h	/^        int iCellNatMax;$/;"	m	struct:_param
+iCellNatMin	include/Param.h	/^        int iCellNatMin;$/;"	m	struct:_param
+identify	src/display.C	/^int SYWindow::identify(int px, int py)$/;"	f	class:SYWindow
+idx1	include/OpList.h	/^	int		idx1;$/;"	m	struct:_operate
+idx2	include/OpList.h	/^	int		idx2;$/;"	m	struct:_operate
+idx3	include/OpList.h	/^	int		idx3;$/;"	m	struct:_operate
+imgstrgrid	include/Param.h	/^        int imgstrgrid[6];$/;"	m	struct:_param
+importgif	src/display.C	/^void SYWindow::importgif()$/;"	f	class:SYWindow
+inBuf	include/Home.h	/^        char      *inBuf;$/;"	m	struct:_home
+inBuf	include/RemoteDomain.h	/^	char	*inBuf;$/;"	m	struct:_remotedomain
+inBufLen	include/RemoteDomain.h	/^	int	inBufLen;$/;"	m	struct:_remotedomain
+inRequests	include/Home.h	/^        MPI_Request  *inRequests; \/* used for asynchronous I\/O *\/$/;"	m	struct:_home
+inStatus	include/Home.h	/^        MPI_Status   *inStatus;$/;"	m	struct:_home
+includeInertia	include/Param.h	/^        int   includeInertia;  \/* Toggle: 0 == no, 1 == yes *\/$/;"	m	struct:_param
+incr	include/Timer.h	/^	real8	incr;      \/* time of most recent event for this event type *\/$/;"	m	struct:_timer
+index	include/Tag.h	/^   int index ;$/;"	m	struct:_tag
+index	include/display.h	/^        int index;$/;"	m	struct:SYWindow::ZInd
+indxErate	include/Param.h	/^        int   indxErate;     \/* to be compatible with micro3d *\/$/;"	m	struct:_param
+initRot	include/display.h	/^    void initRot()$/;"	f	class:SYWindow
+intersectCnt	include/FM.h	/^        int   intersectCnt;     \/* Number of cells intersecting this domain   *\/$/;"	m	struct:_fmlayer
+intersectMax	include/FM.h	/^        int   intersectMax[3];  \/* this domain.  These are meaningless except *\/$/;"	m	struct:_fmlayer
+intersectMin	include/FM.h	/^        int   intersectMin[3];  \/* Min and max indices of cells intersecting  *\/$/;"	m	struct:_fmlayer
+interstitialLoops	include/ParadisGen.h	/^        int     interstitialLoops;$/;"	m	struct:__anon9
+invLx	include/Param.h	/^        real8 invLx, invLy, invLz;$/;"	m	struct:_param
+invLy	include/Param.h	/^        real8 invLx, invLy, invLz;$/;"	m	struct:_param
+invLz	include/Param.h	/^        real8 invLx, invLy, invLz;$/;"	m	struct:_param
+ioGroupNum	include/Home.h	/^        int   ioGroupNum;    \/* IO group containing this process *\/$/;"	m	struct:_home
+ipow	src/FMSupport.c	/^real8 ipow(real8 x, int n)$/;"	f
+isFirstInIOGroup	include/Home.h	/^        int   isFirstInIOGroup;   \/* Set to 1 if this process is the  *\/$/;"	m	struct:_home
+isLastInIOGroup	include/Home.h	/^        int   isLastInIOGroup;    \/* Set to 1 if this process is the  *\/$/;"	m	struct:_home
+jCellNatMax	include/Param.h	/^        int jCellNatMax;$/;"	m	struct:_param
+jCellNatMin	include/Param.h	/^        int jCellNatMin; $/;"	m	struct:_param
+kCellNatMax	include/Param.h	/^        int kCellNatMax;$/;"	m	struct:_param
+kCellNatMin	include/Param.h	/^        int kCellNatMin; $/;"	m	struct:_param
+lDim	include/FM.h	/^        int   lDim[3];     \/* Number of cells in each dimension at this layer *\/$/;"	m	struct:_fmlayer
+labFrameXDir	include/Param.h	/^        real8 labFrameXDir[3];  \/* The Z direction is informational only *\/$/;"	m	struct:_param
+labFrameYDir	include/Param.h	/^        real8 labFrameYDir[3];  \/* and is recalculated explicitly from   *\/$/;"	m	struct:_param
+labFrameZDir	include/Param.h	/^        real8 labFrameZDir[3];  \/* the X and Y directions                *\/$/;"	m	struct:_param
+lastCycle	include/Home.h	/^        int       lastCycle;   \/* cycle to quit on *\/$/;"	m	struct:_home
+lastDrag	include/display.h	/^    unsigned long lastDrag;$/;"	m	class:SYWindow
+lastFreeNode	include/Home.h	/^        Node_t    *lastFreeNode;$/;"	m	struct:_home
+lastGhostNode	include/Home.h	/^        Node_t    *lastGhostNode;$/;"	m	struct:_home
+lastInGroup	include/Typedefs.h	/^        int   lastInGroup;$/;"	m	struct:__anon14
+lastInIOGroup	include/Home.h	/^        int   firstInIOGroup, lastInIOGroup; \/* first and last processes in *\/$/;"	m	struct:_home
+limitRadius	include/display.h	/^        int limitRadius;$/;"	m	struct:SYWindow::YPoint
+lineNum	src/MemCheck.c	/^        int  lineNum;                    \/* source code line number at which *\/$/;"	m	struct:__anon25	file:
+line_width	src/DisplayC.C	/^double point_radius, line_width;$/;"	v
+loadType	include/Param.h	/^        int   loadType;      \/* 0 Creep test *\/$/;"	m	struct:_param
+loop	include/display.h	/^    int loop;$/;"	m	class:SYWindow
+loopType	include/ParadisGen.h	/^        int     loopType;$/;"	m	struct:__anon9
+main	src/CTableGen.c	/^main(int argc, char *argv[])$/;"	f
+main	src/Main.c	/^main (int argc, char *argv[])$/;"	f
+main	src/display.C	/^int main(int argc, char *argv[])$/;"	f
+main	tools/ComparePlots.c	/^main(int argc, char *argv[])$/;"	f
+main	utilities/CalcDensity.c	/^main(int argc, char *argv[])$/;"	f
+main	utilities/ParadisConvert.c	/^main(int argc, char *argv[])$/;"	f
+main	utilities/ParadisGen.c	/^main(int argc, char *argv[])$/;"	f
+main	utilities/ParadisRepart.c	/^main(int argc, char *argv[])$/;"	f
+main	utilities/StressTableGen.c	/^main(int argc, char *argv[])$/;"	f
+makeeta	src/FMSupport.c	/^void makeeta(int norder, real8 ksi0[3], real8 ksi[3], real8 b[3], real8 *Eeta) {$/;"	f
+makeftabs	src/FMSupport.c	/^void makeftabs(real8 *fact, real8 *ifact, real8 *dfact)$/;"	f
+makeqtab	src/FMSupport.c	/^void makeqtab(real8 qtab[NMAX+1][NMAX+1])$/;"	f
+malloc	include/Home.h	81;"	d
+massDensity	include/Param.h	/^        real8 massDensity;     \/* Units are kg\/m^3 *\/$/;"	m	struct:_param
+materialType	include/Param.h	/^        int   materialType;  \/* Type of crystal structure (i.e. BCC, FCC)   *\/$/;"	m	struct:_param
+matrix	include/FM.h	/^typedef double matrix[3][3];$/;"	t
+maxCoordinates	include/Param.h	/^        real8 maxCoordinates[3];     \/* maximum XYZ coordinates of sim  *\/$/;"	m	struct:_param
+maxDT	include/Param.h	/^        real8 maxDT;         \/* Maximum timestep duration permitted*\/$/;"	m	struct:_param
+maxNumThreads	include/Param.h	/^        int   maxNumThreads;$/;"	m	struct:_param
+maxPackSiz	include/Home.h	/^        int       maxPackSiz;     \/* byte length required to accomodate *\/$/;"	m	struct:_home
+maxSeg	include/Param.h	/^        real8 maxSeg;    \/* max allowable segment length, before*\/$/;"	m	struct:_param
+maxSegLen	include/ParadisGen.h	/^        real8   maxSegLen;$/;"	m	struct:__anon9
+maxSideX	include/Param.h	/^        real8 minSideX, maxSideX;$/;"	m	struct:_param
+maxSideY	include/Param.h	/^        real8 minSideY, maxSideY;$/;"	m	struct:_param
+maxSideZ	include/Param.h	/^        real8 minSideZ, maxSideZ;$/;"	m	struct:_param
+maxSplitsEquiv	src/SplitSurfaceNodes.c	/^int maxSplitsEquiv[MAX_ARMS+1]   = { 0, 0, 2, 4, 8,  16, 32, 64,  128, 256 };$/;"	v
+maxSplitsNoEquiv	src/SplitSurfaceNodes.c	/^int maxSplitsNoEquiv[MAX_ARMS+1] = { 0, 0, 3, 7, 15, 31, 63, 127, 255, 511 };$/;"	v
+maxTagIndex	include/RemoteDomain.h	/^	int	maxTagIndex;	\/* error if tag.index exceeds this value *\/$/;"	m	struct:_remotedomain
+maxlinewidth	include/display.h	/^    double maxpointradius, maxlinewidth;$/;"	m	class:SYWindow
+maxlinewidth	src/DisplayC.C	/^double maxpointradius, maxlinewidth;$/;"	v
+maxpointradius	include/display.h	/^    double maxpointradius, maxlinewidth;$/;"	m	class:SYWindow
+maxpointradius	src/DisplayC.C	/^double maxpointradius, maxlinewidth;$/;"	v
+maxstep	include/Param.h	/^        int   maxstep;       \/* Cycles to execute before terminating *\/$/;"	m	struct:_param
+memBlocks	src/MemCheck.c	/^static MemBlock_t *memBlocks = (MemBlock_t *)NULL;$/;"	v	file:
+memBlocksAllocated	src/MemCheck.c	/^static int        memBlocksAllocated = 0;$/;"	v	file:
+memBlocksUsed	src/MemCheck.c	/^static int        memBlocksUsed = 0;$/;"	v	file:
+mesh_type	include/Param.h	/^        int mesh_type;          \/* 1: rectangular prism                    *\/$/;"	m	struct:_param
+minCoordinates	include/Param.h	/^        real8 minCoordinates[3];     \/* minimum XYZ coordinates of sim  *\/$/;"	m	struct:_param
+minSeg	include/Param.h	/^        real8 minSeg;    \/* min allowable segment length, before *\/$/;"	m	struct:_param
+minSideX	include/Param.h	/^        real8 minSideX, maxSideX;$/;"	m	struct:_param
+minSideY	include/Param.h	/^        real8 minSideY, maxSideY;$/;"	m	struct:_param
+minSideZ	include/Param.h	/^        real8 minSideZ, maxSideZ;$/;"	m	struct:_param
+mirrorDomainKeys	include/Home.h	/^        MirrorDomain_t  **mirrorDomainKeys;     \/* image of entire domains *\/$/;"	m	struct:_home
+mobilityFunc	include/Param.h	/^        int   (*mobilityFunc)(Home_t *home, Node_t *node);  \/* Set during *\/$/;"	m	struct:_param
+mobilityLaw	include/Param.h	/^        char  mobilityLaw[MAX_STRING_LEN];$/;"	m	struct:_param
+mobilityType	include/Param.h	/^        int   mobilityType;  \/* Integer value corresponding to the *\/$/;"	m	struct:_param
+mpCoeff	include/FM.h	/^        real8 *mpCoeff;   \/* Array of multipole expansion coefficients *\/$/;"	m	struct:_fmcell
+msrsp	include/display.h	/^    int msrsp;\/\/mouse response$/;"	m	class:SYWindow
+multiNodeLife	include/Node.h	/^        int     multiNodeLife;$/;"	m	struct:_node
+myDomain	include/Home.h	/^        int       myDomain;    \/* encoded domain index for this domain *\/$/;"	m	struct:_home
+myTag	include/Node.h	/^	Tag_t	myTag;$/;"	m	struct:_node
+nL	include/display.h	/^    int nP, nL; \/\/Number of points\/lines$/;"	m	class:SYWindow
+nP	include/display.h	/^    int nP, nL; \/\/Number of points\/lines$/;"	m	class:SYWindow
+nXcells	include/Param.h	/^        int nXcells;$/;"	m	struct:_param
+nXdoms	include/Param.h	/^        int nXdoms;$/;"	m	struct:_param
+nYcells	include/Param.h	/^        int nYcells;$/;"	m	struct:_param
+nYdoms	include/Param.h	/^        int nYdoms;$/;"	m	struct:_param
+nZcells	include/Param.h	/^        int nZcells;$/;"	m	struct:_param
+nZdoms	include/Param.h	/^        int nZdoms;$/;"	m	struct:_param
+name	include/Timer.h	/^	char	*name;     \/* label used during TimerPrint *\/$/;"	m	struct:_timer
+name	src/DisplayC.C	/^struct { int r, g, b; const char *name; } RGBTable[]={$/;"	m	struct:__anon21	file:
+native	include/Node.h	/^	int	native;		\/* 1 = native node, 0 = ghost node *\/$/;"	m	struct:_node
+nativeCellCount	include/Home.h	/^        int       nativeCellCount;$/;"	m	struct:_home
+nativeNodeQ	include/Home.h	/^        Node_t    *nativeNodeQ;$/;"	m	struct:_home
+nbrCount	include/Cell.h	/^   int      nbrCount ; \/* number of neighbor cells *\/$/;"	m	struct:_cell
+nbrList	include/Cell.h	/^   int     *nbrList ;  \/* list of neighbor cell encoded indices *\/$/;"	m	struct:_cell
+nbrTag	include/Node.h	/^	Tag_t	*nbrTag;$/;"	m	struct:_node
+nburg	include/Home.h	/^        int       nburg;$/;"	m	struct:_home
+nburg	include/InData.h	/^	int	nburg;		\/* number of burgers vectors in the *\/$/;"	m	struct:_indata
+netCyclicStrain	include/Param.h	/^        real8 netCyclicStrain; \/* Net accumulated strain under cyclic load *\/$/;"	m	struct:_param
+newGraph	src/display.C	/^void SYWindow::newGraph()$/;"	f	class:SYWindow
+newNodeKeyMax	include/Home.h	/^        int       newNodeKeyMax;$/;"	m	struct:_home
+newNodeKeyPtr	include/Home.h	/^        int       newNodeKeyPtr;$/;"	m	struct:_home
+newNodeKeyPtr	include/MirrorDomain.h	/^        int newNodeKeyPtr; \/* elements of nodeKeys array *\/$/;"	m	struct:_mirrordomain
+newTag	include/Home.h	/^        Tag_t  newTag;$/;"	m	struct:__anon2
+next	include/FM.h	/^        FMCell_t *next;$/;"	m	struct:_fmcell
+next	include/Node.h	/^	NodeBlock_t	*next;$/;"	m	struct:_nodeblock
+next	include/Node.h	/^	Node_t	*next;		\/* pointer to the next node in the queue *\/$/;"	m	struct:_node
+next	include/Typedefs.h	/^	int	next;$/;"	m	struct:__anon13
+nextDT	include/Param.h	/^        real8 nextDT;        \/* timestep to attempt the next cycle *\/$/;"	m	struct:_param
+nextInCell	include/Node.h	/^	Node_t	*nextInCell;	\/* used to queue node onto the current *\/$/;"	m	struct:_node
+nextInIOGroup	include/Home.h	/^        int   prevInIOGroup, nextInIOGroup;  \/* Previous and next processes *\/$/;"	m	struct:_home
+nimagex	utilities/StressTableGen.c	/^        int   nimagex;$/;"	m	struct:__anon39	file:
+nimagey	utilities/StressTableGen.c	/^        int   nimagey;$/;"	m	struct:__anon39	file:
+nimagez	utilities/StressTableGen.c	/^        int   nimagez;$/;"	m	struct:__anon39	file:
+node	include/InData.h	/^	Node_t  *node;		\/* array of node structs *\/$/;"	m	struct:_indata
+node	include/Typedefs.h	/^	Node_t	*node;$/;"	m	struct:__anon13
+node1	include/Home.h	/^        Node_t     *node1;$/;"	m	struct:__anon3
+node1	src/NodeForce.c	/^        Node_t *node1;$/;"	m	struct:__anon26	file:
+node2	include/Home.h	/^        Node_t     *node2;$/;"	m	struct:__anon3
+node2	src/NodeForce.c	/^        Node_t *node2;$/;"	m	struct:__anon26	file:
+node3	src/NodeForce.c	/^        Node_t *node3;$/;"	m	struct:__anon26	file:
+node4	src/NodeForce.c	/^        Node_t *node4;$/;"	m	struct:__anon26	file:
+nodeBlockQ	include/Home.h	/^        NodeBlock_t  *nodeBlockQ;$/;"	m	struct:_home
+nodeConstraint	include/Typedefs.h	/^        int   *nodeConstraint;$/;"	m	struct:__anon14
+nodeCount	include/Cell.h	/^   int      nodeCount ;\/* number of nodes on nodeQ *\/$/;"	m	struct:_cell
+nodeCount	include/InData.h	/^	int	nodeCount;	\/* number of nodes in <node> array *\/$/;"	m	struct:_indata
+nodeCount	include/Param.h	/^        int   nodeCount;             \/* Total number of nodes in the    *\/$/;"	m	struct:_param
+nodeCount	include/Typedefs.h	/^        int   nodeCount;$/;"	m	struct:__anon14
+nodeIndex	include/Typedefs.h	/^        int   *nodeIndex;$/;"	m	struct:__anon14
+nodeKeys	include/Home.h	/^        Node_t    **nodeKeys;$/;"	m	struct:_home
+nodeKeys	include/MirrorDomain.h	/^        Node_t **nodeKeys; \/* indexed by node's tag.index, points *\/$/;"	m	struct:_mirrordomain
+nodeKeys	include/RemoteDomain.h	/^	Node_t	**nodeKeys;	\/* indexed by node's tag.index, points *\/$/;"	m	struct:_remotedomain
+nodeLock	include/Node.h	/^        omp_lock_t nodeLock;$/;"	m	struct:_node
+nodeNumSegs	include/Typedefs.h	/^        int   *nodeNumSegs;$/;"	m	struct:__anon14
+nodePos	include/Typedefs.h	/^        real8 *nodePos;$/;"	m	struct:__anon14
+nodeQ	include/Cell.h	/^   Node_t  *nodeQ ;    \/* queue head of nodes currently in this cell *\/$/;"	m	struct:_cell
+node_data_file	include/Param.h	/^        char node_data_file[MAX_STRING_LEN];$/;"	m	struct:_param
+nodes	include/Node.h	/^	Node_t		*nodes;$/;"	m	struct:_nodeblock
+numBurgGroups	include/Param.h	/^        int  numBurgGroups;     \/* Number of groups into which different  *\/$/;"	m	struct:_param
+numBurgVectors	include/Home.h	/^        int   numBurgVectors;       \/* Total number of burgers vectors *\/$/;"	m	struct:__anon4
+numCells	include/FM.h	/^        int   numCells;  \/* Number of cells in the cell table at  *\/$/;"	m	struct:_fmlayer
+numChains	include/ParadisGen.h	/^        int     numChains;$/;"	m	struct:__anon9
+numDLBCycles	include/Param.h	/^        int   numDLBCycles;     \/* Number of initial load-balance-only *\/$/;"	m	struct:_param
+numDomains	include/Home.h	/^        int       numDomains;$/;"	m	struct:_home
+numDoms	include/Decomp.h	/^        int          numDoms[3];$/;"	m	struct:_rbdecomp
+numEndPts	src/WriteFragments.c	/^        int       numEndPts;$/;"	m	struct:__anon30	file:
+numExpCells	include/RemoteDomain.h	/^	int	numExpCells;	\/* number of native cells exported to *\/$/;"	m	struct:_remotedomain
+numFRSrcs	include/ParadisGen.h	/^        int     numFRSrcs;$/;"	m	struct:__anon9
+numFileSegments	include/Param.h	/^        int   numFileSegments;       \/* Number of files the nodal data  *\/$/;"	m	struct:_param
+numFragments	src/WriteFragments.c	/^        int     numFragments;$/;"	m	struct:__anon31	file:
+numIOGroups	include/Param.h	/^        int  numIOGroups;  \/* number of groups into which to split tasks *\/$/;"	m	struct:_param
+numInteriorPts	src/WriteFragments.c	/^        int       numInteriorPts;$/;"	m	struct:__anon30	file:
+numLoadCycle	include/Param.h	/^        int   numLoadCycle;  \/* Number of cyclic cycles *\/$/;"	m	struct:_param
+numLoops	include/ParadisGen.h	/^        int     numLoops;$/;"	m	struct:__anon9
+numNbrs	include/Node.h	/^	int	numNbrs;$/;"	m	struct:_node
+numNbrs	src/WriteFragments.c	/^        int     numNbrs;  \/* Only needed for fragment endpoints *\/$/;"	m	struct:__anon29	file:
+numPlanes	include/Home.h	/^        int   numPlanes;            \/* Total number of planes in *\/$/;"	m	struct:__anon4
+numPlanesPerBurg	include/Home.h	/^        int   *numPlanesPerBurg;    \/* Number of planes associated with *\/$/;"	m	struct:__anon4
+nx	include/Node.h	/^	real8	*nx, *ny, *nz;		\/* glide plane *\/        $/;"	m	struct:_node
+nx	include/OpList.h	/^	real8		nx;$/;"	m	struct:_operate
+nx	utilities/StressTableGen.c	/^        int   nx;$/;"	m	struct:__anon39	file:
+ny	include/Node.h	/^	real8	*nx, *ny, *nz;		\/* glide plane *\/        $/;"	m	struct:_node
+ny	include/OpList.h	/^	real8		ny;$/;"	m	struct:_operate
+ny	utilities/StressTableGen.c	/^        int   ny;$/;"	m	struct:__anon39	file:
+nz	include/Node.h	/^	real8	*nx, *ny, *nz;		\/* glide plane *\/        $/;"	m	struct:_node
+nz	include/OpList.h	/^	real8		nz;$/;"	m	struct:_operate
+nz	utilities/StressTableGen.c	/^        int   nz;$/;"	m	struct:__anon39	file:
+oldTag	include/Home.h	/^        Tag_t  oldTag;$/;"	m	struct:__anon2
+oldvX	include/Node.h	/^	real8	oldvX, oldvY, oldvZ;	\/* nodal velocity at previous step *\/$/;"	m	struct:_node
+oldvY	include/Node.h	/^	real8	oldvX, oldvY, oldvZ;	\/* nodal velocity at previous step *\/$/;"	m	struct:_node
+oldvZ	include/Node.h	/^	real8	oldvX, oldvY, oldvZ;	\/* nodal velocity at previous step *\/$/;"	m	struct:_node
+oldx	include/Node.h	/^	real8	oldx, oldy, oldz;	\/* for strain increment, Moono.Rhee *\/$/;"	m	struct:_node
+oldy	include/Node.h	/^	real8	oldx, oldy, oldz;	\/* for strain increment, Moono.Rhee *\/$/;"	m	struct:_node
+oldz	include/Node.h	/^	real8	oldx, oldy, oldz;	\/* for strain increment, Moono.Rhee *\/$/;"	m	struct:_node
+opList	include/Home.h	/^        Operate_t *opList;$/;"	m	struct:_home
+operator =	include/display.h	/^    const SYWindow &operator =(const SYWindow &yw){ return yw;}$/;"	f	class:SYWindow
+optList	src/CTableGen.c	/^Option_t        optList[OPT_MAX] = {$/;"	v
+optList	utilities/ParadisGen.c	/^Option_t optList[OPT_MAX] = {$/;"	v
+optList	utilities/ParadisRepart.c	/^Option_t        optList[OPT_MAX] = {$/;"	v
+optList	utilities/StressTableGen.c	/^Option_t optList[OPT_MAX] = {$/;"	v
+optMinAbbrev	include/ParadisGen.h	/^        int   optMinAbbrev;$/;"	m	struct:__anon8
+optMinAbbrev	src/CTableGen.c	/^        int     optMinAbbrev;$/;"	m	struct:__anon20	file:
+optMinAbbrev	utilities/ParadisRepart.c	/^        int     optMinAbbrev;$/;"	m	struct:__anon37	file:
+optMinAbbrev	utilities/StressTableGen.c	/^        int     optMinAbbrev;$/;"	m	struct:__anon38	file:
+optName	include/ParadisGen.h	/^        char  *optName;$/;"	m	struct:__anon8
+optName	src/CTableGen.c	/^        char    *optName;$/;"	m	struct:__anon20	file:
+optName	utilities/ParadisRepart.c	/^        char    *optName;$/;"	m	struct:__anon37	file:
+optName	utilities/StressTableGen.c	/^        char    *optName;$/;"	m	struct:__anon38	file:
+optPaired	include/ParadisGen.h	/^        int   optPaired;$/;"	m	struct:__anon8
+optPaired	src/CTableGen.c	/^        int     optPaired;$/;"	m	struct:__anon20	file:
+optPaired	utilities/ParadisRepart.c	/^        int     optPaired;$/;"	m	struct:__anon37	file:
+optPaired	utilities/StressTableGen.c	/^        int     optPaired;$/;"	m	struct:__anon38	file:
+optType	include/ParadisGen.h	/^        int   optType;$/;"	m	struct:__anon8
+optType	src/CTableGen.c	/^        int     optType;$/;"	m	struct:__anon20	file:
+optType	utilities/ParadisRepart.c	/^        int     optType;$/;"	m	struct:__anon37	file:
+optType	utilities/StressTableGen.c	/^        int     optType;$/;"	m	struct:__anon38	file:
+outBuf	include/Home.h	/^        char      *outBuf;$/;"	m	struct:_home
+outBuf	include/RemoteDomain.h	/^	char	*outBuf;$/;"	m	struct:_remotedomain
+outBufLen	include/RemoteDomain.h	/^	int	outBufLen;$/;"	m	struct:_remotedomain
+outRequests	include/Home.h	/^        MPI_Request  *outRequests;$/;"	m	struct:_home
+outStatus	include/Home.h	/^        MPI_Status   *outStatus;$/;"	m	struct:_home
+outputFile	include/ParadisGen.h	/^        char    *outputFile;$/;"	m	struct:__anon9
+ownedCnt	include/FM.h	/^        int   ownedCnt;    \/* Total number of cells owned by this domain *\/$/;"	m	struct:_fmlayer
+ownedMax	include/FM.h	/^        int   ownedMax[3]; \/* domain.  This information is statically    *\/$/;"	m	struct:_fmlayer
+ownedMin	include/FM.h	/^        int   ownedMin[3]; \/* Min and max indices of cells owned by this *\/$/;"	m	struct:_fmlayer
+owningDom	include/FM.h	/^        int   owningDom;  \/* Index of domain owning this cell.  There is  *\/$/;"	m	struct:_fmcell
+paint	src/display.C	/^void SYWindow::paint()$/;"	f	class:SYWindow
+param	include/Home.h	/^        Param_t   *param;$/;"	m	struct:_home
+param	include/InData.h	/^	Param_t	*param;$/;"	m	struct:_indata
+paramCnt	include/Typedefs.h	/^        int       paramCnt;$/;"	m	struct:__anon16
+partialDisloDensity	include/Param.h	/^        real8 *partialDisloDensity;  \/* Dynamically sized array to hold   *\/$/;"	m	struct:_param
+pause	include/display.h	/^    bool alive,pause,drawframe;$/;"	m	class:SYWindow
+paxby	src/CorrectionTable.c	/^static void paxby(int uorder, int p[], int q[], real8 weight,$/;"	f	file:
+pbc	utilities/StressTableGen.c	/^        int   pbc;$/;"	m	struct:__anon39	file:
+pbcVal	include/ParadisGen.h	/^        int     pbcVal;$/;"	m	struct:__anon9
+pbcglide	src/display.C	/^void YWindow::pbcglide(double dx, double dy)$/;"	f	class:YWindow
+pbcglideTo	src/display.C	/^void YWindow::pbcglideTo(XEvent ev)$/;"	f	class:YWindow
+pbcshift	include/display.h	/^    double pbcshift[3];$/;"	m	class:SYWindow
+pbcshift	src/DisplayC.C	/^double pbcshift[3];$/;"	v
+pbcshiftTo	src/display.C	/^void YWindow::pbcshiftTo(XEvent ev, int dir)$/;"	f	class:YWindow
+pixmap	include/display.h	/^    Pixmap pixmap;$/;"	m	class:SYWindow
+planeList	include/Home.h	/^        real8 (*planeList)[3];      \/* Arraay of burgers vector planes *\/$/;"	m	struct:__anon4
+point_radius	src/DisplayC.C	/^double point_radius, line_width;$/;"	v
+pois	include/Param.h	/^        real8 pois;$/;"	m	struct:_param
+polefigcounter	include/Param.h	/^        int   polefigfile, polefigfreq, polefigcounter;$/;"	m	struct:_param
+polefigdt	include/Param.h	/^        real8 polefigdt, polefigtime;$/;"	m	struct:_param
+polefigfile	include/Param.h	/^        int   polefigfile, polefigfreq, polefigcounter;$/;"	m	struct:_param
+polefigfreq	include/Param.h	/^        int   polefigfile, polefigfreq, polefigcounter;$/;"	m	struct:_param
+polefigtime	include/Param.h	/^        real8 polefigdt, polefigtime;$/;"	m	struct:_param
+pos	utilities/CalcDensity.c	/^    real8 pos[3];$/;"	m	struct:__anon33	file:
+povray	include/Param.h	/^        int   povray,  povrayfreq,  povraycounter; $/;"	m	struct:_param
+povraycounter	include/Param.h	/^        int   povray,  povrayfreq,  povraycounter; $/;"	m	struct:_param
+povraydt	include/Param.h	/^        real8 povraydt, povraytime;$/;"	m	struct:_param
+povrayfreq	include/Param.h	/^        int   povray,  povrayfreq,  povraycounter; $/;"	m	struct:_param
+povraytime	include/Param.h	/^        real8 povraydt, povraytime;$/;"	m	struct:_param
+prev	include/FM.h	/^        FMCell_t *prev;$/;"	m	struct:_fmcell
+prevInIOGroup	include/Home.h	/^        int   prevInIOGroup, nextInIOGroup;  \/* Previous and next processes *\/$/;"	m	struct:_home
+printWinSpec	src/display.C	/^void YWindow::printWinSpec()$/;"	f	class:YWindow
+projectTo	src/display.C	/^void YWindow::projectTo(XEvent ev)$/;"	f	class:YWindow
+pscount	include/display.h	/^    int gifcount,pscount;$/;"	m	class:SYWindow
+psfile	include/Param.h	/^        int   psfile,  psfilefreq;$/;"	m	struct:_param
+psfiledt	include/Param.h	/^        real8 psfiledt, psfiletime;$/;"	m	struct:_param
+psfilefreq	include/Param.h	/^        int   psfile,  psfilefreq;$/;"	m	struct:_param
+psfiletime	include/Param.h	/^        real8 psfiledt, psfiletime;$/;"	m	struct:_param
+r	include/display.h	/^        double x, y, z, r; \/\/coordinates always lie in [-1, 1]$/;"	m	struct:SYWindow::YPoint
+r	include/display.h	/^        double x0, y0, z0, x1, y1, z1, r;$/;"	m	struct:SYWindow::YLine
+r	src/DisplayC.C	/^struct { int r, g, b; const char *name; } RGBTable[]={$/;"	m	struct:__anon21	file:
+rInterval	include/display.h	/^enum { MaxPoints=40000, MaxLines=80000, rInterval=50, DSCLEN=60};$/;"	e	enum:__anon17
+rTol	include/Param.h	/^        real8 rTol;      \/* Maximum error allowed in timestep *\/$/;"	m	struct:_param
+radius	include/ParadisGen.h	/^        real8   radius;$/;"	m	struct:__anon9
+randm	src/Util.c	/^real8 randm(int *seed)$/;"	f
+rann	include/Param.h	/^        real8 rann;   \/* closest distance before dislocations are *\/$/;"	m	struct:_param
+rc	include/Param.h	/^        real8 rc;     \/* core radius in elastic interaction calculation *\/ $/;"	m	struct:_param
+rcvOpCount	include/Home.h	/^        int       rcvOpCount;$/;"	m	struct:_home
+rcvOpList	include/Home.h	/^        Operate_t *rcvOpList;$/;"	m	struct:_home
+rdinit	src/FMSupport.c	/^static void rdinit(int norder,int uorder,int maxorder,$/;"	f	file:
+real8	include/Typedefs.h	/^typedef double real8;$/;"	t
+realAddr	src/MemCheck.c	/^        void *realAddr;                  \/* true address of the allocated *\/$/;"	m	struct:__anon25	file:
+realdt	include/Param.h	/^        real8 realdt;        \/* *almost* obsolete *\/$/;"	m	struct:_param
+realloc	include/Home.h	83;"	d
+recycledNodeHeap	include/Home.h	/^        int       *recycledNodeHeap;$/;"	m	struct:_home
+recycledNodeHeapEnts	include/Home.h	/^        int       recycledNodeHeapEnts;$/;"	m	struct:_home
+recycledNodeHeapSize	include/Home.h	/^        int       recycledNodeHeapSize;$/;"	m	struct:_home
+refCnt	utilities/CalcDensity.c	/^    int   refCnt;$/;"	m	struct:__anon33	file:
+remeshAreaMax	include/Param.h	/^        real8 remeshAreaMax; \/* This is calculated from remeshAreaMin and  *\/$/;"	m	struct:_param
+remeshAreaMin	include/Param.h	/^        real8 remeshAreaMin; \/* This values is based on the minSeg value  *\/$/;"	m	struct:_param
+remeshRule	include/Param.h	/^        int remeshRule;$/;"	m	struct:_param
+remoteDomainCount	include/Home.h	/^        int       remoteDomainCount; \/* Number of primary remote domains *\/$/;"	m	struct:_home
+remoteDomainKeys	include/Home.h	/^        RemoteDomain_t  **remoteDomainKeys; \/* pointers to RemoteDomain_t    *\/$/;"	m	struct:_home
+remoteDomains	include/Home.h	/^        int       *remoteDomains;    \/* encoded indices of the neighbor *\/$/;"	m	struct:_home
+reversergb	src/DisplayC.C	/^int reversergb;$/;"	v
+reversergb	src/display.C	/^void SYWindow::reversergb()$/;"	f	class:SYWindow
+rijmFileName	utilities/StressTableGen.c	/^        char  *rijmFileName;$/;"	m	struct:__anon39	file:
+rijmPBCFileName	utilities/StressTableGen.c	/^        char  *rijmPBCFileName;$/;"	m	struct:__anon39	file:
+rijmPBCTable	utilities/StressTableGen.c	/^static real8 *rijmPBCTable;$/;"	v	file:
+rijmTable	utilities/StressTableGen.c	/^static real8 *rijmTable;$/;"	v	file:
+rint	include/Home.h	109;"	d
+rinterval	include/display.h	/^    int rinterval;$/;"	m	class:SYWindow
+rmax	include/Param.h	/^        real8 rmax;      \/* maximum migration distance per timestep *\/$/;"	m	struct:_param
+rotMatrix	include/Home.h	/^        real8 rotMatrix[3][3];$/;"	m	struct:_home
+rotMatrixInverse	include/Home.h	/^        real8 rotMatrixInverse[3][3];$/;"	m	struct:_home
+rotateTo	src/display.C	/^void YWindow::rotateTo(XEvent ev)$/;"	f	class:YWindow
+rotateangles	src/DisplayC.C	/^double rotateangles[4];$/;"	v
+rveclist	src/FMSupport.c	/^static int rveclist[][3] = { {12, 0, 0} , {12,12, 0} , {12,12,12} ,$/;"	v	file:
+save	include/Timer.h	/^	real8	save;      \/* to save full force update times till *\/$/;"	m	struct:_timer
+saveRot	include/display.h	/^    void saveRot()$/;"	f	class:SYWindow
+saveScale	include/display.h	/^    void saveScale()$/;"	f	class:SYWindow
+saveView	include/display.h	/^    void saveView()$/;"	f	class:SYWindow
+savecn	include/Param.h	/^        int   savecn,  savecnfreq,  savecncounter;$/;"	m	struct:_param
+savecncounter	include/Param.h	/^        int   savecn,  savecnfreq,  savecncounter;$/;"	m	struct:_param
+savecndt	include/Param.h	/^        real8 savecndt, savecntime;$/;"	m	struct:_param
+savecnfreq	include/Param.h	/^        int   savecn,  savecnfreq,  savecncounter;$/;"	m	struct:_param
+savecntime	include/Param.h	/^        real8 savecndt, savecntime;$/;"	m	struct:_param
+savedensityspec	include/Param.h	/^        int   savedensityspec[3];$/;"	m	struct:_param
+saveprop	include/Param.h	/^        int   saveprop, savepropfreq;$/;"	m	struct:_param
+savepropdt	include/Param.h	/^        real8 savepropdt, saveproptime;$/;"	m	struct:_param
+savepropfreq	include/Param.h	/^        int   saveprop, savepropfreq;$/;"	m	struct:_param
+saveproptime	include/Param.h	/^        real8 savepropdt, saveproptime;$/;"	m	struct:_param
+savetimers	include/Param.h	/^        int   savetimers, savetimersfreq, savetimerscounter;$/;"	m	struct:_param
+savetimerscounter	include/Param.h	/^        int   savetimers, savetimersfreq, savetimerscounter;$/;"	m	struct:_param
+savetimersdt	include/Param.h	/^        real8 savetimersdt, savetimerstime;$/;"	m	struct:_param
+savetimersfreq	include/Param.h	/^        int   savetimers, savetimersfreq, savetimerscounter;$/;"	m	struct:_param
+savetimerstime	include/Param.h	/^        real8 savetimersdt, savetimerstime;$/;"	m	struct:_param
+scaleTo	src/display.C	/^void YWindow::scaleTo(XEvent ev)$/;"	f	class:YWindow
+scalepoints	include/DisplayC.h	/^int scalepoints;$/;"	v
+scalepoints	include/display.h	/^    int scalepoints;$/;"	m	class:SYWindow
+secondaryRemoteDomainCount	include/Home.h	/^        int       secondaryRemoteDomainCount;  \/* Number of secondary *\/$/;"	m	struct:_home
+seed	include/ParadisGen.h	/^        int     seed;$/;"	m	struct:__anon9
+seg	src/LocalSegForces.c	/^        Segment_t *seg;$/;"	m	struct:__anon24	file:
+seg1	src/LocalSegForces.c	/^        Segment_t *seg1;$/;"	m	struct:__anon23	file:
+seg2	src/LocalSegForces.c	/^        Segment_t *seg2;$/;"	m	struct:__anon23	file:
+segCount	include/Typedefs.h	/^        int   segCount;$/;"	m	struct:__anon14
+segLock	include/Home.h	/^        omp_lock_t segLock;$/;"	m	struct:__anon3
+segTags	include/Typedefs.h	/^        int   *segTags;$/;"	m	struct:__anon14
+semID	include/display.h	/^    int semID; \/\/for Lock\/Unlock mechanism$/;"	m	class:SYWindow
+semID2	include/display.h	/^    int semID2; \/\/for Lock\/Unlock mechanism$/;"	m	class:SYWindow
+semun	include/display.h	/^union semun$/;"	u
+sessileburgspec	include/Param.h	/^        real8 sessileburgspec[30];$/;"	m	struct:_param
+sessilelinespec	include/Param.h	/^        real8 sessilelinespec[30];$/;"	m	struct:_param
+setSeg1Forces	src/LocalSegForces.c	/^        int       setSeg1Forces;$/;"	m	struct:__anon23	file:
+setSeg2Forces	src/LocalSegForces.c	/^        int       setSeg2Forces;$/;"	m	struct:__anon23	file:
+setWinSpec	src/display.C	/^void YWindow::setWinSpec(int x0,int y0,double s,double d,double a[3][3])$/;"	f	class:YWindow
+setinterval	include/display.h	/^    void setinterval(int i) {if (i>0) rinterval=i; }$/;"	f	class:SYWindow
+sgnv	include/Node.h	/^	int	sgnv;		\/* +1: if contribute to strain rate,	*\/$/;"	m	struct:_node
+shearModulus	include/Param.h	/^        real8 shearModulus;$/;"	m	struct:_param
+sigbLoc	include/Node.h	/^	real8	*sigbLoc;		\/* sig.b on arms (numNbr*3) *\/$/;"	m	struct:_node
+sigbRem	include/Node.h	/^	real8	*sigbRem;		\/* sig.b on arms (numNbr*3) *\/$/;"	m	struct:_node
+simVol	include/Param.h	/^        real8 simVol;         \/* Total volume of simulation *\/$/;"	m	struct:_param
+skipIO	include/Param.h	/^        int  skipIO;    \/* if set, all major IO is skipped regardless *\/$/;"	m	struct:_param
+sleepseconds	src/DisplayC.C	/^int sleepseconds;$/;"	v
+sort	include/display.h	/^    bool square, sort;$/;"	m	class:SYWindow
+spinRot	src/display.C	/^void YWindow::spinRot(double arc)$/;"	f	class:YWindow
+splitMultiNodeFreq	include/Param.h	/^        int splitMultiNodeFreq;  \/* Code will attempt to split multi-nodes *\/$/;"	m	struct:_param
+springConst	include/Param.h	/^        real8 springConst;$/;"	m	struct:_param
+square	include/display.h	/^    bool square, sort;$/;"	m	class:SYWindow
+startTime	include/Timer.h	/^	real8	startTime; \/* time at which most recent TimerStart called *\/$/;"	m	struct:_timer
+started	include/Timer.h	/^	int	started;   \/* 1 if event is active, 0 otherwise *\/$/;"	m	struct:_timer
+subDecomp	include/Decomp.h	/^        RBDecomp_t   *subDecomp[8];$/;"	m	struct:_rbdecomp
+surfaceSegCount	include/Home.h	/^        int   surfaceSegCount;$/;"	m	struct:_home
+surfaceSegList	include/Home.h	/^        real8 *surfaceSegList;$/;"	m	struct:_home
+tag	src/WriteFragments.c	/^        Tag_t   tag;$/;"	m	struct:__anon29	file:
+tag	utilities/CalcDensity.c	/^    Tag_t tag;$/;"	m	struct:__anon33	file:
+tag1	utilities/CalcDensity.c	/^    Tag_t tag1;$/;"	m	struct:__anon32	file:
+tag2	utilities/CalcDensity.c	/^    Tag_t tag2;$/;"	m	struct:__anon32	file:
+tagMap	include/Home.h	/^        TagMap_t  *tagMap;$/;"	m	struct:_home
+tagMapEnts	include/Home.h	/^        int       tagMapEnts;$/;"	m	struct:_home
+tagMapSize	include/Home.h	/^        int       tagMapSize;$/;"	m	struct:_home
+taskMappingMode	include/Param.h	/^        int taskMappingMode;  \/* Only valid for BG\/P systems on which a  *\/$/;"	m	struct:_param
+taylorCoeff	include/FM.h	/^        real8 *taylorCoeff; \/* Array of taylor expansion coefficients    *\/$/;"	m	struct:_fmcell
+tecplot	include/Param.h	/^        int   tecplot, tecplotfreq, tecplotcounter; $/;"	m	struct:_param
+tecplotcounter	include/Param.h	/^        int   tecplot, tecplotfreq, tecplotcounter; $/;"	m	struct:_param
+tecplotdt	include/Param.h	/^        real8 tecplotdt, tecplottime;$/;"	m	struct:_param
+tecplotfreq	include/Param.h	/^        int   tecplot, tecplotfreq, tecplotcounter; $/;"	m	struct:_param
+tecplottime	include/Param.h	/^        real8 tecplotdt, tecplottime;$/;"	m	struct:_param
+testcolor	src/display.C	/^void SYWindow::testcolor()$/;"	f	class:SYWindow
+theDisplay	include/display.h	/^    Display *theDisplay;$/;"	m	class:SYWindow
+theScreen	include/display.h	/^    int theScreen;$/;"	m	class:SYWindow
+theWindow	include/display.h	/^    Window theWindow, Root;$/;"	m	class:SYWindow
+thinfilm	include/display.h	/^    bool thinfilm; double film_zmin, film_zmax;$/;"	m	class:SYWindow
+thread_routine	src/display.C	/^void * SYWindow::thread_routine(void *p)$/;"	f	class:SYWindow
+timeNow	include/Param.h	/^        real8 timeNow;       \/* current simulation time *\/$/;"	m	struct:_param
+timeStart	include/Param.h	/^        real8 timeStart;     \/* Initial simulation time *\/$/;"	m	struct:_param
+timers	include/Home.h	/^        Timer_t   *timers;$/;"	m	struct:_home
+timestepIntegrator	include/Param.h	/^        char  timestepIntegrator[MAX_STRING_LEN];$/;"	m	struct:_param
+totLoad	include/Decomp.h	/^        double       totLoad;$/;"	m	struct:_rbdecomp
+totedgepStrain	include/Param.h	/^        real8 totedgepStrain[6], totscrewpStrain[6];$/;"	m	struct:_param
+totpSpn	include/Param.h	/^        real8 delpSpin[6],totpSpn[6];$/;"	m	struct:_param
+totpStn	include/Param.h	/^        real8 delpStrain[6],delSig[6],totpStn[6];$/;"	m	struct:_param
+totscrewpStrain	include/Param.h	/^        real8 totedgepStrain[6], totscrewpStrain[6];$/;"	m	struct:_param
+totstraintensor	include/Param.h	/^        real8 totstraintensor[6];$/;"	m	struct:_param
+trailer	src/MemCheck.c	/^        char *trailer;                   \/* pointer to trailer appended to *\/$/;"	m	struct:__anon25	file:
+translateTo	src/display.C	/^void YWindow::translateTo(XEvent ev)$/;"	f	class:YWindow
+true	include/display.h	24;"	d
+type	include/OpList.h	/^	OpType_t	type;$/;"	m	struct:_operate
+type	include/ParadisGen.h	/^        int     type;$/;"	m	struct:__anon9
+update	src/display.C	/^void SYWindow::update()$/;"	f	class:SYWindow
+update	src/display.C	/^void YWindow::update()$/;"	f	class:YWindow
+useLabFrame	include/Param.h	/^        int   useLabFrame;   \/* 0 if standard crystalographic frame is to *\/$/;"	m	struct:_param
+userAddr	src/MemCheck.c	/^        void *userAddr;                  \/* memory address returned to caller *\/$/;"	m	struct:__anon25	file:
+userSize	src/MemCheck.c	/^        int  userSize;                   \/* size (in bytes) of the portion *\/$/;"	m	struct:__anon25	file:
+vAverage	include/Param.h	/^        real8 vAverage;        \/* average nodal velocity *\/$/;"	m	struct:_param
+vStDev	include/Param.h	/^        real8 vStDev;          \/* St.Dev of nodal velocity *\/$/;"	m	struct:_param
+vX	include/Node.h	/^	real8	vX, vY, vZ;		\/* nodal velocity: units=burgMag\/sec *\/$/;"	m	struct:_node
+vY	include/Node.h	/^	real8	vX, vY, vZ;		\/* nodal velocity: units=burgMag\/sec *\/$/;"	m	struct:_node
+vZ	include/Node.h	/^	real8	vX, vY, vZ;		\/* nodal velocity: units=burgMag\/sec *\/$/;"	m	struct:_node
+vacancyConc	include/Param.h	/^        real8 vacancyConc;            \/* Concentration of vacancies in the *\/$/;"	m	struct:_param
+vacancyConcEquilibrium	include/Param.h	/^        real8 vacancyConcEquilibrium; \/* Thermal equilibrium vacacy concen-*\/$/;"	m	struct:_param
+val	include/display.h	/^    int val;                    \/* value for SETVAL *\/$/;"	m	union:semun
+valCnt	include/Typedefs.h	/^        int  valCnt;$/;"	m	struct:__anon15
+valList	include/Typedefs.h	/^        void *valList;$/;"	m	struct:__anon15
+valType	include/Typedefs.h	/^        int  valType;$/;"	m	struct:__anon15
+varList	include/Typedefs.h	/^        VarData_t *varList;$/;"	m	struct:__anon16
+varName	include/Typedefs.h	/^        char varName[MAX_STRING_LEN];$/;"	m	struct:__anon15
+vector	include/FM.h	/^typedef double vector[3];$/;"	t
+velfile	include/Param.h	/^        int   velfile, velfilefreq, velfilecounter;$/;"	m	struct:_param
+velfilecounter	include/Param.h	/^        int   velfile, velfilefreq, velfilecounter;$/;"	m	struct:_param
+velfiledt	include/Param.h	/^        real8 velfiledt, velfiletime;$/;"	m	struct:_param
+velfilefreq	include/Param.h	/^        int   velfile, velfilefreq, velfilecounter;$/;"	m	struct:_param
+velfiletime	include/Param.h	/^        real8 velfiledt, velfiletime;$/;"	m	struct:_param
+verticalRot	src/display.C	/^void YWindow::verticalRot(double arc)$/;"	f	class:YWindow
+vis	include/display.h	/^    Visual *vis;$/;"	m	class:SYWindow
+visinfo	include/display.h	/^    XVisualInfo visinfo;$/;"	m	class:SYWindow
+width	include/display.h	/^    unsigned int width, height;$/;"	m	class:SYWindow
+win	src/DisplayC.C	/^YWindow *win;$/;"	v
+winDefaultsFile	include/Param.h	/^        char  winDefaultsFile[MAX_STRING_LEN];$/;"	m	struct:_param
+win_height	src/DisplayC.C	/^int win_width, win_height;$/;"	v
+win_name	src/DisplayC.C	/^char win_name[100];$/;"	v
+win_width	src/DisplayC.C	/^int win_width, win_height;$/;"	v
+writeBinRestart	include/Param.h	/^        int  writeBinRestart; \/* if set, will write data portion of *\/$/;"	m	struct:_param
+writeForce	include/Param.h	/^        int   writeForce, writeForceFreq, writeForceCounter;$/;"	m	struct:_param
+writeForceCounter	include/Param.h	/^        int   writeForce, writeForceFreq, writeForceCounter;$/;"	m	struct:_param
+writeForceDT	include/Param.h	/^        real8 writeForceDT, writeForceTime;$/;"	m	struct:_param
+writeForceFreq	include/Param.h	/^        int   writeForce, writeForceFreq, writeForceCounter;$/;"	m	struct:_param
+writeForceTime	include/Param.h	/^        real8 writeForceDT, writeForceTime;$/;"	m	struct:_param
+writeVisit	include/Param.h	/^        int   writeVisit, writeVisitFreq, writeVisitCounter;$/;"	m	struct:_param
+writeVisitCounter	include/Param.h	/^        int   writeVisit, writeVisitFreq, writeVisitCounter;$/;"	m	struct:_param
+writeVisitDT	include/Param.h	/^        real8 writeVisitDT, writeVisitTime;$/;"	m	struct:_param
+writeVisitFreq	include/Param.h	/^        int   writeVisit, writeVisitFreq, writeVisitCounter;$/;"	m	struct:_param
+writeVisitNodes	include/Param.h	/^        int   writeVisitNodes, writeVisitNodesAsText;$/;"	m	struct:_param
+writeVisitNodesAsText	include/Param.h	/^        int   writeVisitNodes, writeVisitNodesAsText;$/;"	m	struct:_param
+writeVisitSegments	include/Param.h	/^        int   writeVisitSegments, writeVisitSegmentsAsText;$/;"	m	struct:_param
+writeVisitSegmentsAsText	include/Param.h	/^        int   writeVisitSegments, writeVisitSegmentsAsText;$/;"	m	struct:_param
+writeVisitTime	include/Param.h	/^        real8 writeVisitDT, writeVisitTime;$/;"	m	struct:_param
+writeXpm	include/display.h	/^    void writeXpm(char *name)$/;"	f	class:SYWindow
+writegif	src/display.C	/^void SYWindow::writegif()$/;"	f	class:SYWindow
+writeps	src/display.C	/^void SYWindow::writeps()$/;"	f	class:SYWindow
+x	include/Node.h	/^	real8	x, y, z;		\/* nodal position *\/$/;"	m	struct:_node
+x	include/OpList.h	/^	real8		x;$/;"	m	struct:_operate
+x	include/display.h	/^        double x, y, z, r; \/\/coordinates always lie in [-1, 1]$/;"	m	struct:SYWindow::YPoint
+x0	include/display.h	/^        double x0, y0, z0, x1, y1, z1, r;$/;"	m	struct:SYWindow::YLine
+x1	include/display.h	/^        double x0, y0, z0, x1, y1, z1, r;$/;"	m	struct:SYWindow::YLine
+xBoundMax	include/Param.h	/^        real8 xBoundMin, xBoundMax;$/;"	m	struct:_param
+xBoundMin	include/Param.h	/^        real8 xBoundMin, xBoundMax;$/;"	m	struct:_param
+xBoundType	include/Param.h	/^        BoundType_t xBoundType;$/;"	m	struct:_param
+xIndex	include/Cell.h	/^   int     xIndex, yIndex, zIndex; \/* Indices of the cell in each dimension *\/$/;"	m	struct:_cell
+xLen	utilities/StressTableGen.c	/^        real8 xLen, yLen, zLen;$/;"	m	struct:__anon39	file:
+xMaxLevel	include/Home.h	/^        int       xMaxLevel;$/;"	m	struct:_home
+xShift	include/Cell.h	/^   real8   xShift ;    \/* if periodic, amount to shift corresp' base coord *\/$/;"	m	struct:_cell
+xSurf	include/ParadisGen.h	/^        real8   xSurf[2];$/;"	m	struct:__anon9
+xprintf	src/FMSigma2.c	38;"	d	file:
+xprintf	src/FMSigma2.c	40;"	d	file:
+xvector	src/Util.c	/^void xvector(real8 ax, real8 ay, real8 az,$/;"	f
+y	include/Node.h	/^	real8	x, y, z;		\/* nodal position *\/$/;"	m	struct:_node
+y	include/OpList.h	/^	real8		y;$/;"	m	struct:_operate
+y	include/display.h	/^        double x, y, z, r; \/\/coordinates always lie in [-1, 1]$/;"	m	struct:SYWindow::YPoint
+y0	include/display.h	/^        double x0, y0, z0, x1, y1, z1, r;$/;"	m	struct:SYWindow::YLine
+y1	include/display.h	/^        double x0, y0, z0, x1, y1, z1, r;$/;"	m	struct:SYWindow::YLine
+yBoundMax	include/Param.h	/^        real8 yBoundMin, yBoundMax;$/;"	m	struct:_param
+yBoundMin	include/Param.h	/^        real8 yBoundMin, yBoundMax;$/;"	m	struct:_param
+yBoundType	include/Param.h	/^        BoundType_t yBoundType;$/;"	m	struct:_param
+yIndex	include/Cell.h	/^   int     xIndex, yIndex, zIndex; \/* Indices of the cell in each dimension *\/$/;"	m	struct:_cell
+yLen	utilities/StressTableGen.c	/^        real8 xLen, yLen, zLen;$/;"	m	struct:__anon39	file:
+yMaxLevel	include/Home.h	/^        int       yMaxLevel;$/;"	m	struct:_home
+yShift	include/Cell.h	/^   real8   yShift ;$/;"	m	struct:_cell
+ySurf	include/ParadisGen.h	/^        real8   ySurf[2];$/;"	m	struct:__anon9
+yw	src/display.C	1808;"	d	file:
+z	include/Node.h	/^	real8	x, y, z;		\/* nodal position *\/$/;"	m	struct:_node
+z	include/OpList.h	/^	real8		z;$/;"	m	struct:_operate
+z	include/display.h	/^        double x, y, z, r; \/\/coordinates always lie in [-1, 1]$/;"	m	struct:SYWindow::YPoint
+z0	include/display.h	/^        double x0, y0, z0, x1, y1, z1, r;$/;"	m	struct:SYWindow::YLine
+z1	include/display.h	/^        double x0, y0, z0, x1, y1, z1, r;$/;"	m	struct:SYWindow::YLine
+zBoundMax	include/Param.h	/^        real8 zBoundMin, zBoundMax;$/;"	m	struct:_param
+zBoundMin	include/Param.h	/^        real8 zBoundMin, zBoundMax;$/;"	m	struct:_param
+zBoundType	include/Param.h	/^        BoundType_t zBoundType;$/;"	m	struct:_param
+zIndex	include/Cell.h	/^   int     xIndex, yIndex, zIndex; \/* Indices of the cell in each dimension *\/$/;"	m	struct:_cell
+zLen	utilities/StressTableGen.c	/^        real8 xLen, yLen, zLen;$/;"	m	struct:__anon39	file:
+zMaxLevel	include/Home.h	/^        int       zMaxLevel;$/;"	m	struct:_home
+zShift	include/Cell.h	/^   real8   zShift ;$/;"	m	struct:_cell
+zSurf	include/ParadisGen.h	/^        real8   zSurf[2];$/;"	m	struct:__anon9
+zoom	src/display.C	/^void YWindow::zoom(double z)$/;"	f	class:YWindow
+~SYWindow	src/display.C	/^SYWindow::~SYWindow()$/;"	f	class:SYWindow

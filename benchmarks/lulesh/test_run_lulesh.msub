@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#MSUB -l nodes=32:ppn=64
+#MSUB -l partition=cab
+#MSUB -A asccasc
+#MSUB -q pbatch
+#MSUB -V
+#MSUB -l walltime=00:05:00
+#MSUB -o run_lulesh.out
+#MSUB -e run_lulesh.err
+
+#MSUB -v OMP_NESTED,OMP_SCHEDULE,OMP_WAIT_POLICY,OMP_PLACES, OMP_PROC_BIND,OMP_THREAD_LIMIT,OMP_DYNAMIC,OMP_NUM_THREADS, PAPI_EVENTS, GOMP_CPU_AFFINITY,KMP_AFFINITY,KMP_BLOCKTIME, MPICH_ASYNC_PROGRESS, SMT, gmpi_replay,SLURM_NTASKS,SLURM_NNODES,SLURM_NTASKS_PER_NODE, SLURM_NTASKS_PER_SOCKET,dataDir,RAPL,gmpi_replay_path,gmpi_replay_file, cpuFreq,shortTaskRAPL,PATH,LD_LIBRARY_PATH, powerLimit, POWER_INTERVAL, powerBalancing, collThreshold,dataDir,  envList
+
+. /usr/local/tools/dotkit/init.sh
+use mvapich2-intel-2.0
+#sockets=\"`lstopo --only socket|cut -d'#' -f2|tr '\n' ' '`\"
+
+#(SLURM_NTASKS_PER_NODE='1' SLURM_NNODES=\"16\")
+
+OMP_DYNAMIC="FALSE"
+KMP_BLOCKTIME=0
+
+OMP_PROC_BIND='TRUE'
+OMP_NUM_THREADS=8
+
+RAPL=1 \
+MPICH_ASYNC_PROGRESS=1 \
+OMP_NUM_THREADS=8 \
+KMP_AFFINITY=compact \
+powerLimit=60 \
+POWER_INTERVAL=50 \
+powerBalancing=1 \
+collThreshold=3 \
+dataDir="./powerdata" \
+SLURM_NTASKS_PER_SOCKET=1 \
+srun -N 32 -n 64 ./lulesh2.0_power -s 100 -i 10

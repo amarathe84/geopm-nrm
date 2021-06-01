@@ -1,0 +1,4 @@
+#GEO_INSTALL_PATH=$(HOME)/geopm/install-$(echo $HOSTNAME | sed -e "s/[0-9]*$//")
+#GEO_INSTALL_PATH=$(HOME)/geopm/install-1.1.0
+GEO_INSTALL_PATH=/opt/geopm/1.1/gnu/
+#LIBMSR_INSTALL_PATH=/g/g92/marathe1/quartz/local

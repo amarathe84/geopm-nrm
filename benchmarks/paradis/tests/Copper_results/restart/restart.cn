@@ -1,0 +1,231 @@
+########################################
+###                                  ###
+###  ParaDiS control parameter file  ###
+###                                  ###
+########################################
+
+#
+#  Simulation cell and processor setup
+#  
+numXdoms =   14  
+numYdoms =   5  
+numZdoms =   2  
+numXcells =   4  
+numYcells =   4  
+numZcells =   4  
+xBoundType =   0  
+yBoundType =   0  
+zBoundType =   0  
+decompType =   1  
+DLBfreq =   0  
+#
+#  Simulation time and timestepping controls
+#  
+cycleStart =   100  
+maxstep =   100  
+timeNow =   9.728742e-10  
+timeStart =   9.717153e-10  
+timestepIntegrator =   "trapezoid"  
+deltaTT =   1.158837e-12  
+maxDT =   1.500000e+00  
+nextDT =   1.390604e-12  
+dtIncrementFact =   1.200000e+00  
+dtDecrementFact =   5.000000e-01  
+dtExponent =   4.000000e+00  
+dtVariableAdjustment =   0  
+rTol =   1.000000e+01  
+#
+#  Discretization and topological change controls
+#  
+maxSeg =   2.000000e+02  
+minSeg =   9.611246e+01  
+remeshRule =   2  
+splitMultiNodeFreq =   1  
+collisionMethod =   2  
+#
+#  Fast Multipole Method controls
+#  
+fmEnabled =   1  
+fmMPOrder =   2  
+fmTaylorOrder =   5  
+fmCorrectionTbl =   "inputs/fm-ctab.Cu.m2.t5.dat"  
+#
+#  Tables for non-FMM far-field force calcs
+#  
+#
+#  Loading conditions
+#  
+loadType =   1  
+appliedStress = [
+  1.563684e-09
+  7.372211e-12
+  1.204067e+05
+  7.360369e-04
+  -1.201788e-02
+  -1.051922e-10
+  ]
+eRate =   1.000000e+03  
+indxErate =   1  
+edotdir = [
+  -1.980282e-07
+  1.684931e-08
+  1.000000e+00
+  ]
+useLabFrame =   0  
+#
+#  Material and mobility parameters
+#  
+mobilityLaw =   "FCC_0"  
+shearModulus =   5.460000e+10  
+pois =   3.240000e-01  
+burgMag =   2.556000e-10  
+YoungModulus =   1.445808e+11  
+rc =   1.500000e+02  
+Ecore =   3.177543e+10  
+MobScrew =   1.000000e+04  
+MobEdge =   1.000000e+04  
+includeInertia =   0  
+#
+#  Flux decomposition
+#  
+totstraintensor = [
+  3.815142e-20
+  2.761982e-22
+  9.728742e-07
+  1.639226e-14
+  -1.926565e-13
+  -3.246129e-21
+  ]
+totpStn = [
+  -4.971066e-08
+  -9.036373e-08
+  1.400754e-07
+  1.207325e-07
+  -6.418610e-08
+  2.756428e-08
+  ]
+totpSpn = [
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  1.684930e-08
+  -1.980282e-07
+  4.757016e-08
+  ]
+FCC_Ltot = [
+  1.352924e+11
+  9.373331e+10
+  1.406000e+11
+  2.165754e+04
+  1.346845e+11
+  9.373331e+10
+  1.406000e+11
+  1.381367e+04
+  1.352924e+11
+  9.373331e+10
+  1.406000e+11
+  5.053169e+05
+  1.620469e+11
+  1.400735e+11
+  1.406000e+11
+  2.223788e+06
+  1.623508e+11
+  1.406000e+11
+  1.406000e+11
+  1.787474e+04
+  1.355963e+11
+  1.411264e+11
+  9.373331e+10
+  1.705945e+04
+  ]
+FCC_fluxtot = [
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  0.000000e+00
+  4.318579e-09
+  1.465851e+01
+  6.693174e+01
+  -5.787018e-07
+  4.623518e+00
+  2.285966e+01
+  -9.581990e-10
+  -4.583181e-07
+  2.691555e+01
+  -1.147665e+02
+  -7.821381e-07
+  9.840697e+00
+  -4.496362e+01
+  -2.015500e-09
+  ]
+#
+#  Total density. Informational only; ignored on input
+#  
+disloDensity =   2.426569e+14  
+#
+#  Velocity statistics
+#  
+vAverage =   0.000000e+00  
+vStDev =   0.000000e+00  
+#
+#  I/O controls and parameters
+#  
+dirname =   "tests/Copper_results"  
+writeBinRestart =   0  
+skipIO =   0  
+numIOGroups =   1  
+armfile =   0  
+fluxfile =   1  
+fluxfreq =   10000  
+fluxcounter =   0  
+fragfile =   0  
+gnuplot =   1  
+gnuplotfreq =   20000  
+gnuplotcounter =   0  
+polefigfile =   0  
+povray =   0  
+psfile =   0  
+savecn =   1  
+savecnfreq =   20000  
+savecncounter =   0  
+saveprop =   1  
+savepropfreq =   10000  
+savetimers =   0  
+tecplot =   0  
+velfile =   1  
+velfilefreq =   20000  
+velfilecounter =   0  
+writeForce =   0  
+writeVisit =   0  
+winDefaultsFile =   "inputs/paradis.xdefaults"  
+#
+#  Miscellaneous parameters
+#  
+enforceGlidePlanes =   1  
+enableCrossSlip =   1  
+TensionFactor =   1.000000e+00  
+elasticinteraction =   1  

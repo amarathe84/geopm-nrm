@@ -1,0 +1,1 @@
+ --xproc=23 --yproc=4 --zproc=2 --nx=100 --ny=100 --nz=100 -n 10 -N 100

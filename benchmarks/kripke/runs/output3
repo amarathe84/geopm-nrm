@@ -1,0 +1,87 @@
+Setting power limits
+Setting package power limit to:100.0000W  for socket:0
+Calling set_pkg_rapl_limit
+Setting package power limit to:100.0000W  for socket:1
+Calling set_pkg_rapl_limit
+DRAM power uncapped
+Setting power limits
+Setting package power limit to:100.0000W  for socket:0
+Calling set_pkg_rapl_limit
+Setting package power limit to:100.0000W  for socket:1
+Calling set_pkg_rapl_limit
+DRAM power uncapped
+
+----------------------------------------------------------------------
+------------------------ KRIPKE VERSION 1.1 --------------------------
+----------------------------------------------------------------------
+This work was produced at the Lawrence Livermore National Laboratory
+(LLNL) under contract no. DE-AC-52-07NA27344 (Contract 44) between the
+U.S. Department of Energy (DOE) and Lawrence Livermore National
+Security, LLC (LLNS) for the operation of LLNL. The rights of the
+Federal Government are reserved under Contract 44.
+
+Main Contact: Adam J. Kunen <kunen1@llnl.gov>
+----------------------------------------------------------------------
+Rank: 0 Thread 0: Core 0
+Rank: 0 Thread 9: Core 9
+Rank: 0 Thread 6: Core 6
+Rank: 0 Thread 1: Core 1
+Rank: 0 Thread 3: Core 3
+Rank: 0 Thread 10: Core 10
+Rank: 0 Thread 4: Core 4
+Rank: 0 Thread 5: Core 5
+Rank: 0 Thread 2: Core 2
+Rank: 0 Thread 7: Core 7
+Rank: 0 Thread 8: Core 8
+Rank: 0 Thread 11: Core 11
+Number of MPI tasks:   4
+OpenMP threads/task:   12
+OpenMP total threads:  48
+Processors:            2 x 2 x 1
+Zones:                 16 x 16 x 16
+Legendre Order:        4
+Total X-Sec:           sigt=[0.100000, 0.000100, 0.100000]
+Scattering X-Sec:      sigs=[0.050000, 0.000050, 0.050000]
+Quadrature Set:        Dummy S2 with 96 points
+Parallel method:       Sweep
+Loop Nesting Order     DGZ
+Number iterations:     20
+GroupSet/Groups:       64 sets, 1 groups/set
+DirSets/Directions:    8 sets, 12 directions/set
+Zone Sets:             1,1,1
+Unknown counts: psi=25165824, rhs=25165824, phi=6553600, phi_out=6553600
+Region volumes: Reg1=8.789062e+03, Reg2=1.177734e+05, Reg3=2.753438e+06
+iter 0: particle count=7.487488e+07, change=1.000000e+00
+iter 1: particle count=1.125855e+08, change=3.349511e-01
+iter 2: particle count=1.313924e+08, change=1.431351e-01
+iter 3: particle count=1.407381e+08, change=6.640521e-02
+iter 4: particle count=1.453680e+08, change=3.184924e-02
+iter 5: particle count=1.476542e+08, change=1.548355e-02
+iter 6: particle count=1.487795e+08, change=7.563193e-03
+iter 7: particle count=1.493316e+08, change=3.697158e-03
+iter 8: particle count=1.496017e+08, change=1.805479e-03
+iter 9: particle count=1.497334e+08, change=8.801810e-04
+iter 10: particle count=1.497976e+08, change=4.282699e-04
+iter 11: particle count=1.498288e+08, change=2.079888e-04
+iter 12: particle count=1.498439e+08, change=1.008304e-04
+iter 13: particle count=1.498512e+08, change=4.880224e-05
+iter 14: particle count=1.498547e+08, change=2.358594e-05
+iter 15: particle count=1.498564e+08, change=1.138407e-05
+iter 16: particle count=1.498573e+08, change=5.488215e-06
+iter 17: particle count=1.498576e+08, change=2.643061e-06
+iter 18: particle count=1.498578e+08, change=1.271664e-06
+iter 19: particle count=1.498579e+08, change=6.113215e-07
+Timers:
+  Timer                    Count       Seconds
+  LPlusTimes                  20       5.01716
+  LTimes                      20       4.94957
+  Scattering                  20       4.65466
+  Solve                        1      16.17555
+  Source                      20       0.00017
+  Sweep                       20       0.91749
+  Sweep_Kernel             10240       0.23367
+
+TIMER_NAMES:LPlusTimes,LTimes,Scattering,Solve,Source,Sweep,Sweep_Kernel
+TIMER_DATA:5.017157,4.949573,4.654658,16.175551,0.000170,0.917488,0.233666
+
+

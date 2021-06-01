@@ -1,0 +1,85 @@
+
+#############################################################################
+#
+#    makefile:  This is the primary make file controlling the build
+#               of the ParaDiS parallel code and associated utilities.
+#
+#    Usage:
+#        gmake           build paradis executable and some of the
+#                        associated tools and utilities.
+#        gmake clean     remove executable and object files
+#        gmake depend    update makefile dependencies
+#
+############################################################################
+
+#
+#       Include files containing the system specific macro definitions
+#       as well as the settings and flags that are not system dependent.
+#
+
+SOURCE_DIR=/usr/WS2/variorum/am/geopm-tests/benchmarks/paradis
+
+include makefile.no_power.sys
+include makefile.setup.power
+
+
+###########################################################################
+#
+#	Define the object modules for the application
+#
+###########################################################################
+
+PARADIS    = paradis
+PARADIS_DBG    = paradis_dbg
+PARADIS_PRISTINE = paradis_pristine
+CTABLEGENP = ctablegenp
+UTILS      = utils
+
+DIRS    = src utilities
+
+BINDIR = ./bin
+
+###########################################################################
+#
+#	Define all targets and dependencies below
+#
+###########################################################################
+
+all:	$(PARADIS) $(PARADIS_PRISTINE) $(CTABLEGENP) $(UTILS)
+
+clean:
+	@ ( for i in $(DIRS) ; do	\
+		$(MAKE) -C $$i $@;\
+	done ;				\
+	)
+
+$(BINDIR):
+	mkdir -p $(BINDIR)
+
+$(PARADIS):	$(BINDIR)
+	@ $(MAKE) -C src $@
+	mv ../bin/paradis ../bin/paradis.no_power 
+
+#$(PARADIS_DBG):	$(BINDIR)
+#	@ $(MAKE) -C src $@
+
+$(PARADIS_PRISTINE):	$(BINDIR)
+	@ $(MAKE) -C src $@
+
+$(CTABLEGENP): 	$(BINDIR)
+	@ $(MAKE) -C src $@
+
+$(UTILS):	$(BINDIR)
+	@ $(MAKE) -C utilities
+
+depend: 	
+	@ ( for i in $(DIRS) ; do	\
+	$(MAKE) -C $$i $@;\
+	done ;				\
+	)
+
+purify:		$(BINDIR)	
+	@ $(MAKE) -C src $@
+
+prof:		$(BINDIR)
+	@ $(MAKE) -C src $@
