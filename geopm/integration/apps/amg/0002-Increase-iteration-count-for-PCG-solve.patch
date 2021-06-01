@@ -1,0 +1,70 @@
+From 6d49442a0cae9020c019bc43af63053b79b98534 Mon Sep 17 00:00:00 2001
+From: "Christopher M. Cantalupo" <christopher.m.cantalupo@intel.com>
+Date: Tue, 6 Oct 2020 17:08:13 -0700
+Subject: [PATCH 2/2] Increase iteration count for PCG solve
+
+- Increase mg_max_iter from 100 to 500
+- Decrease error tolerence to zero to avoid
+  leaving loop because of error convergence.
+
+#  Copyright (c) 2015 - 2021, Intel Corporation
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions
+#  are met:
+#
+#      * Redistributions of source code must retain the above copyright
+#        notice, this list of conditions and the following disclaimer.
+#
+#      * Redistributions in binary form must reproduce the above copyright
+#        notice, this list of conditions and the following disclaimer in
+#        the documentation and/or other materials provided with the
+#        distribution.
+#
+#      * Neither the name of Intel Corporation nor the names of its
+#        contributors may be used to endorse or promote products derived
+#        from this software without specific prior written permission.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+#  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+#  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+#  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+#  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+#  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY LOG OF THE USE
+#  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+Signed-off-by: Christopher M. Cantalupo <christopher.m.cantalupo@intel.com>
+---
+ test/amg.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/test/amg.c b/test/amg.c
+index 18811ea..842f636 100644
+--- a/test/amg.c
++++ b/test/amg.c
+@@ -72,7 +72,7 @@ main( hypre_int argc,
+    HYPRE_Int           max_levels = 25;
+    HYPRE_Int           num_iterations;
+    HYPRE_Int           max_iter = 1000;
+-   HYPRE_Int           mg_max_iter = 100;
++   HYPRE_Int           mg_max_iter = 500;
+    HYPRE_Int 	       cum_num_its=0;
+    HYPRE_Int           nodal = 0;
+    HYPRE_Real          final_res_norm;
+@@ -113,7 +113,7 @@ main( hypre_int argc,
+    HYPRE_Int    relax_type = 18;   
+    HYPRE_Int    rap2=1;
+    HYPRE_Int    keepTranspose = 0;
+-   HYPRE_Real   tol = 1.e-8, pc_tol = 0.;
++   HYPRE_Real   tol = 0., pc_tol = 0.;
+    HYPRE_Real   atol = 0.0;
+ 
+    HYPRE_Real   wall_time;
+-- 
+1.8.3.1
+

@@ -1,0 +1,168 @@
+From 1aa92708e95ffb39815759f588d0371c508613c7 Mon Sep 17 00:00:00 2001
+From: Brad Geltz <brad.geltz@intel.com>
+Date: Wed, 7 Oct 2020 15:55:14 -0700
+Subject: [PATCH 5/5] Add region markup
+#
+#  Copyright (c) 2015 - 2021, Intel Corporation
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions
+#  are met:
+#
+#      * Redistributions of source code must retain the above copyright
+#        notice, this list of conditions and the following disclaimer.
+#
+#      * Redistributions in binary form must reproduce the above copyright
+#        notice, this list of conditions and the following disclaimer in
+#        the documentation and/or other materials provided with the
+#        distribution.
+#
+#      * Neither the name of Intel Corporation nor the names of its
+#        contributors may be used to endorse or promote products derived
+#        from this software without specific prior written permission.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+#  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+#  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+#  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+#  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+#  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY LOG OF THE USE
+#  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+Signed-off-by: Brad Geltz <brad.geltz@intel.com>
+---
+ src/SparseMatrix_functions.hpp | 24 ++++++++++++++++++++++++
+ src/Vector_functions.hpp       | 24 ++++++++++++++++++++++++
+ 2 files changed, 48 insertions(+)
+
+diff --git a/src/SparseMatrix_functions.hpp b/src/SparseMatrix_functions.hpp
+index 876f4ad..b598181 100644
+--- a/src/SparseMatrix_functions.hpp
++++ b/src/SparseMatrix_functions.hpp
+@@ -43,6 +43,10 @@
+ #include <exchange_externals.hpp>
+ #include <mytimer.hpp>
+
++#ifndef NO_GEOPM
++#include "geopm.h"
++#endif
++
+ #ifdef MINIFE_HAVE_TBB
+ #include <LockingMatrix.hpp>
+ #endif
+@@ -515,6 +519,13 @@ void operator()(MatrixType& A,
+         ScalarType* ycoefs                        = &y.coefs[0];
+         const ScalarType beta                     = 0;
+
++#ifndef NO_GEOPM
++        static uint64_t R_ID = 0;
++        if (R_ID == 0) {
++            geopm_prof_region( "PHASE_MATVEC", GEOPM_REGION_HINT_COMPUTE, &R_ID);
++        }
++        geopm_prof_enter( R_ID);
++#endif
+         #pragma omp parallel for
+         for(MINIFE_GLOBAL_ORDINAL row = 0; row < rows_size; ++row) {
+                 const MINIFE_GLOBAL_ORDINAL row_start = Arowoffsets[row];
+@@ -529,6 +540,9 @@ void operator()(MatrixType& A,
+
+                 ycoefs[row] = sum;
+         }
++#ifndef NO_GEOPM
++        geopm_prof_exit(R_ID);
++#endif
+ }
+ };
+ #elif defined(MINIFE_ELL_MATRIX)
+@@ -553,6 +567,13 @@ void operator()(MatrixType& A,
+         ScalarType* ycoefs = &y.coefs[0];
+   ScalarType beta = 0;
+
++#ifndef NO_GEOPM
++  static uint64_t R_ID = 0;
++  if (R_ID == 0) {
++      geopm_prof_region( "PHASE_MATVEC", GEOPM_REGION_HINT_COMPUTE, &R_ID);
++  }
++  geopm_prof_enter( R_ID);
++#endif
+   #pragma omp parallel for
+   for(int row=0; row<n; ++row) {
+     ScalarType sum = beta*ycoefs[row];
+@@ -566,6 +587,9 @@ void operator()(MatrixType& A,
+
+     ycoefs[row] = sum;
+   }
++#ifndef NO_GEOPM
++  geopm_prof_exit(R_ID);
++#endif
+ }
+ };
+ #endif
+diff --git a/src/Vector_functions.hpp b/src/Vector_functions.hpp
+index cdf9b15..4f54069 100644
+--- a/src/Vector_functions.hpp
++++ b/src/Vector_functions.hpp
+@@ -36,6 +36,10 @@
+ #include <mpi.h>
+ #endif
+
++#ifndef NO_GEOPM
++#include "geopm.h"
++#endif
++
+ #ifdef MINIFE_HAVE_TBB
+ #include <LockingVector.hpp>
+ #endif
+@@ -152,6 +156,13 @@ void
+   const ScalarType*  ycoefs = &y.coefs[0];
+         ScalarType*  wcoefs = &w.coefs[0];
+
++#ifndef NO_GEOPM
++  static uint64_t R_ID = 0;
++  if (R_ID == 0) {
++    geopm_prof_region( "PHASE_WAXPBY", GEOPM_REGION_HINT_MEMORY, &R_ID);
++  }
++  geopm_prof_enter( R_ID);
++#endif
+   if(beta == 0.0) {
+ 	if(alpha == 1.0) {
+   		#pragma omp parallel for
+@@ -177,6 +188,9 @@ void
+   		}
+   	}
+   }
++#ifndef NO_GEOPM
++  geopm_prof_exit( R_ID);
++#endif
+
+ #ifdef MINIFE_DEBUG_OPENMP
+   std::cout << "Finished WAXPBY." << std::endl;
+@@ -245,10 +259,20 @@ typename TypeTraits<typename Vector::ScalarType>::magnitude_type
+   const Scalar*  ycoefs = &y.coefs[0];
+   MINIFE_SCALAR result = 0;
+
++#ifndef NO_GEOPM
++  static uint64_t R_ID = 0;
++  if (R_ID == 0) {
++    geopm_prof_region( "PHASE_DOT", GEOPM_REGION_HINT_MEMORY, &R_ID);
++  }
++  geopm_prof_enter( R_ID);
++#endif
+   #pragma omp parallel for reduction(+:result)
+   for(int i=0; i<n; ++i) {
+     result += xcoefs[i] * ycoefs[i];
+   }
++#ifndef NO_GEOPM
++  geopm_prof_exit( R_ID);
++#endif
+
+ #ifdef HAVE_MPI
+   magnitude local_dot = result, global_dot = 0;
+--
+2.23.0
+

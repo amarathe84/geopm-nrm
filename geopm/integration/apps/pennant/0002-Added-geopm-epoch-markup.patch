@@ -1,0 +1,92 @@
+From 400205e54d19c8646ad3179e5d575627ee57f35c Mon Sep 17 00:00:00 2001
+From: Fuat Keceli <fuat.keceli@intel.com>
+Date: Wed, 4 Nov 2020 06:55:51 -0800
+Subject: [PATCH 2/6] Added geopm epoch markup.
+
+#  Copyright (c) 2015 - 2021, Intel Corporation
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions
+#  are met:
+#
+#      * Redistributions of source code must retain the above copyright
+#        notice, this list of conditions and the following disclaimer.
+#
+#      * Redistributions in binary form must reproduce the above copyright
+#        notice, this list of conditions and the following disclaimer in
+#        the documentation and/or other materials provided with the
+#        distribution.
+#
+#      * Neither the name of Intel Corporation nor the names of its
+#        contributors may be used to endorse or promote products derived
+#        from this software without specific prior written permission.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+#  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+#  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+#  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+#  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+#  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY LOG OF THE USE
+#  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+Signed-off-by: Fuat Keceli <fuat.keceli@intel.com>
+---
+ Makefile      |  6 ++++++
+ src/Driver.cc | 12 ++++++++++++
+ 2 files changed, 18 insertions(+)
+
+diff --git a/Makefile b/Makefile
+index e05e812..a0611ef 100644
+--- a/Makefile
++++ b/Makefile
+@@ -36,6 +36,12 @@ CXXFLAGS_OPENMP := -qopenmp
+ CXXFLAGS := $(CXXFLAGS_OPT)
+ #CXXFLAGS := $(CXXFLAGS_DEBUG)
+ 
++# link against geopm
++ifdef USEGEOPM
++	LDFLAGS += $(GEOPM_LDFLAGS) $(GEOPM_LDLIBS)
++	CXXFLAGS += $(GEOPM_CFLAGS) -DUSEGEOPM -DEPOCH_TO_OUTERLOOP=$(EPOCH_TO_OUTERLOOP)
++endif
++
+ # add mpi to compile (comment out for serial build)
+ # the following assumes the existence of an mpi compiler
+ # wrapper called mpicxx
+diff --git a/src/Driver.cc b/src/Driver.cc
+index 2b919df..c75da82 100644
+--- a/src/Driver.cc
++++ b/src/Driver.cc
+@@ -28,6 +28,10 @@
+ #include "Mesh.hh"
+ #include "Hydro.hh"
+ 
++#ifdef USEGEOPM
++#include "geopm.h"
++#endif
++
+ using namespace std;
+ 
+ 
+@@ -97,6 +101,14 @@ void Driver::run() {
+     // main event loop
+     while (cycle < cstop && time < tstop) {
+ 
++#ifdef USEGEOPM
++        // Picking up an epoch every cycle end up in too many epochs
++        // per second and increases the GEOPM control loop significantly.
++        if (cycle % EPOCH_TO_OUTERLOOP == 0) {
++            geopm_prof_epoch();
++        }
++#endif
++
+         cycle += 1;
+ 
+         // get timestep
+-- 
+1.8.3.1
+

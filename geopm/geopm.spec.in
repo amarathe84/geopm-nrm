@@ -1,0 +1,255 @@
+#  Copyright (c) 2015 - 2021, Intel Corporation
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions
+#  are met:
+#
+#      * Redistributions of source code must retain the above copyright
+#        notice, this list of conditions and the following disclaimer.
+#
+#      * Redistributions in binary form must reproduce the above copyright
+#        notice, this list of conditions and the following disclaimer in
+#        the documentation and/or other materials provided with the
+#        distribution.
+#
+#      * Neither the name of Intel Corporation nor the names of its
+#        contributors may be used to endorse or promote products derived
+#        from this software without specific prior written permission.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+#  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+#  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+#  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+#  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+#  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY LOG OF THE USE
+#  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+Summary: Global Extensible Open Power Manager
+Name: geopmpolicy
+Version: @VERSION@
+Release: 1
+License: BSD-3-Clause
+Group: System Environment/Libraries
+Vendor: Intel Corporation
+URL: https://geopm.github.io
+Source0: geopm.tar.gz
+BuildRoot: %{_tmppath}/geopm-%{version}-%{release}-root
+BuildRequires: gcc-c++
+BuildRequires: unzip
+BuildRequires: libtool
+BuildRequires: elfutils-libelf-devel
+
+%if 0%{?rhel} >= 8
+# Needed to generate debuginfo packages
+BuildRequires: gdb-headless
+%endif
+
+%if ((%{defined suse_version}) && (0%{?suse_version} < 1500)) || ((%{defined rhel}) && (0%{?rhel} < 8))
+# The version of python 3 available in these versions is not supported for all
+# of our package dependencies, but they do support 2.7 and newer versions of 3
+# We originally released to these distributions with an implicit python 2
+# dependency, so keep it that way for existing compatibility.
+%define python_major_version %{nil}
+BuildRequires: python
+BuildRequires: python-devel
+%define python_bin /usr/bin/python
+%else
+%define python_major_version 3
+%if %{defined rhel}
+# We should depend on python36, but that package is implemented as a module.
+# The enterprise Linux repos on opensuse's OBS instance don't expose modules
+# at this time, so the build fails due to a seemingly invalid dependency.
+# For now, depend on platform-python instead, which is a bare package.
+BuildRequires: platform-python
+BuildRequires: platform-python-devel
+%else
+BuildRequires: python3
+BuildRequires: python3-devel
+%endif
+%define python_bin %{__python3}
+%endif
+
+%if 0%{?suse_version} >= 1320
+BuildRequires: openssh
+%endif
+
+Prefix: %{_prefix}
+
+%if %{defined suse_version}
+%define docdir %{_defaultdocdir}/geopm
+%else
+%define docdir %{_defaultdocdir}/geopm-%{version}
+%endif
+
+%description
+@BLURB@
+
+%prep
+
+%setup -n geopm-%{version}
+
+%package devel
+Summary: Global Extensible Open Power Manager - development
+Group: Development/Libraries
+Requires: geopmpolicy
+
+%description devel
+Development package for GEOPM.
+
+%package -n python%{python_major_version}-geopmpy
+Summary: Global Extensible Open Power Manager - python %{python_major_version}
+Group: System Environment/Libraries
+Requires: geopmpolicy
+%{?python_provide:%python_provide python%{python_major_version}-geopmpy}
+
+%description -n python%{python_major_version}-geopmpy
+Python %{python_major_version} package for GEOPM.
+
+%build
+test -f configure || ./autogen.sh
+
+%if %{defined suse_version}
+./configure --prefix=%{_prefix} --libdir=%{_libdir} --libexecdir=%{_libexecdir} \
+            --includedir=%{_includedir} --sbindir=%{_sbindir} \
+            --mandir=%{_mandir} --docdir=%{docdir} \
+            --disable-mpi --disable-openmp \
+            --disable-fortran \
+            --with-python=%{python_bin} \
+            || ( cat config.log && false )
+%else
+./configure --prefix=%{_prefix} --libdir=%{_libdir} --libexecdir=%{_libexecdir} \
+            --includedir=%{_includedir} --sbindir=%{_sbindir} \
+            --mandir=%{_mandir} --docdir=%{docdir} \
+            --disable-mpi --disable-openmp \
+            --disable-fortran \
+            --with-python=%{python_bin} \
+            || ( cat config.log && false )
+%endif
+
+%{__make} %{?_smp_mflags}
+
+%install
+%{__make} DESTDIR=%{buildroot} install
+rm -f $(find %{buildroot}/%{_libdir} -name '*.a'; \
+        find %{buildroot}/%{_libdir} -name '*.la')
+
+rm -f %{buildroot}/%{_mandir}/man1/geopmbench.1
+rm -f %{buildroot}/%{_mandir}/man1/geopmctl.1
+rm -f %{buildroot}/%{_mandir}/man1/geopmlaunch.1
+rm -f %{buildroot}/%{_mandir}/man3/geopm_fortran.3
+rm -f %{buildroot}/%{_mandir}/man3/geopm_ctl_c.3
+
+rm -f %{buildroot}/%{_includedir}/geopm_ctl.h
+
+rm -f %{buildroot}/%{_bindir}/geopmlaunch
+
+%clean
+
+%post
+/sbin/ldconfig
+
+%preun
+
+%postun
+/sbin/ldconfig
+
+%files
+%defattr(-,root,root,-)
+%{_libdir}/libgeopmpolicy.so.0.0.0
+%{_libdir}/libgeopmpolicy.so.0
+%{_libdir}/libgeopmpolicy.so
+%dir %{_libdir}/geopm
+%{_bindir}/geopmadmin
+%{_bindir}/geopmagent
+%{_bindir}/geopmread
+%{_bindir}/geopmwrite
+%dir %{docdir}
+%doc %{docdir}/COPYING
+%doc %{docdir}/README
+%doc %{docdir}/VERSION
+%doc %{_mandir}/man1/geopmadmin.1.gz
+%doc %{_mandir}/man1/geopmagent.1.gz
+%doc %{_mandir}/man1/geopmread.1.gz
+%doc %{_mandir}/man1/geopmwrite.1.gz
+%doc %{_mandir}/man3/geopm::Agent.3.gz
+%doc %{_mandir}/man3/geopm::Agg.3.gz
+%doc %{_mandir}/man3/geopm::CircularBuffer.3.gz
+%doc %{_mandir}/man3/geopm::CNLIOGroup.3.gz
+%doc %{_mandir}/man3/geopm::CpuinfoIOGroup.3.gz
+%doc %{_mandir}/man3/geopm::EnergyEfficientRegion.3.gz
+%doc %{_mandir}/man3/geopm::Exception.3.gz
+%doc %{_mandir}/man3/geopm::Helper.3.gz
+%doc %{_mandir}/man3/geopm::IOGroup.3.gz
+%doc %{_mandir}/man3/geopm::MSRIO.3.gz
+%doc %{_mandir}/man3/geopm::MSRIOGroup.3.gz
+%doc %{_mandir}/man3/geopm::PlatformIO.3.gz
+%doc %{_mandir}/man3/geopm::PlatformTopo.3.gz
+%doc %{_mandir}/man3/geopm::PluginFactory.3.gz
+%doc %{_mandir}/man3/geopm::PowerBalancer.3.gz
+%doc %{_mandir}/man3/geopm::PowerGovernor.3.gz
+%doc %{_mandir}/man3/geopm::SampleAggregator.3.gz
+%doc %{_mandir}/man3/geopm::SharedMemory.3.gz
+%doc %{_mandir}/man3/geopm::TimeIOGroup.3.gz
+%doc %{_mandir}/man3/geopm_agent_c.3.gz
+%doc %{_mandir}/man3/geopm_error.3.gz
+%doc %{_mandir}/man3/geopm_hash.3.gz
+%doc %{_mandir}/man3/geopm_imbalancer.3.gz
+%doc %{_mandir}/man3/geopm_pio_c.3.gz
+%doc %{_mandir}/man3/geopm_prof_c.3.gz
+%doc %{_mandir}/man3/geopm_sched.3.gz
+%doc %{_mandir}/man3/geopm_time.3.gz
+%doc %{_mandir}/man3/geopm_topo_c.3.gz
+%doc %{_mandir}/man3/geopm_version.3.gz
+%doc %{_mandir}/man7/geopm.7.gz
+%doc %{_mandir}/man7/geopm_agent_energy_efficient.7.gz
+%doc %{_mandir}/man7/geopm_agent_frequency_map.7.gz
+%doc %{_mandir}/man7/geopm_agent_monitor.7.gz
+%doc %{_mandir}/man7/geopm_agent_power_balancer.7.gz
+%doc %{_mandir}/man7/geopm_agent_power_governor.7.gz
+%doc %{_mandir}/man7/geopm_report.7.gz
+
+%files devel
+%defattr(-,root,root,-)
+%dir %{_includedir}/geopm
+%{_includedir}/geopm.h
+%{_includedir}/geopm/Agent.hpp
+%{_includedir}/geopm/Agg.hpp
+%{_includedir}/geopm/CircularBuffer.hpp
+%{_includedir}/geopm/CpuinfoIOGroup.hpp
+%{_includedir}/geopm/EnergyEfficientRegion.hpp
+%{_includedir}/geopm/Exception.hpp
+%{_includedir}/geopm/FrequencyGovernor.hpp
+%{_includedir}/geopm/Helper.hpp
+%{_includedir}/geopm/IOGroup.hpp
+%{_includedir}/geopm/MSR.hpp
+%{_includedir}/geopm/MSRIO.hpp
+%{_includedir}/geopm/MSRIOGroup.hpp
+%{_includedir}/geopm/PlatformIO.hpp
+%{_includedir}/geopm/PlatformTopo.hpp
+%{_includedir}/geopm/PluginFactory.hpp
+%{_includedir}/geopm/PowerBalancer.hpp
+%{_includedir}/geopm/PowerGovernor.hpp
+%{_includedir}/geopm/SampleAggregator.hpp
+%{_includedir}/geopm/SharedMemory.hpp
+%{_includedir}/geopm/SharedMemoryScopedLock.hpp
+%{_includedir}/geopm/TimeIOGroup.hpp
+%{_includedir}/geopm/json11.hpp
+%{_includedir}/geopm_agent.h
+%{_includedir}/geopm_error.h
+%{_includedir}/geopm_hash.h
+%{_includedir}/geopm_imbalancer.h
+%{_includedir}/geopm_pio.h
+%{_includedir}/geopm_sched.h
+%{_includedir}/geopm_time.h
+%{_includedir}/geopm_topo.h
+%{_includedir}/geopm_version.h
+
+%files -n python%{python_major_version}-geopmpy
+%{expand:%{python%{python_major_version}_sitelib}}/*
+%doc %{_mandir}/man7/geopmpy.7.gz
+%changelog
+@CHANGELOG@
